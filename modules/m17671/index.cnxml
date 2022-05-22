@@ -1,0 +1,209 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/">
+<title>Models</title>
+<metadata>
+  <md:content-id>m17671</md:content-id><md:title>Models</md:title>
+  <md:abstract>This module presents the basic idea of a model to be used in the physical sciences, social sciences, and engineering.  Perhaps also in the humanities.</md:abstract>
+  <md:uuid>d79af647-3534-45fb-870b-7802e9d8e68a</md:uuid>
+</metadata>
+
+<content>
+<section id="id12518972">
+<title>Models</title>
+<para id="id3749920">The concept of a model is very close to that
+of an analogy. It is so fundamental to our thought, decision
+making, and problem solving processes that it is difficult to
+isolate and study; however, to accomplish the goal of simulating
+and understanding complicated social systems, it is essential that
+we do understand the concept of a model and develop methods for
+constructing them. Like many basic concepts, it is best described
+by examples:</para>
+<section id="id12605387">
+<title>Physical Model</title>
+<para id="id10457132">To the average person the word "model" might
+bring to mind someone modeling a dress, or perhaps a photographer's
+model, or even a model airplane or car. Let's consider these cases.
+The usual reason for looking at a dress on a model is to imagine
+what the dress would look like on one's self without having to buy
+it to find out. The photographer uses his camera to make a likeness
+of the model in the form of a picture. The model plane or car
+allows one to enjoy the details and perspectives of the model
+without the problems and expense of actual ownership of the
+airplane or car. Indeed, one can try experiments on the models that
+would be very difficult or expensive to actually perform on the
+real thing.</para>
+<para id="id10457155">Consider the methods and purposes behind the
+architect's model of a building, the car designer's prototype of a
+new design, or the aerodynamicist's wind tunnel model of a new
+airplane. As one considers what is common to these ideas of a model
+and what purposes are served, perhaps the concept begins to take
+shape.</para>
+</section>
+<section id="id12408762">
+<title>Mental Model</title>
+<para id="id12304020">Rather than further pursue the various types
+of physical models, let us consider another less obvious form of
+model, the mental model. For example, the merchant who mentally
+speculates: "if I increase the price of this article from x to y,
+the buyers will still buy enough that I will come out ahead," and
+the mother who says, "if I spank my child for leaving his toys out,
+he will stop", are both using intuitive mental models of incredibly
+complicated economic, sociological, and psychological systems that
+even experts don't agree on. Freud, Skinner, Erikson and others
+have all produced models of human psychology that much of modern
+therapy and advertising are based on. Indeed, reflection indicates
+that much of human thought is involved with mental model making and
+the use of these models for decision making, problem solving, or
+merely pleasure.</para>
+<para id="id17243990">The politician who tells the voters what will
+happen if certain policies are followed, the advertiser who tells
+the potential buyer the results of using his product, and the
+preacher who predicts the consequences of evil to his followers are
+all involved with the building and use of mental and verbal
+models.</para>
+<para id="id40510073">Even the simple speculation of "if I wear
+these clothes I will look nice" is based on a model of how one's
+friends will respond to one's dress. Indeed, most processes of
+experience can be viewed as model building, experimentation, model
+modification, etc. Further reflection shows how much of one's
+mental activities can be viewed as involved with modeling and how
+many academic disciplines are based on models, even though the
+concept and process is poorly understood and seldom explicitly
+discussed.</para>
+<para id="id39445584">It may seem that the idea of a model and its
+use is being made so general that it is useless. Our purpose in
+being so general is to search for what is common in these diverse
+examples, and to extract it for study and more efficient
+use.</para>
+</section>
+<section id="id40546494">
+<title>Mathematical Model</title>
+<para id="id39127265">Rather than follow further examples of mental
+or verbal models, we will turn to another form of model: the
+mathematical model. The incredible advances of the physical
+sciences and engineering disciplines have resulted from the
+development and use of mathematical models. When one describes the
+relation between the force applied to an object and its mass and
+acceleration by the familiar formula 
+<m:math display="inline">
+  <m:mrow>
+    <m:mi>F</m:mi>
+    <m:mo>=</m:mo>
+    <m:mi>M</m:mi>
+    <m:mo>⋅</m:mo>
+    <m:mi>A</m:mi>
+  </m:mrow>
+</m:math>
+ , one is using a
+mathematical model of a physical phenomena. Here, mathematical
+functions are used to represent physical qualities, so that the
+interrelationship can be described by equations. If these equations
+are fundamental and if their solutions accurately simulate the
+actual phenomena, then they are given the special status of "laws".
+Consider the cases of Newton's laws, Kirchoff's laws, Faraday's
+law, Boyle's law, and in other fields, Fechner's law
+(psychophysics), Paneto's law (economics), etc. Indeed, model
+formulation and verification is the basis of the so-called
+scientific method.</para>
+<para id="id40197121">An important feature of the various types of
+models we have discussed is how one can move from one to another.
+Consider the following hypothetical account of how a physical "law"
+was developed.</para>
+<para id="id40425270">At some point in time it was noticed that if
+a heavy object was dropped, it fell down. As further experience was
+accumulated, it was noticed that the object always fell in a
+straight line toward the earth. Next, after closer observation, it
+was discovered that the object's speed increased as it fell. The
+next step was a major one. It required curiosity, mathematical
+ability, and a real quantum jump to move from the verbal model to a
+mathematical one where it was conjectured that the velocity was a
+linear function of time after being dropped, V = Kt . This proved
+to be incredibly accurate, and thus, a "law" was discovered.</para>
+<para id="id39886636">The use of mathematical models has been so
+successful in many areas that the concept of a model was sometimes
+forgotten. Indeed, some models are so accurate that users can
+forget that they are dealing with models and not the actual
+phenomenon. When we work in areas where accurate models are not
+available, a good understanding of the modeling process becomes
+essential.</para>
+<para id="id11276346">The first step in choosing a model is
+deciding what the purpose of the model will be and what questions
+are being asked. It is obviously an advantage to use the simplest
+model possible to serve a particular purpose but the danger that
+over-simplification will destroy the validity of the model always
+exists.</para>
+<para id="id40297069">The second step is the actual construction of
+the model. Here, the various theories, laws, relations, etc. that
+apply must be used, and after that, the model requires that new
+relations be established. In other words, while building the model,
+one often discovers what data should be collected and what
+experiments must be performed, as well as what data is irrelevant
+or misleading. At this point, alterations are often substantial in
+the model.</para>
+<para id="id40175671">The third step is verification or validation
+of the model. This usually involves some comparisons of the model
+with the phenomenon it models. One must be very careful at this
+point to test all of the characteristics the model should have,
+while remaining within the original goals and purposes set, not
+violating the assumptions that were made. A common mistake is to use models outside the
+area for which they were intended.</para>
+
+<para id="id40466991">Verification often involves applying the
+model to data that was not used in its construction to see if it
+can explain the observations. If internal relations were used to
+derive some data, these can be compared with observations. On the
+other hand, if the model were built by forcing agreement with the
+observations, then the resulting implied internal relations can be
+examined for their validity.</para>
+<para id="id27975474">All of these steps are done in a rather
+circular fashion with the attempted use of, and verification of,
+the model suggesting modification, restructuring and
+reverification, or in some cases, discarding the whole approach.
+Some reflection will perhaps show that these are common ideas in
+modeling, and we try to systematically apply them to the very
+interesting but very difficult problem of modeling large groups of
+people.</para>
+</section>
+</section>
+</content>
+<bib:file>
+        <bib:entry id="mblack">
+          <bib:book>
+            <bib:author>
+              Max Black
+            </bib:author>
+            <bib:title>
+              Models and Metaphors: Studies in Language and Philosophy 
+            </bib:title>
+            <bib:publisher>
+              Cornell University Press
+            </bib:publisher>
+            <bib:year>
+              1962
+            </bib:year>
+            <bib:month>
+            </bib:month>
+          </bib:book>
+        </bib:entry>
+        <bib:entry id="mblack1">
+          <bib:book>
+            <bib:author>
+              Andrew Ortony
+            </bib:author>
+            <bib:title>
+              A Collection of Essays on Metaphor 
+            </bib:title>
+            <bib:publisher>
+              Cambridge Press
+            </bib:publisher>
+            <bib:year>
+              1993
+            </bib:year>
+            <bib:month>
+            </bib:month>
+            <bib:note>
+              Second Edition
+            </bib:note>
+          </bib:book>
+        </bib:entry>
+  </bib:file>
+</document>

@@ -1,0 +1,805 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/">
+  <title>Limits to Growth</title>
+  <metadata>
+  <md:content-id>m18163</md:content-id><md:title>Limits to Growth</md:title>
+  <md:abstract/>
+  <md:uuid>80973a03-af9a-4d44-97f1-361181376d16</md:uuid>
+</metadata>
+
+<content>
+    <section id="cid1">
+      <title>A Limit to Simple Growth: The Logistic Function</title>
+      <para id="id2253707">In the preceding sections we saw how the linear first-order differential
+equations lead to exponential solutions. Both the unbounded nature of the
+solution and the assumption of a constant growth rate indicate a
+modification that will give more realistic modeling of observed population
+growths.
+
+</para>
+      <list id="element-312" list-type="labeled-item" mark-suffix=".">
+<item><label>A</label> A Nonlinear Equation</item>
+</list><para id="element-604">It seems reasonable to assume under that many conditions the growth
+rate <m:math><m:mi>r</m:mi></m:math> would not remain constant, but would decrease with increasing
+population.
+This might result from the effects of crowding and reduced resources, or
+other physical and psychological factors on the birth and death rates.
+The simpliest functional form one could assume would be a linear
+reduction of <m:math><m:mi>r</m:mi></m:math> as the population increased.</para><equation id="id2253742"><m:math mode="display">
+          <m:mrow>
+            <m:mi>r</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>r</m:mi>
+              <m:mrow>
+                <m:mi>o</m:mi>
+              </m:mrow>
+            </m:msub>
+                <m:mspace width="0.166667em"/>
+                <m:mo>(</m:mo>
+                <m:mn>1</m:mn>
+
+
+            <m:mrow>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mo>-</m:mo>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mi>β</m:mi>
+              <m:mspace width="0.166667em"/>
+              <m:mi>p</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2253818">Here <m:math><m:msub><m:mi>r</m:mi><m:mi>o</m:mi></m:msub></m:math> is the rate for very small <m:math><m:mi>p</m:mi></m:math> where no limits have
+been felt.
+The term <m:math><m:mi>β</m:mi></m:math> gives the reducing effect of <m:math><m:mi>p</m:mi></m:math> on <m:math><m:mrow><m:mi>r</m:mi><m:mspace width="0.166667em"/></m:mrow></m:math>.
+This is seen by plotting <m:math><m:mi>r</m:mi></m:math> versus <m:math><m:mrow><m:mi>p</m:mi><m:mspace width="0.166667em"/></m:mrow></m:math>.
+<figure id="id17521357"><media id="id17521362" alt=""><image src="../../media/troff5.png" mime-type="image/png"/></media></figure>
+Note the growth rate is maximum at <m:math><m:mrow><m:msub><m:mi>r</m:mi><m:mi>o</m:mi></m:msub></m:mrow></m:math> for <m:math><m:mi>p</m:mi></m:math> equal to zero
+and linearly decreasing to zero when <m:math><m:mi>p</m:mi></m:math> is equal to <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mi>β</m:mi></m:mfrac></m:mrow></m:math>.
+The constant case is a special instance of <link target-id="id2253742" class="cnxn"/>  for <m:math><m:mi>β</m:mi></m:math> equal to zero.
+
+Now consider the population equation with this new growth rate.</para>
+      <equation id="id2253970">
+        <m:math mode="display">
+          <m:mrow>
+            <m:mfrac>
+              <m:mrow>
+                <m:mi>d</m:mi>
+                <m:mi>p</m:mi>
+              </m:mrow>
+              <m:mrow>
+                <m:mi>d</m:mi>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>r</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mi>p</m:mi>
+          </m:mrow>
+        </m:math>
+      </equation>
+      
+      <equation id="id2254026">
+        <m:math mode="display">
+          <m:mrow>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>r</m:mi>
+              <m:mrow>
+                <m:mi>o</m:mi>
+                <m:mspace width="0.166667em"/>
+                <m:mo>(</m:mo>
+                <m:mi>l</m:mi>
+              </m:mrow>
+            </m:msub>
+            <m:mrow>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mo>-</m:mo>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mi>β</m:mi>
+              <m:mspace width="4pt"/>
+              <m:mi>p</m:mi>
+              <m:mo>)</m:mo>
+              <m:mspace width="4pt"/>
+              <m:mi>p</m:mi>
+            </m:mrow>
+          </m:mrow>
+        </m:math>
+      </equation>
+<!--empty paragraphs get left behind.-->
+      <equation id="id2254098"><m:math mode="display">
+          <m:mrow>
+            <m:mfrac>
+              <m:mrow>
+                <m:mi>d</m:mi>
+                <m:mi>p</m:mi>
+              </m:mrow>
+              <m:mrow>
+                <m:mi>d</m:mi>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>r</m:mi>
+              <m:mrow>
+                <m:mi>o</m:mi>
+                <m:mspace width="0.166667em"/>
+                <m:mi>p</m:mi>
+              </m:mrow>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>r</m:mi>
+              <m:mi>o</m:mi>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mi>β</m:mi>
+            <m:mspace width="4pt"/>
+            <m:msup>
+              <m:mi>p</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mspace width="2.em"/>
+
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2254205">This is now a nonlinear first-order differential equation with several
+interesting features.
+The solution of <link target-id="id2253970" class="cnxn"/> can be shown to equal</para>
+      <equation id="id2254213"><m:math>
+<m:mi>p</m:mi>
+<m:mo>(</m:mo>
+<m:mi>t</m:mi>
+<m:mo>)</m:mo>
+<m:mo>=</m:mo>
+<m:mfrac>
+<m:mrow>
+<m:mi>k</m:mi>
+<m:msup>
+<m:mi>e</m:mi>
+<m:msub>
+<m:mi>r</m:mi>
+<m:msup>
+<m:mi>o</m:mi>
+<m:mi>t</m:mi>
+</m:msup>
+</m:msub>
+</m:msup>
+</m:mrow>
+<m:mrow>
+<m:mn>1</m:mn>
+<m:mo>+</m:mo>
+<m:mi>β</m:mi>
+<m:mi>k</m:mi>
+<m:msup>
+<m:mi>e</m:mi>
+<m:msub>
+<m:mi>r</m:mi>
+
+<m:msup>
+<m:mi>o</m:mi>
+
+<m:mi>t</m:mi>
+</m:msup>
+</m:msub>
+</m:msup>
+</m:mrow>
+</m:mfrac>
+
+<m:mo>=</m:mo>
+<m:mfrac>
+<m:mrow>
+<m:mn>1</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mi>β</m:mi>
+<m:mo>+</m:mo>
+<m:msup>
+<m:mi>k</m:mi>
+<m:mn>-1</m:mn>
+</m:msup>
+<m:msup>
+<m:mi>e</m:mi>
+<m:msub>
+<m:mi>-r</m:mi>
+<m:msup>
+<m:mi>o</m:mi>
+<m:mi>t</m:mi>
+</m:msup>
+</m:msub>
+</m:msup>
+</m:mrow>
+</m:mfrac>
+</m:math></equation>
+      <para id="id2254429">for</para>
+      <equation id="id2254435"><m:math mode="display">
+          <m:mrow>
+            <m:mi>k</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mfrac>
+              <m:mrow>
+                <m:mi>p</m:mi>
+                <m:mo>(</m:mo>
+                <m:mi>o</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mrow>
+                <m:mn>1</m:mn>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:mo>-</m:mo>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:mi>p</m:mi>
+                <m:mo>(</m:mo>
+                <m:mi>o</m:mi>
+                <m:mo>)</m:mo>
+                <m:mspace width="4pt"/>
+                <m:mi>β</m:mi>
+              </m:mrow>
+            </m:mfrac>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2254529">This function is called a
+<emphasis>logistic </emphasis>or <emphasis>sigmoid, </emphasis>and is illustrated below for several initial values of <m:math><m:mrow><m:mi>p</m:mi><m:mo>(</m:mo><m:mi>o</m:mi><m:mo>)</m:mo><m:mspace width="0.166667em"/></m:mrow></m:math>. <figure id="id16038294"><media id="id16038298" alt=""><image src="../../media/troff6.png" mime-type="image/png"/></media></figure>
+</para>
+      <para id="id2254566">
+An alternate form is</para>
+      <equation id="id2254571">
+        <m:math mode="display">
+          <m:mrow>
+            <m:mover accent="true">
+              <m:mi>p</m:mi>
+              <m:mo>˙</m:mo>
+            </m:mover>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>r</m:mi>
+              <m:mrow>
+                <m:mi>o</m:mi>
+                <m:mspace width="0.166667em"/>
+                <m:mo>(</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mfrac>
+              <m:mi>p</m:mi>
+              <m:mi>k</m:mi>
+            </m:mfrac>
+            <m:mrow>
+              <m:mspace width="4pt"/>
+              <m:mo>)</m:mo>
+              <m:mspace width="4pt"/>
+              <m:mi>p</m:mi>
+            </m:mrow>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2254658">where <m:math><m:mi>k</m:mi></m:math> is <m:math><m:mrow><m:mi>p</m:mi><m:mo>(</m:mo><m:mi>∞</m:mi><m:mo>)</m:mo><m:mspace width="0.166667em"/></m:mrow></m:math>, the asymptotic value of population, or
+the carrying capacity of the "system".
+This requires <m:math><m:mrow><m:mi>k</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mfrac><m:mn>1</m:mn><m:mi>β</m:mi></m:mfrac><m:mspace width="4pt"/><m:mspace width="4pt"/></m:mrow></m:math>.</para>
+      <para id="id2254729">There are several very interesting features of this function.
+For small initial populations, the initial increase is very much like
+exponential.
+This is obvious since the negative term in <link target-id="id2253970" class="cnxn"/> is small and the
+equation looks linear.
+However, as <m:math><m:mrow><m:mi>p</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:math> grows, the growth rate goes to zero and a
+steady-state or equilibrium is approached as a limit.</para>
+      <para id="id2254754">It it interesting to note that it is possible to normalize the logistic
+into a "standard" form.
+If we scale both the amplitude and time by
+</para>
+      <equation id="id2255034"><m:math mode="display">
+          <m:mrow>
+            <m:mrow>
+              <m:mi>x</m:mi>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mo>=</m:mo>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mi>β</m:mi>
+              <m:mspace width="0.166667em"/>
+              <m:mi>p</m:mi>
+              <m:mi>τ</m:mi>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mo>=</m:mo>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mi>β</m:mi>
+              <m:mspace width="0.166667em"/>
+              <m:mi>t</m:mi>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mo>+</m:mo>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mo form="prefix">log</m:mo>
+              <m:mspace width="4pt"/>
+              <m:mi>η</m:mi>
+              <m:mspace width="0.166667em"/>
+              <m:mi>k</m:mi>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mo>,</m:mo>
+            </m:mrow>
+            
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2255152">then <link target-id="id2254213" class="cnxn"/> becomes</para>
+      <equation id="id2255157"><m:math mode="display">
+          <m:mrow>
+            <m:mi>x</m:mi>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>τ</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mfrac>
+              <m:mn>1</m:mn>
+              <m:mrow>
+                <m:mn>1</m:mn>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:mo>+</m:mo>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:msup>
+                  <m:mi>e</m:mi>
+                  <m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:mspace width="0.166667em"/>
+                    <m:mi>τ</m:mi>
+                  </m:mrow>
+                </m:msup>
+              </m:mrow>
+            </m:mfrac>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="2.em"/>
+
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2255253">When plotted on semi-log paper, the logistic is an increasing straight
+line for small time, and becomes a horizontal straight line for large
+time.</para>
+      <para id="id2255261">The use of the logistic to model simple population growth with a limit
+is shown in Figures 4, 5, and 6.
+There have been many other applications of the logistic <link target-id="bid0" class="cnxn"/> <link target-id="bid3" class="cnxn"/> <link target-id="bid7" class="cnxn"/> <link target-id="bid9" class="cnxn"/> with some success and some failures.
+Unfortunately, if one tries to use this model to predict the limiting
+value while the system is still in the early stages of growth, a large
+error results since an exponential and a logistic look very similar in
+the early stages.</para>
+      
+      
+      
+      <para id="id2255281">It is possible to manipulate the data so that a plot of it becomes a
+straight line.
+If the reciprocal of <m:math><m:mrow><m:mi>p</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:math> in <link target-id="id2254213" class="cnxn"/> is considered</para>
+      <equation id="id2255303"><m:math mode="display">
+          <m:mrow>
+            <m:mfrac>
+              <m:mi>l</m:mi>
+              <m:mi>p</m:mi>
+            </m:mfrac>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>β</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>+</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:msup>
+              <m:mi>k</m:mi>
+              <m:mrow>
+                <m:mo>-</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+            </m:msup>
+            <m:mspace width="4pt"/>
+            <m:msup>
+              <m:mi>e</m:mi>
+              <m:msub>
+                <m:mrow>
+                  <m:mo>-</m:mo>
+                  <m:mi>r</m:mi>
+<m:mi>o</m:mi>
+                </m:mrow>
+                <m:mrow>
+ 
+                  <m:mi>t</m:mi>
+                </m:mrow>
+              </m:msub>
+            </m:msup>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2255392">and the logarithm is taken</para>
+      <equation id="id2255397"><m:math mode="display">
+          <m:mrow>
+            <m:mo form="prefix">log</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mfenced separators="" open="(" close=")">
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mfrac>
+                <m:mi>l</m:mi>
+                <m:mi>p</m:mi>
+              </m:mfrac>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mo>-</m:mo>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mi>β</m:mi>
+              <m:mspace width="4pt"/>
+            </m:mfenced>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mo form="prefix">log</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mi>k</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>β</m:mi>
+              <m:mrow>
+                
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="2.em"/>
+
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2255535">we have a linear function.
+Unfortunately, trial-and-error must be used to find <m:math><m:mrow><m:mi>β</m:mi><m:mspace width="4pt"/></m:mrow></m:math> since it appears on both sides of the <link target-id="id2255397" class="cnxn"/>.</para>
+<!--empty paragraphs get left behind.-->
+    </section>
+    <section id="cid2">
+      <title>A More Complicated Limit to Growth</title>
+      <para id="id2255567">The <link target-id="id2253970" class="cnxn"/> that gives rise to the logistic is the simpliest
+modification to include the effect of a non-constant <m:math><m:mrow><m:mi>r</m:mi><m:mspace width="0.166667em"/></m:mrow></m:math>.
+Perhaps a more realistic relation of <m:math><m:mi>r</m:mi></m:math> as a function of <m:math><m:mi>p</m:mi></m:math> could
+be found.
+In general, the equation becomes</para>
+      <equation id="id2255603"><m:math mode="display">
+          <m:mrow>
+            <m:mfrac>
+              <m:mrow>
+                <m:mi>d</m:mi>
+                <m:mi>p</m:mi>
+              </m:mrow>
+              <m:mrow>
+                <m:mi>d</m:mi>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>f</m:mi>
+            <m:mspace width="0.166667em"/>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mspace width="0.166667em"/>
+              <m:mi>p</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2255683">where <m:math><m:mrow><m:mi>f</m:mi><m:mspace width="0.166667em"/><m:mo>(</m:mo><m:mspace width="0.166667em"/><m:mi>p</m:mi><m:mo>)</m:mo></m:mrow></m:math> is a more complicated function of <m:math><m:mspace width="0.166667em"/><m:mi>p</m:mi></m:math>.
+The nature of the solution will still be the same in the sense
+that <m:math><m:mrow><m:mi>p</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:math> will move from an initial value monotonically toward a
+constant limit – there can be no over or under shoots with the model.
+There may be more than one possible final steady-state value
+if <m:math><m:mrow><m:mi>f</m:mi><m:mspace width="0.166667em"/><m:mo>(</m:mo><m:mspace width="0.166667em"/><m:mi>p</m:mi><m:mo>)</m:mo></m:mrow></m:math> has more than one zero.</para>
+      <para id="id2255767">Consider the growth rate to vary as a quadratic function of population
+rather than as a linear function shown in <link target-id="id2253742" class="cnxn"/>.
+One particular form it might take could be <figure id="id15773433"><media id="id15773437" alt=""><image src="../../media/troff7.png" mime-type="image/png"/></media></figure></para>
+      <para id="id2255773">
+where</para>
+      <equation id="id2255778"><m:math mode="display">
+          <m:mrow>
+            <m:mi>r</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>r</m:mi>
+              <m:mrow>
+                <m:mi>o</m:mi>
+                <m:mspace width="0.166667em"/>
+                <m:mo>(</m:mo>
+                <m:mspace width="0.166667em"/>
+                <m:mn>1</m:mn>
+              </m:mrow>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>+</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>B</m:mi>
+            <m:mi>p</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>C</m:mi>
+            <m:msup>
+              <m:mi>p</m:mi>
+              <m:mrow>
+                <m:mn>2</m:mn>
+                <m:mspace width="0.166667em"/>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:msup>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            
+            <m:mrow>
+             
+            </m:mrow>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2255899">This might be the model of a system where moderate increases in
+population increase the growth rate, but higher values finally cause
+the rate to drop as before.
+A situation where moderate levels allow male and female members to find each other more often could lead to this model, or a process such as
+industrialization, where efficiency can increase with size to a point.</para>
+      
+      <para id="id2255916">The resulting differential equation is first order, but now has a cubic
+nonlinearity.</para>
+      <equation id="id2255920"><m:math mode="display">
+          <m:mrow>
+            <m:mfrac>
+              <m:mrow>
+                <m:mi>d</m:mi>
+                <m:mi>p</m:mi>
+              </m:mrow>
+              <m:mrow>
+                <m:mi>d</m:mi>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>r</m:mi>
+              <m:mrow>
+                <m:mi>o</m:mi>
+                <m:mspace width="0.166667em"/>
+                <m:mi>p</m:mi>
+              </m:mrow>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>+</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>r</m:mi>
+              <m:mi>o</m:mi>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mi>B</m:mi>
+            <m:msup>
+              <m:mi>p</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:msubsup>
+              <m:mi>r</m:mi>
+              <m:mrow>
+                <m:mi>o</m:mi>
+                <m:mspace width="0.166667em"/>
+                <m:mi>C</m:mi>
+                <m:mi>p</m:mi>
+              </m:mrow>
+              <m:mn>3</m:mn>
+            </m:msubsup>
+            <m:mspace width="2.em"/>
+
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2256055">The solution looks somewhat like a logistic.
+It starts with low population and an exponential growth;
+then, as the second term begins to dominate, the growth is
+super-exponential – faster than exponential.
+Finally, the cubic term – the limit – causes an abrupt leveling
+off to a constant equilibrium value of <m:math><m:mrow><m:mi>k</m:mi><m:mspace width="4pt"/></m:mrow></m:math>.</para>
+      <para id="id2256084">If more complicated systems are to be modeled, modification other than
+more complicated nonlinearities must be used.
+Other modification might include</para>
+      <list id="id2256090" list-type="labeled-item" mark-suffix=".">
+<item id="uid1"><label>a</label> Time delays
+</item>
+<item><label>b</label> Use population age groups</item>
+<item><label>c</label> Allow parameters to depend on other environmental variables or
+states.
+</item>
+      </list>
+      <para id="id2256107">The next generalization we will consider here will be the addition of
+another state variable.
+This allows a much broader and more versatile system of equations and
+solutions.
+</para>
+    </section>
+  </content>
+<bib:file>
+<bib:entry id="bid0">
+      <bib:book>
+<!--required fields-->
+        <bib:author>D.J. de Solla Price</bib:author>
+        <bib:title>Little Science Big Science</bib:title>
+        <bib:publisher>Columbia University press</bib:publisher>
+        <bib:year>1963</bib:year>
+<!--optional fields-->
+        <bib:volume/>
+        <bib:series/>
+        <bib:address>New York</bib:address>
+        <bib:edition/>
+        <bib:month/>
+        <bib:note/>
+      </bib:book>
+    </bib:entry>
+<bib:entry id="bid3">
+      <bib:book>
+<!--required fields-->
+        <bib:author>Charles J. Krebs</bib:author>
+        <bib:title>Ecology</bib:title>
+        <bib:publisher>Harper and Row</bib:publisher>
+        <bib:year>1972</bib:year>
+<!--optional fields-->
+        <bib:volume/>
+        <bib:series/>
+        <bib:address>New York</bib:address>
+        <bib:edition/>
+        <bib:month/>
+        <bib:note/>
+      </bib:book>
+    </bib:entry>
+<bib:entry id="bid7">
+      <bib:book>
+<!--required fields-->
+        <bib:author>R.H. MacArthur and J.H. Connell</bib:author>
+        <bib:title>The Biology of Population</bib:title>
+        <bib:publisher>John Wiley</bib:publisher>
+        <bib:year>1966</bib:year>
+<!--optional fields-->
+        <bib:volume/>
+        <bib:series/>
+        <bib:address>New York</bib:address>
+        <bib:edition/>
+        <bib:month/>
+        <bib:note/>
+      </bib:book>
+    </bib:entry>
+<bib:entry id="bid9">
+      <bib:book>
+<!--required fields-->
+        <bib:author>H.T. Davis</bib:author>
+        <bib:title>Introduction to Nonlinear Differential and Integral Equations</bib:title>
+        <bib:publisher>Dover Publishing</bib:publisher>
+        <bib:year>1962</bib:year>
+<!--optional fields-->
+        <bib:volume/>
+        <bib:series/>
+        <bib:address>New York</bib:address>
+        <bib:edition/>
+        <bib:month/>
+        <bib:note/>
+      </bib:book>
+    </bib:entry>
+</bib:file>
+
+</document>

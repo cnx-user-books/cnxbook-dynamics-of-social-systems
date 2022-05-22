@@ -1,0 +1,453 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/">
+<title>Dynamics</title>
+<metadata>
+  <md:content-id>m17819</md:content-id><md:title>Dynamics</md:title>
+  <md:abstract>This module presents the basic idea of dynamics: the time evolution of a phenomenon.  Part of the notes used in a course taught at Rice University in 1973-74.</md:abstract>
+  <md:uuid>d052c3f6-1cee-4b99-bb4c-bf3dcf9f23c2</md:uuid>
+</metadata>
+
+<content>
+<section id="id13143965">
+<title>Dynamics of Systems</title>
+<para id="id13266912">In this module we will present several
+definitions and a language that will later be used to model social
+systems. Although a complete and detailed presentation will not be
+made, the ideas covered are very important for anything other than
+a superficial understanding of dynamic models. Much of this
+material grew out of what is called system theory and control
+theory. <link target-id="bid4" class="cnxn"/><link target-id="bid5" class="cnxn"/></para>
+<section id="id5404181">
+<title>Definitions</title>
+<para id="id13035331">As we noted before, it is sometimes difficult
+to give clear, precise definitions of some ideas. That is the case
+for the definition of a system which sounds a bit vague but seems
+to be as good as possible.</para>
+<para id="id12938398">A system is defined as a set of interrelated
+entities, variables, or ideas that have some common features or
+purpose.</para>
+<para id="id12938402">Examples of systems would be a car, a radio,
+a transportation network, a set of coupled equations, a society, a
+family, etc. The system may be physical, biological, social,
+conceptual, or many other forms.</para>
+<para id="id13317590">The dynamics of a system is the way the
+various variables of the system change and evolve with
+time.</para>
+<para id="id11858986">The study of dynamics is an important part of
+physics, engineering, and economics. Indeed, the study of change in
+history, psychology, etc. can be viewed as a study of dynamics, and
+when anyone makes predictions about the future, he is certainly
+using a dynamic model whether he realizes it or not. There are many
+studies of systems which are not dynamic models - these use static
+or equilibrium models and study relationships where time variations
+are assumed not important. The mathematics often used in the study
+of system dynamics are calculus and differential equations.</para>
+<para id="id11849783">The structure of a system is the
+specification of the components of importance and interest and the
+description of the relations and interconnections within the
+system.</para>
+<para id="id12858195">The choice of structures may be easy or very
+difficult depending on the system. In many physical systems the
+structure is fairly well developed, however, for social systems it
+is more complicated. The choice of age groupings, economic
+groupings, etc. by a sociologist is the choice of structure for a
+particular system. Indeed, much of the research in the social
+sciences has centered around structure with relatively little work
+being done explicitly on dynamics. For our purposes, we need
+both.</para>
+</section>
+<section id="id9986929"><title>Descriptions of Systems</title>
+
+<para id="id12963264">There are two rather different but
+complimentary descriptions that have been used with success in
+systems analysis. One is an input-output or external approach, and
+the other is a state variable or interval approach. Both have
+merits and will be briefly described.</para>
+
+<section id="element-597"><title>The Input-Output Description</title>
+<para id="id11356164">Here there are three entities considered: the
+input <m:math><m:mi>x</m:mi></m:math> , output <m:math><m:mi>y</m:mi></m:math> , and the system <m:math><m:mi>s</m:mi></m:math> . Symbolically, this is
+illustrated by <figure id="id32423"><media id="id21972388" alt=""><image src="../../media/figure2troff.png" mime-type="image/png" width="475"/></media></figure></para>
+
+
+<para id="id12471786">This has proven a very valuable approach that
+avoids internal details of the system that are of no interest or
+are difficult to describe.</para>
+<para id="id11008228">There are three problems that can be formulated
+with this description:</para>
+<list id="id12465199" list-type="enumerated"><item>Analysis: <m:math><m:mi>x</m:mi></m:math> and <m:math><m:mi>s</m:mi></m:math> given, find <m:math><m:mi>y</m:mi></m:math> ;</item>
+<item>Synthesis: <m:math><m:mi>x</m:mi></m:math> and <m:math><m:mi>y</m:mi></m:math> given, find <m:math><m:mi>s</m:mi></m:math> ; and</item>
+<item>Control: <m:math><m:mi>s</m:mi></m:math> and <m:math><m:mi>y</m:mi></m:math> given, find <m:math><m:mi>x</m:mi></m:math> .</item>
+</list>
+<para id="id13192962">In the modeling of systems and signals, one
+often has a partial description of all three, and they must be
+completed in a way to be consistent.</para></section>
+
+
+
+<section id="element-487"><title>The State Variable or Internal</title>
+<para id="id13047325">In this case, a detailed description of the 
+internal structure of a model is made. The idea of a "state" is
+very important to dynamic systems, but is so fundamental as to be
+difficult to define. The situation if further complicated by the
+fact that the word state is used in many different ways in other
+areas.</para>
+<para id="id12481232">The state of system is the present
+information about the past that allows one of predict the effect of
+the past on the future. The variables that describe the state are
+called the state variables and the minimum number of state
+variables is called the order (or dimension) of the system.</para>
+<para id="id11855004">For example, if one is modeling a social
+system, in order to predict the future population, in addition to
+other factors, one must know the present population; therefore,
+population would be a state variable. Another example might be a
+second-order differential equation.</para>
+<para id="id3074095"><m:math>
+<m:mover accent="true">
+              <m:mi>x</m:mi>
+              <m:mo>"</m:mo>
+            </m:mover>
+
+<m:mo>+</m:mo>
+<m:mi>a</m:mi>
+<m:mover accent="true">
+              <m:mi>x</m:mi>
+              <m:mo>˙</m:mo>
+            </m:mover>
+
+<m:mo>+</m:mo>
+<m:mi>b</m:mi>
+<m:mi>x</m:mi>
+<m:mo>=</m:mo>
+<m:mn>0</m:mn>
+</m:math>
+</para>
+<para id="id3050358">Here <m:math><m:mi>x</m:mi><m:mo>(</m:mo><m:mi>o</m:mi><m:mo>)</m:mo></m:math> and <m:math><m:mover accent="true">
+              <m:mi>x</m:mi>
+              <m:mo>˙</m:mo>
+            </m:mover>
+<m:mo>(</m:mo><m:mi>o</m:mi><m:mo>)</m:mo></m:math> are needed to calculate
+<m:math><m:mi>x</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:math> ; therefore, they could be stat &amp; variables. A mechanical
+example would be a moving mass where one would have to know the
+position <m:math><m:mi>x</m:mi></m:math> and velocity <m:math><m:mi>v</m:mi></m:math> at some time to predict its future
+position.</para>
+<para id="id12232076">In addition to state variables, a system
+often has many variables that are derived from present values of
+other variables, but do not require any past values. These are very
+important in the description of some systems, and it is often very
+difficult to distinguish between state and derived variables when
+initially trying to set up a model for a complex system.</para>
+<para id="id12831931">The difficulty in choosing state variables is
+further compounded by the fact that they are not unique. (Their
+number is, however.) For example, in a system of equations, a
+change of variables could be carried out and the new variables used as states. In the mechanical example, one could choose 
+<m:math>
+<m:mi>v</m:mi>
+<m:mo>+</m:mo>
+<m:mi>x</m:mi>
+</m:math> for
+one state variable and 
+<m:math>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2</m:mn>
+</m:mfrac>
+<m:mi>v</m:mi>
+<m:mo>-</m:mo>
+<m:msqrt>
+<m:mn>2</m:mn>
+<m:mi>x</m:mi>
+</m:msqrt>
+</m:math> for the other, although it's hard to
+imagine why one would want to.</para></section>
+
+</section>
+<section id="element-424"><title>Deterministic and Probabilistic</title>
+<para id="id10115167">Still another division of description is into
+those that use deterministic equations to relate the various system
+variables and those that relate the statistics of the variables.
+These two approaches are complimentary. For example, in describing
+a gas in a container, one can relate the gross characteristics of
+pressure, temperature and volume by an algebraic equation; however,
+one must resort to statistics to describe an individual molecule.
+In the case of the social model, it seems to also hold that
+individual people or small groups must be described statistically,
+but the gross behavior of large aggregates can be described
+deterministically. This is certainly not as clear-cut as for a
+container of gas, but it is what we will follow.</para>
+<para id="id10234358">Indeed, not only is the decision between a
+deterministic and probabilistic model difficult to make for a
+social system, but the choice of structure, state variables, and
+many other factors are all difficult and the subject of much debate
+a long researchers. What this means, however, is the basic concepts
+and definitions must be understood even better and used with even
+greater care.</para>
+</section>
+<section id="id12758830">
+<title>Classifications</title>
+<para id="id13047718">There are a number of rather common
+classifications of systems that prove useful. The two most
+important are given here in terms of an input-output
+description.</para>
+<list id="element-398" list-type="labeled-item" mark-suffix=".">
+<item><label>A</label>A system is called linear if, and only if,
+the following two conditions hold. In an input 
+<m:math>
+<m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:math> causes an output
+<m:math>
+<m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:math>, and an input 
+<m:math>
+<m:msub>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+</m:math> causes an output 
+<m:math>
+<m:msub>
+<m:mi>y</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+</m:math>, then an input which is
+the sum of two inputs, 
+<m:math>
+<m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>+</m:mo>
+<m:msub>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+</m:math> , must cause an output 
+<m:math>
+<m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>+</m:mo>
+<m:msub>
+<m:mi>y</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+</m:math>.
+This is called superposition. If the input 
+<m:math>
+<m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:math> is scaled by an
+arbitrary value <m:math><m:mi>a</m:mi></m:math> , then the resulting output must also be scaled
+by the same value <m:math>
+<m:mi>a</m:mi></m:math> .</item></list>
+
+<equation id="element-847"><m:math display="block">
+  <m:mrow>
+    <m:mi>F</m:mi>
+    <m:mo>=</m:mo>
+    <m:mi>M</m:mi>
+    <m:mo>⋅</m:mo>
+    <m:mi>A</m:mi>
+  </m:mrow>
+</m:math></equation><equation id="element-704"><m:math>
+<m:mtext>If</m:mtext>
+<m:mspace width="10pt"/>
+<m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>→</m:mo>
+<m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mspace width="10pt"/>
+<m:mtext>and</m:mtext>
+<m:mspace width="10pt"/>
+<m:msub>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mo>→</m:mo>
+<m:msub>
+<m:mi>y</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+</m:math></equation><equation id="element-250"><m:math>
+<m:mtext>then</m:mtext>
+<m:mspace width="10pt"/>
+<m:mo>(</m:mo>
+<m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>+</m:mo>
+<m:msub>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mo>)</m:mo>
+<m:mspace width="10pt"/>
+<m:mo>→</m:mo>
+<m:mspace width="10pt"/>
+<m:mo>(</m:mo>
+<m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>+</m:mo>
+<m:msub>
+<m:mi>y</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mo>)</m:mo>
+</m:math></equation><equation id="element-950"><m:math>
+<m:mtext>and</m:mtext>
+<m:mspace width="10pt"/>
+<m:mi>a</m:mi>
+<m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mspace width="10pt"/>
+<m:mo>→</m:mo>
+<m:mspace width="10pt"/>
+<m:mi>a</m:mi>
+<m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:math></equation>
+
+<list id="element-693" list-type="labeled-item" mark-suffix=".">
+<item><label>B</label> A system is called time-invariant or
+stationary if, and only if, the following is true for arbitrary <m:math><m:mi>t</m:mi></m:math>
+.</item>
+</list>
+<para id="id13048879"><m:math>
+<m:mtext>If</m:mtext>
+<m:mspace width="10pt"/>
+<m:mi>x</m:mi>
+<m:mo>(</m:mo>
+<m:mi>t</m:mi>
+<m:mo>)</m:mo>
+<m:mo>→</m:mo>
+<m:mi>y</m:mi>
+<m:mo>(</m:mo>
+<m:mi>t</m:mi>
+<m:mo>)</m:mo>
+<m:mspace width="10pt"/>
+<m:mtext>then</m:mtext>
+<m:mspace width="10pt"/>
+<m:mi>x</m:mi>
+<m:mo>(</m:mo>
+<m:mi>t</m:mi>
+<m:mo>+</m:mo>
+<m:mi>T</m:mi>
+<m:mo>)</m:mo>
+<m:mo>→</m:mo>
+<m:mi>y</m:mi>
+<m:mo>(</m:mo>
+<m:mi>t</m:mi>
+<m:mo>+</m:mo>
+<m:mi>T</m:mi>
+<m:mo>)</m:mo>
+</m:math> .</para>
+</section>
+<section id="id12262658"><title>Feedback</title>
+
+<para id="id13128864">A particular structure [Luenberger 1979] which
+is so important that it warrants special discussion has the feature
+that the output affects the input. This is illustrated by the
+following figure.</para>
+<figure id="id13294229"><media id="id19341171" alt=""><image src="../../media/troff2.png" mime-type="image/png" width="475"/></media></figure>
+<para id="id12787434">Feedback is often part of naturally occurring
+systems and it also is often a part of constructed systems. The
+most common feedback system is probably the thermostat that uses a
+measured temperature to feedback a controlling signal to a heater
+in an oven or room heating system. The filling mechanism in the
+tank of a toilet uses a float to feedback a measure of the water
+level to control the input valve. A person's blood sugar level is
+controlled by a complicated biological feedback system. The power
+steering of a car, the auto-pilot of an airplane, and the control
+of a satellite rocket are all examples of feedback.</para>
+<para id="id12263163">An interesting model using feedback can be
+used to describe a bank savings account. Here the output can be the
+amount of interest earned which is then fed back and added to
+increase the account. This feedback is called compounding, and
+results in the rapid exponential growth of an account.</para>
+<para id="id12485248">A similar model will be used to describe a
+population where the feedback signal is the number of people added
+by births less the number of deaths. This forms the basis of the
+exponential predictions of population growth, and we will explore
+it in detail later.</para>
+<para id="id12343207">The basis of the free marketplace is based on
+feedback through price changes to cause the supply to follow the
+demand.</para>
+<para id="id13262891">While feedback is a useful concept, its
+effects become more difficult to predict as the systems become more
+complex. A simple example illustrates one problem. Consider a
+person adjusting the temperature of his shower by the hot and cold
+valves. If there is a time delay introduced by a length of pipe
+between the valves and the shower head, the person will over
+control. If the water is initially too hot, he will turn on the
+cold water, but because of the delay, no effect is immediately felt
+so more cold water is turned on. This continues until finally the
+now very cold water reaches the shower head, whereupon the person
+starts the same procedure of increasing the hot water. This
+oscillation will continue until the person "gets smart" and allows
+for the delay. A similar problem can occur in college education
+because of the four-year delay between the choice of a major and
+the graduation to a job.</para>
+<para id="id12277641">A bit of reflection begins to show the
+complicated nature of a social system will involve multi-variable
+nonlinear systems with time delays and multiple feedback
+loops.</para>
+</section>
+</section>
+</content>
+<bib:file>
+<bib:entry id="bid4">
+      <bib:book>
+<!--required fields-->
+        <bib:author>Director and Roher</bib:author>
+        <bib:title>Introduction to System Theory</bib:title>
+        <bib:publisher>McGraw-Hill</bib:publisher>
+        <bib:year>1972</bib:year>
+<!--optional fields-->
+        <bib:volume/>
+        <bib:series/>
+        <bib:address> </bib:address>
+        <bib:edition/>
+        <bib:month/>
+        <bib:note/>
+      </bib:book>
+    </bib:entry>
+
+
+<bib:entry id="bid5">
+      <bib:book>
+<!--required fields-->
+        <bib:author>Koenig, Tokad, and Keswan</bib:author>
+        <bib:title>Analysis of Discrete Physical Systems</bib:title>
+        <bib:publisher>McGraw-Hill</bib:publisher>
+        <bib:year>1967</bib:year>
+<!--optional fields-->
+        <bib:volume/>
+        <bib:series/>
+        <bib:address> </bib:address>
+        <bib:edition/>
+        <bib:month/>
+        <bib:note/>
+      </bib:book>
+    </bib:entry>
+</bib:file>
+</document>

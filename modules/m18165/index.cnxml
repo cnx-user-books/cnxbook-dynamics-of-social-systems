@@ -1,0 +1,3615 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/">
+  <title>Second Order Model</title>
+  <metadata>
+  <md:content-id>m18165</md:content-id><md:title>Second Order Model</md:title>
+  <md:abstract/>
+  <md:uuid>d54c476e-fdca-4a1f-b9eb-9fa6b9f75259</md:uuid>
+</metadata>
+
+<content>
+    <section id="cid1"><title>Second-order or Two-state Variable Systems</title>
+      
+      <para id="id2253707">In the last few sections, we discussed first-order models of various
+systems and studied the types of interactions that could be modeled and
+the nature of the solutions of these models.
+Of the several indicated generalizations that could be made, this
+section will consider adding another state variable, so that the effects
+of two interacting variables can be used and studied.
+This will greatly increase the class of systems we can model and the
+class of solutions that result.
+In addition, a very interesting set of classical problems fall into
+this class with interesting solutions and interpretations.</para>
+      <para id="id2253720">To illustrate the general problem, consider a system that contains
+populations of two different types with distinctly different characteristics.
+Assume these two populations have a strong effect on each other, as well
+as being influenced differently by their environment, so that modeling
+them by a single total population would not yield useful results.
+We must, therefore, have two separate state variables to describe the
+systems, and this could perhaps be done in the following way.</para>
+      
+      <equation id="id2253737"><m:math mode="display">
+          <m:mrow>
+            <m:mfrac>
+              <m:mrow>
+                <m:mi>d</m:mi>
+                <m:msub>
+                  <m:mi>p</m:mi>
+                  <m:mn>1</m:mn>
+                </m:msub>
+              </m:mrow>
+              <m:mrow>
+                <m:mi>d</m:mi>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>f</m:mi>
+            <m:mspace width="0.166667em"/>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mspace width="0.166667em"/>
+              <m:msub>
+                <m:mi>p</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mo>,</m:mo>
+              <m:mspace width="4pt"/>
+              <m:msub>
+                <m:mi>p</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mspace width="2.em"/>
+
+          </m:mrow>
+        </m:math>
+      </equation>
+      
+      <equation id="id2253842">
+        <m:math mode="display">
+          <m:mrow>
+            <m:mfrac>
+              <m:mrow>
+                <m:mi>d</m:mi>
+                <m:msub>
+                  <m:mi>p</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msub>
+              </m:mrow>
+              <m:mrow>
+                <m:mi>d</m:mi>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>g</m:mi>
+            <m:mspace width="0.166667em"/>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mspace width="0.166667em"/>
+              <m:msub>
+                <m:mi>p</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mo>,</m:mo>
+              <m:mspace width="4pt"/>
+              <m:msub>
+                <m:mi>p</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:mo>)</m:mo>
+            </m:mrow>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2253925">Here the rate of change of population <m:math><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub></m:math> is assumed to depend
+on both the populations <m:math><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub></m:math> and <m:math><m:msub><m:mi>p</m:mi><m:mrow><m:mn>2</m:mn><m:mspace width="0.166667em"/></m:mrow></m:msub></m:math>;
+and likewise, the rate of change of <m:math><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub></m:math> is assumed to depend
+on <m:math><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub></m:math> and <m:math><m:msub><m:mi>p</m:mi><m:mrow><m:mn>2</m:mn><m:mspace width="0.166667em"/></m:mrow></m:msub></m:math>, but in perhaps a different way.</para>
+      <para id="id2254026">Many types of interactions could be considered.
+It might be that <m:math><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub></m:math> and <m:math><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub></m:math> compete for the same
+source of food or resources;
+it might be that <m:math><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub></m:math> is a prey of the predator <m:math><m:msub><m:mi>p</m:mi><m:mrow><m:mn>2</m:mn><m:mspace width="0.166667em"/></m:mrow></m:msub></m:math>;
+or it could be that they both contribute to the welfare of the other.
+These assumptions would be implemented in the choice
+of <m:math><m:munder><m:mi>f</m:mi><m:mo>̲</m:mo></m:munder></m:math> and <m:math><m:munder><m:mi>g</m:mi><m:mo>̲</m:mo></m:munder></m:math> to describe the particular case.
+The best known classical models of these types were proposed by
+Lotka (1925)
+and
+Volterra (1926).
+Later,
+Gause (1934)
+did further experimental and interpretative work.
+Most of this type of work was done in population ecology.<link target-id="bid3"/>, <link target-id="bid12"/>.</para>
+      
+      
+<!--empty paragraphs get left behind.-->
+      <list id="id2254135" list-type="labeled-item" mark-suffix=".">
+        <item id="uid1"><label>A</label>The Simple Lotka-Volterra Competition Model
+
+</item>
+      </list>
+      <para id="id2254155">Consider the particular for for the two-variable model to be</para>
+      <equation id="id2254160"><m:math mode="display">
+          <m:mrow>
+            <m:mfrac>
+              <m:mrow>
+                <m:mi>d</m:mi>
+                <m:msub>
+                  <m:mi>p</m:mi>
+                  <m:mn>1</m:mn>
+                </m:msub>
+              </m:mrow>
+              <m:mrow>
+                <m:mi>d</m:mi>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>a</m:mi>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>b</m:mi>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mspace width="2.em"/>
+          </m:mrow>
+        </m:math>
+      </equation>
+      
+      <equation id="id2254278"><m:math mode="display">
+          <m:mrow>
+            <m:mfrac>
+              <m:mrow>
+                <m:mi>d</m:mi>
+                <m:msub>
+                  <m:mi>p</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msub>
+              </m:mrow>
+              <m:mrow>
+                <m:mi>d</m:mi>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>c</m:mi>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>d</m:mi>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2254379">This might be a simple model of two competing populations,
+where <m:math><m:mi>a</m:mi></m:math> and <m:math><m:mi>c</m:mi></m:math> are the net rate of increase that would occur if
+the other population did not exist.
+The coefficients <m:math><m:mi>b</m:mi></m:math> and <m:math><m:mi>d</m:mi></m:math> model the negative effects of
+interaction on the rates of change as a measure of how often one
+encounters the other.
+ </para>
+      <para id="element-775">To simplify the mathematics, a change of variables will be made.
+Consider the rearrangement of <link target-id="id2254160"/> into
+</para><equation id="id2253062">
+        <m:math mode="display">
+          <m:mrow>
+            <m:mfenced separators="" open="(" close=")">
+              <m:mspace width="4pt"/>
+              <m:mfrac>
+                <m:mi>d</m:mi>
+                <m:mi>c</m:mi>
+              </m:mfrac>
+              <m:mspace width="4pt"/>
+            </m:mfenced>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mover accent="true">
+                <m:mi>p</m:mi>
+                <m:mo>˙</m:mo>
+              </m:mover>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>a</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mfenced separators="" open="(" close=")">
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mfenced separators="" open="(" close=")">
+                <m:mspace width="4pt"/>
+                <m:mfrac>
+                  <m:mi>d</m:mi>
+                  <m:mi>c</m:mi>
+                </m:mfrac>
+                <m:mspace width="4pt"/>
+              </m:mfenced>
+              <m:mspace width="4pt"/>
+              <m:msub>
+                <m:mi>p</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mo>-</m:mo>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mfenced separators="" open="(" close=")">
+                <m:mspace width="4pt"/>
+                <m:mfrac>
+                  <m:mi>b</m:mi>
+                  <m:mi>a</m:mi>
+                </m:mfrac>
+                <m:mspace width="4pt"/>
+              </m:mfenced>
+              <m:mspace width="4pt"/>
+              <m:msub>
+                <m:mi>p</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:mspace width="4pt"/>
+              <m:mfenced separators="" open="(" close=")">
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mspace width="4pt"/>
+                    <m:mi>d</m:mi>
+                  </m:mrow>
+                  <m:mi>c</m:mi>
+                </m:mfrac>
+              </m:mfenced>
+              <m:mspace width="4pt"/>
+              <m:msub>
+                <m:mi>p</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+            </m:mfenced>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+          </m:mrow>
+        </m:math>
+      </equation>
+      
+      <equation id="id2254902"><m:math mode="display">
+          <m:mrow>
+            <m:mfenced separators="" open="(" close=")">
+              <m:mspace width="4pt"/>
+              <m:mfrac>
+                <m:mi>b</m:mi>
+                <m:mi>a</m:mi>
+              </m:mfrac>
+              <m:mspace width="4pt"/>
+            </m:mfenced>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mover accent="true">
+                <m:mi>p</m:mi>
+                <m:mo>˙</m:mo>
+              </m:mover>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>c</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mfenced separators="" open="(" close=")">
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mfenced separators="" open="(" close=")">
+                <m:mspace width="4pt"/>
+                <m:mfrac>
+                  <m:mi>b</m:mi>
+                  <m:mi>a</m:mi>
+                </m:mfrac>
+                <m:mspace width="4pt"/>
+              </m:mfenced>
+              <m:mspace width="4pt"/>
+              <m:msub>
+                <m:mi>p</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mo>-</m:mo>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mfenced separators="" open="(" close=")">
+                <m:mspace width="4pt"/>
+                <m:mfrac>
+                  <m:mi>d</m:mi>
+                  <m:mi>c</m:mi>
+                </m:mfrac>
+                <m:mspace width="4pt"/>
+              </m:mfenced>
+              <m:mspace width="4pt"/>
+              <m:msub>
+                <m:mi>p</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mspace width="4pt"/>
+              <m:mfenced separators="" open="(" close=")">
+                <m:mspace width="4pt"/>
+                <m:mfrac>
+                  <m:mi>b</m:mi>
+                  <m:mi>a</m:mi>
+                </m:mfrac>
+              </m:mfenced>
+              <m:mspace width="4pt"/>
+              <m:msub>
+                <m:mi>p</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+            </m:mfenced>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+           
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2255114">Now let <m:math><m:mrow><m:mi>x</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mfenced separators="" open="(" close=")"><m:mspace width="4pt"/><m:mfrac><m:mi>d</m:mi><m:mi>c</m:mi></m:mfrac><m:mspace width="4pt"/></m:mfenced><m:mspace width="4pt"/><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> and
+<m:math><m:mrow><m:mi>y</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mfenced separators="" open="(" close=")"><m:mspace width="4pt"/><m:mfrac><m:mi>b</m:mi><m:mi>a</m:mi></m:mfrac><m:mspace width="4pt"/></m:mfenced><m:mspace width="4pt"/><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub><m:mspace width="4pt"/></m:mrow></m:math> then, <link target-id="id2253062"/> becomes</para>
+      <equation id="id2255231"><m:math mode="display">
+          <m:mrow>
+            <m:mover accent="true">
+              <m:mi>x</m:mi>
+              <m:mo>˙</m:mo>
+            </m:mover>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>a</m:mi>
+            <m:mspace width="0.166667em"/>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mspace width="0.166667em"/>
+              <m:mi>x</m:mi>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mo>-</m:mo>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mi>x</m:mi>
+              <m:mi>y</m:mi>
+              <m:mspace width="0.166667em"/>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mspace width="2.em"/>
+          </m:mrow>
+        </m:math>
+      </equation>
+      
+      <equation id="id2255324"><m:math mode="display">
+          <m:mrow>
+            <m:mover accent="true">
+              <m:mi>y</m:mi>
+              <m:mo>˙</m:mo>
+            </m:mover>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>c</m:mi>
+            <m:mspace width="0.166667em"/>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mspace width="0.166667em"/>
+              <m:mi>y</m:mi>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mo>-</m:mo>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mi>x</m:mi>
+              <m:mi>y</m:mi>
+              <m:mspace width="0.166667em"/>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+         
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2255412">Note that <m:math><m:mi>x</m:mi></m:math> and <m:math><m:mi>y</m:mi></m:math> are related to <m:math><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub></m:math> and <m:math><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub></m:math> by
+simple constant
+multipliers or scale factors, and therefore, the nature of the solution
+of <link target-id="id2255231"/> is the same as <link target-id="id2254160"/>, but now there are only two
+parameters, <m:math><m:mi>a</m:mi></m:math> and <m:math><m:mrow><m:mi>c</m:mi><m:mspace width="0.166667em"/></m:mrow></m:math>, to consider.
+In fact, by allowing a change of scale of the time variable, it is
+possible to reduce the number of parameters to one, but we will not do
+that.
+The problem of solving the coupled equation of <link target-id="id2255231"/> or, more generally,
+of <link target-id="id2253737"/> can be approached three ways.
+In some cases, an analytical equation for the solution can be found.
+This is always true if the equations are linear, but unfortunately,
+almost never true if they are nonlinear.
+Another approach was the phase plane where one solution is plotted as a
+function of the other, with time as an implicit variable.
+Very important characteristics of the solution can often be determined
+by phase plane methods without actually finding the solution.
+Finally, the equations can be numerically solved by simulation on a
+digital computer using Euler's method or some other more efficient
+algorithm.</para>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--empty paragraphs get left behind.-->
+      <list id="element-511" list-type="labeled-item" mark-suffix=".">
+<item><label>
+B</label>
+The Phase Plane</item>
+</list>
+
+
+
+<para id="id2255508">The pair of equations in <link target-id="id2253737"/> can be reduced to a single equation by
+eliminating the time variable <m:math><m:mrow><m:mi>t</m:mi><m:mspace width="0.166667em"/></m:mrow></m:math>.
+This can be done by simply dividing one by the other to give</para>
+      <equation id="id2255526"><m:math mode="display">
+          <m:mrow>
+            <m:mfrac>
+              <m:mrow>
+                <m:mi>d</m:mi>
+                <m:msub>
+                  <m:mi>p</m:mi>
+                  <m:mn>1</m:mn>
+                </m:msub>
+              </m:mrow>
+              <m:mrow>
+                <m:mi>d</m:mi>
+                <m:msub>
+                  <m:mi>p</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msub>
+              </m:mrow>
+            </m:mfrac>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mfrac>
+              <m:mrow>
+                <m:mi>f</m:mi>
+                <m:mspace width="0.166667em"/>
+                <m:mo>(</m:mo>
+                <m:mspace width="0.166667em"/>
+<m:msub>                
+<m:mi>p</m:mi>
+                
+                <m:mn>1</m:mn>
+</m:msub>                
+<m:mo>,</m:mo>
+                <m:mspace width="4pt"/>
+                <m:msub>
+                  <m:mi>p</m:mi>
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mspace width="0.166667em"/>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:msub>
+              </m:mrow>
+              <m:mrow>
+                <m:mi>g</m:mi>
+                <m:mspace width="0.166667em"/>
+                <m:mo>(</m:mo>
+                <m:mspace width="0.166667em"/>
+                <m:msub>
+                  <m:mi>p</m:mi>
+                  <m:mn>1</m:mn>
+                </m:msub>
+                <m:mo>,</m:mo>
+                <m:mspace width="4pt"/>
+                <m:msub>
+                  <m:mi>p</m:mi>
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mspace width="0.166667em"/>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:msub>
+              </m:mrow>
+            </m:mfrac>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+        
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2255683">The solution of this equation is examined in
+the <m:math><m:mrow><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub><m:mo>,</m:mo><m:mspace width="4pt"/><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:math> plane, which is called the
+<emphasis>phase plane</emphasis>.</para>
+      <para id="id2255722">As an example, consider the competition model in <link target-id="id2255231"/> in the phase
+plane</para>
+      
+      <equation id="element-286"><m:math>
+<m:mfrac>
+<m:mrow>
+<m:mi>d</m:mi>
+<m:mi>x</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>d</m:mi>
+<m:mi>y</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo>
+<m:mfrac>
+<m:mi>a</m:mi>
+<m:mi>c</m:mi>
+</m:mfrac>
+<m:mfrac>
+<m:mrow>
+<m:mi>x</m:mi>
+<m:mo>-</m:mo>
+<m:mi>x</m:mi>
+<m:mi>y</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>y</m:mi>
+<m:mo>-</m:mo>
+<m:mi>x</m:mi>
+<m:mi>y</m:mi>
+</m:mrow>
+</m:mfrac>
+</m:math></equation><para id="id2255834">Solutions in the phase plane are
+<figure id="id11697563"><media id="id6385961" alt=""><image src="../../media/troff8.png" mime-type="image/png"/></media></figure></para>
+      <para id="id2255840">The trajectory starting at <m:math><m:mi>A</m:mi></m:math> gives the value of <m:math><m:mi>x</m:mi></m:math> and <m:math><m:mi>y</m:mi></m:math> with
+time <m:math><m:mrow><m:mi>t</m:mi><m:mspace width="0.166667em"/></m:mrow></m:math>, an implicit variable, indicated by the values shown. If a different initial mixture of populations had been assumed,
+e.g., <m:math><m:mrow><m:mi>B</m:mi><m:mspace width="0.166667em"/></m:mrow></m:math>, then a different trajectory would result.
+Indeed, any initial mixture is a point on the phase plane, and the
+trajectories indicate how they evolve in time.
+The more conventional time solutions are shown for the initial
+of <m:math><m:mi>A</m:mi></m:math> by
+<figure id="id9902521"><media id="id4556329" alt=""><image src="../../media/troff9.png" mime-type="image/png"/></media></figure></para>
+      
+      <para id="id2255918">and for <m:math><m:mi>B</m:mi></m:math> by
+<figure id="id10459717"><media id="id9882888" alt=""><image src="../../media/troff10.png" mime-type="image/png"/></media></figure></para>
+      <para id="id2255932">
+Note the relation of the phase plane plots and the time plots.
+This particular problem will later be examined in greater detail.</para>
+      <para id="id2255939">One might wonder why this peculiar representation of the solutions is
+the form of one variable considered as a form of the other.
+This phase plane approach, although a bit unnatural at first, proves to
+be a very powerful tool.
+It is used by many in the literature <link target-id="bid3"/>
+<link target-id="bid10"/>
+<link target-id="bid12"/>
+<link target-id="bid13"/>
+
+and is a standard mathematical tool. <link target-id="bid8"/> <link target-id="bid9"/>
+It is worthwhile developing this concept before analyzing several
+physical systems.</para>
+      
+      
+      
+      
+      
+      <para id="id2255965">Note that the phase plane contains all possible time plane plots for
+various mixtures.
+It can be shown that if the system has unique solutions, then the phase
+plane trajectories cannot cross.
+This means that a few key trajectories can be constructed which will
+make obvious what all other trajectorie will have to be.
+For example, in the above competition model, the initial mixture always
+determines who the eventual winner will be.
+Any initial mixture to the right of the line from the origin
+to <m:math><m:mi>C</m:mi></m:math> results in <m:math><m:mi>y</m:mi></m:math> increasing without bound
+and <m:math><m:mi>x</m:mi></m:math> becoming extinct.
+Initial mixture to the left gives the opposite result.</para>
+      <para id="id2256004">There are several procedures that aid in the construction and
+interpretation of phase plane trajectories.
+There are special points on the plane known as
+<emphasis>equilibrium points </emphasis>or
+<emphasis>singular points </emphasis>that are important.
+If both <m:math><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac></m:math> and <m:math><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac></m:math> in <link target-id="id22533737"/> are zero,
+then <m:math><m:mi>x</m:mi></m:math> and <m:math><m:mi>y</m:mi></m:math> are
+constants and the system is in equilibrium.
+This means that at these points both the numerator and denominator of
+<link target-id="id2255526"/> are zero.
+For the competition model of <link target-id="element-286"/>, there is a singular point
+at <m:math><m:mrow><m:mi>x</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>0</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>y</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>0</m:mn><m:mspace width="0.166667em"/></m:mrow></m:math>, and another
+at <m:math><m:mrow><m:mi>x</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>1</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>y</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>1</m:mn><m:mspace width="0.166667em"/></m:mrow></m:math>.
+Singular points may be stable or unstable depending on whether small
+perturbations away from the point tend back to it or go away from it. Both points mentioned above are unstable.</para>
+      
+      <para id="id2256199">A particular informative way of finding the singular or equilibrium
+points is to consider what are called
+<emphasis>partial equilibrium lines </emphasis>in the phase plane.
+The curve of all possible solutions of the equition</para>
+      <equation id="id2256211"><m:math mode="display">
+          <m:mrow>
+            <m:mi>f</m:mi>
+            <m:mspace width="0.166667em"/>
+            <m:mo>(</m:mo>
+            <m:mspace width="0.166667em"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>,</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="0.166667em"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mrow>
+                <m:mn>2</m:mn>
+                <m:mspace width="0.166667em"/>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mn>0</m:mn>
+            <m:mspace width="2.em"/>
+
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2256299">is called the
+<emphasis>partial equilibrium curve </emphasis>for population <m:math><m:msub><m:mi>p</m:mi><m:mrow><m:mn>1</m:mn><m:mspace width="0.166667em"/></m:mrow></m:msub></m:math>.
+This is understood by considering the first equation in <link target-id="id2253737"/> alone.
+The equation <link target-id="id2256211"/> implies <m:math><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>0</m:mn><m:mspace width="4pt"/></m:mrow></m:math>, therefore,
+one side of this curve <m:math><m:mfrac><m:mrow><m:mi>d</m:mi><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac></m:math> will be positive and on
+the other side it will be negative.
+If a particular <m:math><m:mrow><m:mi>f</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>0</m:mn></m:mrow></m:math> curve was given by <figure id="id13203270"><media id="id13203274" alt=""><image src="../../media/troff11.png" mime-type="image/png"/></media></figure></para>
+      <para id="id2256430">for any given fixed <m:math><m:msub><m:mi>p</m:mi><m:mrow><m:mn>2</m:mn><m:mspace width="0.166667em"/></m:mrow></m:msub></m:math>, <m:math><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub></m:math> would move to
+the <m:math><m:mrow><m:mi>f</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>0</m:mn></m:mrow></m:math> partial equilibrium curve.
+This curve would, therefore, give the effects of <m:math><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub></m:math> on the
+equilibrium values of <m:math><m:msub><m:mi>p</m:mi><m:mrow><m:mn>1</m:mn><m:mspace width="0.166667em"/></m:mrow></m:msub></m:math>.
+In other words, for a system controlled by the first equation of <link target-id="id2253737"/>
+if <m:math><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub></m:math> is given, the <m:math><m:mrow><m:mi>f</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>0</m:mn></m:mrow></m:math> curve will give the equilibrium
+value <m:math><m:mrow><m:mi>p</m:mi><m:mi>s</m:mi><m:mi>u</m:mi><m:mi>b</m:mi><m:mn>1</m:mn></m:mrow></m:math> approaches.
+.pp
+In fact, however, <m:math><m:mrow><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:math> is not fixed, but must obey the second
+equation in <link target-id="id2253737"/>.
+If this equation is examined separately, we have a second curve called
+the partial equilibrium curve
+for <m:math><m:mrow><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:math> given by</para>
+      <equation id="id2256633"><m:math mode="display">
+          <m:mrow>
+            <m:mi>g</m:mi>
+            <m:mspace width="0.166667em"/>
+            <m:mo>(</m:mo>
+            <m:mspace width="0.166667em"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>,</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="0.166667em"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mrow>
+                <m:mn>2</m:mn>
+                <m:mspace width="0.166667em"/>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mn>0</m:mn>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2256715">A similar analysis of this equation shows the effects of <m:math><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub></m:math> on
+the equilibrium values of <m:math><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub></m:math>, and can be visualized by the
+following illustration of a <m:math><m:mrow><m:mi>g</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> curve.
+<figure id="id11589009"><media id="id8191990" alt=""><image src="../../media/troff12.png" mime-type="image/png"/></media></figure>
+If these two curves are considered simultaneously, then not only are
+the singular points determined by the intersections, but the stability
+of the points and the nature and direction of the trajectories can be
+estimited by the signs of <m:math><m:msub><m:mrow><m:mover accent="true">
+              <m:mi>p</m:mi>
+              <m:mo>˙</m:mo>
+            </m:mover></m:mrow>
+<m:mrow><m:mn>1</m:mn></m:mrow></m:msub></m:math> and <m:math><m:msub><m:mrow><m:mover accent="true">
+              <m:mi>p</m:mi>
+              <m:mo>˙</m:mo>
+            </m:mover></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msub></m:math> in the
+various regions.
+For these illustrated curves of <m:math><m:mrow><m:mi>f</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>g</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math>, we have
+<figure id="id9887282"><media id="id11664056" alt=""><image src="../../media/troff13.png" mime-type="image/png"/></media></figure>
+This determines the singular point, and the directions show that it is
+stable.
+
+Applying this to the Lotka-Volterra competition model of <link target-id="id2255231"/> for the
+partial equilibrium curves gives</para>
+      <equation id="id2256852">
+        <m:math mode="display">
+          <m:mrow>
+            <m:mover accent="true">
+              <m:mi>x</m:mi>
+              <m:mo>˙</m:mo>
+            </m:mover>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>a</m:mi>
+            <m:mspace width="0.166667em"/>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mspace width="0.166667em"/>
+              <m:mi>x</m:mi>
+              <m:mspace width="4pt"/>
+              <m:mspace width="0.166667em"/>
+              <m:mo>-</m:mo>
+              <m:mspace width="4pt"/>
+              <m:mspace width="0.166667em"/>
+              <m:mi>x</m:mi>
+              <m:mi>y</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mn>0</m:mn>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2256949">or</para>
+      <equation id="id2256954">
+        <m:math mode="display">
+          <m:mrow>
+            <m:mi>y</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mn>1</m:mn>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2256989">and</para>
+      <equation id="id2256994">
+        <m:math mode="display">
+          <m:mrow>
+            <m:mover accent="true">
+              <m:mi>y</m:mi>
+              <m:mo>˙</m:mo>
+            </m:mover>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>c</m:mi>
+            <m:mspace width="0.166667em"/>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mspace width="0.166667em"/>
+              <m:mi>y</m:mi>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mo>-</m:mo>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mi>x</m:mi>
+              <m:mi>y</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mn>0</m:mn>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2257091">or</para>
+      <equation id="id2257097"><m:math mode="display">
+          <m:mrow>
+            <m:mi>x</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mn>1</m:mn>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2257140">In the phase plane, these are
+<figure id="id10772280"><media id="id10772284" alt=""><image src="../../media/troff14.png" mime-type="image/png"/></media></figure></para>
+      <para id="id2257146">Another tool that is very useful and is related to the preceding
+discussion is the method of isoclines.<link target-id="bid8"/><link target-id="9"/>
+
+Here we find curves in the phase plane where all the trajectories that
+cross that curve have the same slope.
+The partial equilibrium curves are two isoclines.
+The <m:math><m:mrow><m:mi>f</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>0</m:mn></m:mrow></m:math> curve implies from <link target-id="id2255526"/> that the slope of all
+trajectories along that curve is zero.
+The slope of all trajectories along the <m:math><m:mrow><m:mi>g</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>0</m:mn></m:mrow></m:math> curve is infinite.
+If we find the isocline for a slope of <m:math><m:mrow><m:mi>m</m:mi><m:mspace width="0.166667em"/></m:mrow></m:math>, this is done from <link target-id="id2255526"/> by
+setting</para>
+      <equation id="id2257229"><m:math mode="display">
+          <m:mrow>
+            <m:mfrac>
+              <m:mi>f</m:mi>
+              <m:mi>g</m:mi>
+            </m:mfrac>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>m</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2257293">For the competition model with <m:math><m:mrow><m:mi>a</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mi>c</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>1</m:mn><m:mspace width="4pt"/></m:mrow></m:math>, we have</para>
+      <equation id="id2257346"><m:math mode="display">
+          <m:mrow>
+            <m:mfrac>
+              <m:mrow>
+                <m:mi>x</m:mi>
+                <m:mspace width="0.166667em"/>
+                <m:mspace width="4pt"/>
+                <m:mo>-</m:mo>
+                <m:mspace width="4pt"/>
+                <m:mspace width="0.166667em"/>
+                <m:mi>x</m:mi>
+                <m:mi>y</m:mi>
+              </m:mrow>
+              <m:mrow>
+                <m:mi>y</m:mi>
+                <m:mspace width="4pt"/>
+                <m:mspace width="0.166667em"/>
+                <m:mo>-</m:mo>
+                <m:mspace width="0.166667em"/>
+                <m:mspace width="4pt"/>
+                <m:mi>x</m:mi>
+                <m:mi>y</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>m</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+        
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2257449">Solving for <m:math><m:mi>x</m:mi></m:math> as a function of <m:math><m:mi>y</m:mi></m:math> gives</para>
+      <equation id="id2257474"><m:math mode="display">
+          <m:mrow>
+            <m:mi>x</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mfrac>
+              <m:mrow>
+                <m:mi>m</m:mi>
+                <m:mi>y</m:mi>
+              </m:mrow>
+              <m:mrow>
+                <m:mn>1</m:mn>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:mo>+</m:mo>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:mo>(</m:mo>
+                <m:mi>m</m:mi>
+                <m:mspace width="4pt"/>
+                <m:mspace width="0.166667em"/>
+                <m:mo>-</m:mo>
+                <m:mspace width="0.166667em"/>
+                <m:mspace width="4pt"/>
+                <m:mn>1</m:mn>
+                <m:mo>)</m:mo>
+                <m:mspace width="0.166667em"/>
+                <m:mi>y</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2257584">The <m:math><m:mrow><m:mi>m</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>0</m:mn></m:mrow></m:math> isocline is <m:math><m:mrow><m:mi>y</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>1</m:mn><m:mspace width="4pt"/></m:mrow></m:math>. The <m:math><m:mrow><m:mi>m</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mi>∞</m:mi></m:mrow></m:math> isocline
+is <m:math><m:mrow><m:mi>x</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>1</m:mn><m:mspace width="4pt"/></m:mrow></m:math>. The <m:math><m:mrow><m:mi>m</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>1</m:mn></m:mrow></m:math> isocline is</para>
+      <equation id="id2257730"><m:math mode="display">
+          <m:mrow>
+            <m:mi>x</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>y</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2257774">and <m:math><m:mrow><m:mi>m</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>-</m:mo><m:mspace width="0.166667em"/><m:mn>1</m:mn></m:mrow></m:math> gives</para>
+      <equation id="id2257811">
+        <m:math mode="display">
+          <m:mrow>
+            <m:mi>x</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="0.166667em"/>
+            <m:mfrac>
+              <m:mi>y</m:mi>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mn>1</m:mn>
+                <m:mspace width="0.166667em"/>
+                <m:mspace width="4pt"/>
+                <m:mo>-</m:mo>
+                <m:mspace width="4pt"/>
+                <m:mspace width="0.166667em"/>
+                <m:mn>2</m:mn>
+                <m:mi>y</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mfrac>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>.</m:mo>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2257892">In the phase plane the isocline looks like 
+<figure id="id10043816"><media id="id10043820" alt=""><image src="../../media/troff15.png" mime-type="image/png"/></media></figure></para>
+      <para id="id2257897">
+Note how the isoclines aid one in sketching or visualizing the phase
+plane solution trajectories.</para>
+      <para id="id2257904">This should be enough detail on this approach to allow application to
+the various two-variable models that can be so interesting.</para>
+<!--empty paragraphs get left behind.-->
+      <list id="id2257914" list-type="labeled-item">
+        <item id="uid2"><label>C.
+</label>Competition Models
+
+</item>
+      </list>
+      <para id="id2257938">We will now return to the competition model of <link target-id="id2254160"/> and examine it in
+more detail.
+Consider a situation where the uninhibited growth rate of
+population <m:math><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub></m:math> is 10%.
+This implies <m:math><m:mrow><m:mi>a</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>1</m:mn></m:mrow></m:math> in <link target-id="id2254160"/>.
+Assume that the negative effects of <m:math><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub></m:math> are such
+that 100 members
+of <m:math><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub></m:math> cancel the positive effects of one member of <m:math><m:msub><m:mi>p</m:mi><m:mrow><m:mn>1</m:mn><m:mspace width="0.166667em"/></m:mrow></m:msub></m:math>.
+&gt;From the first equation of <link target-id="id2254160"/>, we have</para>
+      <equation id="id2258042"><m:math mode="display">
+          <m:mrow>
+            <m:msub>
+              <m:mover accent="true">
+                <m:mi>p</m:mi>
+                <m:mo>˙</m:mo>
+              </m:mover>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>a</m:mi>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>b</m:mi>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>a</m:mi>
+              <m:mspace width="4pt"/>
+              <m:mspace width="0.166667em"/>
+              <m:mo>-</m:mo>
+              <m:mspace width="0.166667em"/>
+              <m:mspace width="4pt"/>
+              <m:mi>b</m:mi>
+              <m:msub>
+                <m:mi>p</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+
+
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2258216">If <m:math><m:mrow><m:mi>a</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>1</m:mn><m:mspace width="0.166667em"/></m:mrow></m:math>, then <m:math><m:mrow><m:mi>b</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>001</m:mn></m:mrow></m:math>.
+We also assume that <m:math><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub></m:math> has the same self-growth rate,
+and <m:math><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub></m:math> affects <m:math><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub></m:math> in the same way
+that <m:math><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub></m:math> affects <m:math><m:msub><m:mi>p</m:mi><m:mrow><m:mn>1</m:mn><m:mspace width="0.166667em"/></m:mrow></m:msub></m:math>.
+This gives <m:math><m:mrow><m:mi>c</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>1</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>d</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>001</m:mn></m:mrow></m:math>.
+The model becomes</para>
+      <equation id="id2258426">
+        <m:math mode="display">
+          <m:mrow>
+            <m:msub>
+              <m:mover accent="true">
+                <m:mi>p</m:mi>
+                <m:mo>˙</m:mo>
+              </m:mover>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mn>0</m:mn>
+            <m:mo>.</m:mo>
+            <m:mn>1</m:mn>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mn>0</m:mn>
+            <m:mo>.</m:mo>
+            <m:mn>001</m:mn>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+          </m:mrow>
+        </m:math>
+      </equation>
+      
+      <equation id="id2258558">
+        <m:math mode="display">
+          <m:mrow>
+            <m:msub>
+              <m:mover accent="true">
+                <m:mi>p</m:mi>
+                <m:mo>˙</m:mo>
+              </m:mover>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mn>0</m:mn>
+            <m:mo>.</m:mo>
+            <m:mn>1</m:mn>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mn>0</m:mn>
+            <m:mo>.</m:mo>
+            <m:mn>001</m:mn>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mi>p</m:mi>
+            <m:mi>s</m:mi>
+            <m:mi>b</m:mi>
+            <m:mn>2</m:mn>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>.</m:mo>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2258671">Using Euler's method to convert these differential equations to
+difference equations, we see that</para>
+      <equation id="id2258678">
+        <m:math mode="display">
+          <m:mrow>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>n</m:mi>
+              <m:mspace width="4pt"/>
+              <m:mspace width="0.166667em"/>
+              <m:mo>+</m:mo>
+              <m:mspace width="0.166667em"/>
+              <m:mspace width="4pt"/>
+              <m:mn>1</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>n</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>+</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>T</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mi>a</m:mi>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>n</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>T</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mi>b</m:mi>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>n</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>n</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+          </m:mrow>
+        </m:math>
+      </equation>
+      
+      <equation id="id2258868"><m:math mode="display">
+          <m:mrow>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>n</m:mi>
+              <m:mspace width="4pt"/>
+              <m:mspace width="0.166667em"/>
+              <m:mo>+</m:mo>
+              <m:mspace width="0.166667em"/>
+              <m:mspace width="4pt"/>
+              <m:mn>1</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>n</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>+</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>T</m:mi>
+            <m:mi>c</m:mi>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>n</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>T</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mi>d</m:mi>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>n</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>n</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2259049">These were programmed on a Tektronix 31 programmable calculator with an
+automatic plotter to give the phase plane output shown in Figure G.
+The trajectories were generated by running the simulation with various
+initial populations.
+For example, the lowest trajectory was run with an initial population
+of <m:math><m:mrow><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>25</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>50</m:mn></m:mrow></m:math>.
+The next one used <m:math><m:mrow><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>30</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>35</m:mn></m:mrow></m:math>.</para>
+      <para id="id2259188">If a different situation is considered where one population has a
+growth rate of 20% and the other 5%<m:math><m:mspace width="0.166667em"/></m:math>, but the interactions are
+still at a ratio of 100<m:math><m:mspace width="0.166667em"/></m:math>, the equations become</para>
+      <equation id="id2259214">
+        <m:math mode="display">
+          <m:mrow>
+            <m:mover accent="true">
+              <m:mi>p</m:mi>
+              <m:mo>˙</m:mo>
+            </m:mover>
+            <m:mn>1</m:mn>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mn>0</m:mn>
+            <m:mo>.</m:mo>
+            <m:mn>2</m:mn>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mn>0</m:mn>
+            <m:mo>.</m:mo>
+            <m:mn>002</m:mn>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+          </m:mrow>
+        </m:math>
+      </equation>
+      
+      <equation id="id2259320"><m:math mode="display">
+          <m:mrow>
+            <m:mover accent="true">
+              <m:mi>p</m:mi>
+              <m:mo>˙</m:mo>
+            </m:mover>
+            <m:mn>2</m:mn>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mn>0</m:mn>
+            <m:mo>.</m:mo>
+            <m:mn>05</m:mn>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mn>0</m:mn>
+            <m:mo>.</m:mo>
+            <m:mn>0005</m:mn>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2259426">The solutions for this case are shown in Figure H.
+Here the results of the different rates are rather startling.
+The trajectory number 1 starts
+at <m:math><m:mrow><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>10</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>1</m:mn><m:mspace width="0.166667em"/></m:mrow></m:math>,
+yet <m:math><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub></m:math> overcomes <m:math><m:msub><m:mi>p</m:mi><m:mrow><m:mn>1</m:mn><m:mspace width="0.166667em"/></m:mrow></m:msub></m:math>.
+Trajectory number 2 starts
+at <m:math><m:mrow><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>16</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>1</m:mn><m:mspace width="0.166667em"/></m:mrow></m:math>, and <m:math><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub></m:math> still
+wins; but when the initial values
+are <m:math><m:mrow><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>17</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>1</m:mn><m:mspace width="0.166667em"/></m:mrow></m:math>, trajectory
+number 3 shows <m:math><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub></m:math> wins
+For <m:math><m:mrow><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>500</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>200</m:mn></m:mrow></m:math> or 240, trajectories
+numbers 4 and 5 show <m:math><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub></m:math> wins; but
+with <m:math><m:mrow><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>500</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>250</m:mn></m:mrow></m:math> or 300, trajectories 6 and 7 show <m:math><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub></m:math> wins.
+This exemplifies the very large difference a four-to-one growth rate
+ratio can make, and how critical the outcome depends on the initial
+values.
+It also illustrate the power of the phase plane in describing the
+model.</para>
+      <para id="id2259862">In the basic competition model described by <link target-id="id2254160"/>, and when normalized,
+described by <link target-id="id2255231"/>, we see that even if the interactive terms are very
+small, one population always grows without limit and the other becomes
+extinct.
+This describes a "survival of the fittest" model, but the unlimited
+growth and no possibility of coexistence seems unreasonable.</para>
+      <para id="id2259871">The next level of complication is the addition of a limit to growth in
+the same manner that the exponential was changed to a logistic.
+A crowding or self-competition term is added to the simple competition
+model.
+Consider now</para>
+      <equation id="id2259878"><m:math mode="display">
+          <m:mrow>
+            <m:msub>
+              <m:mover accent="true">
+                <m:mi>p</m:mi>
+                <m:mo>˙</m:mo>
+              </m:mover>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>a</m:mi>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>b</m:mi>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>e</m:mi>
+            <m:mspace width="4pt"/>
+            <m:msubsup>
+              <m:mi>p</m:mi>
+              <m:mn>1</m:mn>
+              <m:mn>2</m:mn>
+            </m:msubsup>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="2.em"/>
+
+          </m:mrow>
+        </m:math>
+      </equation>
+      
+      <equation id="id2260022"><m:math mode="display">
+          <m:mrow>
+            <m:msub>
+              <m:mover accent="true">
+                <m:mi>p</m:mi>
+                <m:mo>˙</m:mo>
+              </m:mover>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>c</m:mi>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>d</m:mi>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>f</m:mi>
+            <m:mspace width="4pt"/>
+            <m:msubsup>
+              <m:mi>p</m:mi>
+              <m:mn>2</m:mn>
+              <m:mn>2</m:mn>
+            </m:msubsup>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2260149">Using the normalizing procedure that was used before on <link target-id="id2254160"/> reduces
+the number of parameters from six to four:</para>
+      <equation id="id2260157"><m:math mode="display">
+          <m:mrow>
+            <m:mover accent="true">
+              <m:mi>x</m:mi>
+              <m:mo>˙</m:mo>
+            </m:mover>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>a</m:mi>
+            <m:mspace width="0.166667em"/>
+            <m:mi>x</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>a</m:mi>
+            <m:mspace width="0.166667em"/>
+            <m:mi>x</m:mi>
+            <m:mspace width="0.166667em"/>
+            <m:mi>y</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>k</m:mi>
+            <m:mspace width="0.166667em"/>
+            <m:msup>
+              <m:mi>x</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="2.em"/>
+          </m:mrow>
+        </m:math>
+      </equation>
+      
+      <equation id="id2260286"><m:math mode="display">
+          <m:mrow>
+            <m:mover accent="true">
+              <m:mi>y</m:mi>
+              <m:mo>˙</m:mo>
+            </m:mover>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>c</m:mi>
+            <m:mspace width="0.166667em"/>
+            <m:mi>y</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>c</m:mi>
+            <m:mspace width="0.166667em"/>
+            <m:mi>x</m:mi>
+            <m:mspace width="0.166667em"/>
+            <m:mi>y</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>L</m:mi>
+            <m:mspace width="0.166667em"/>
+            <m:msup>
+              <m:mi>y</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2260398">where</para>
+      <equation id="id2260404"><m:math mode="display">
+          <m:mrow>
+            <m:mi>x</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mfenced separators="" open="(" close=")">
+              <m:mspace width="4pt"/>
+              <m:mfrac>
+                <m:mi>d</m:mi>
+                <m:mi>c</m:mi>
+              </m:mfrac>
+              <m:mspace width="4pt"/>
+            </m:mfenced>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>k</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mfrac>
+              <m:mrow>
+                <m:mi>e</m:mi>
+                <m:mi>c</m:mi>
+              </m:mrow>
+              <m:mi>d</m:mi>
+            </m:mfrac>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="2.em"/>
+          </m:mrow>
+        </m:math>
+      </equation>
+      
+      <equation id="id2260588"><m:math mode="display">
+          <m:mrow>
+            <m:mi>y</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mfenced separators="" open="(" close=")">
+              <m:mspace width="4pt"/>
+              <m:mfrac>
+                <m:mi>b</m:mi>
+                <m:mi>a</m:mi>
+              </m:mfrac>
+              <m:mspace width="4pt"/>
+            </m:mfenced>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>L</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mfrac>
+              <m:mrow>
+                <m:mi>f</m:mi>
+                <m:mi>a</m:mi>
+              </m:mrow>
+              <m:mi>b</m:mi>
+            </m:mfrac>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2260735">Consider the partial equilibrium curves for this model.</para>
+      <equation id="id2260741">
+        <m:math mode="display">
+          <m:mrow>
+            <m:mi>f</m:mi>
+            <m:mspace width="0.166667em"/>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>x</m:mi>
+              <m:mo>,</m:mo>
+              <m:mspace width="0.166667em"/>
+              <m:mi>y</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>a</m:mi>
+            <m:mi>x</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>a</m:mi>
+            <m:mi>x</m:mi>
+            <m:mi>y</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>K</m:mi>
+            <m:msup>
+              <m:mi>x</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mn>0</m:mn>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <equation id="id2260864">
+        <m:math mode="display">
+          <m:mrow>
+            <m:mi>x</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mfrac>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mi>a</m:mi>
+                <m:mspace width="4pt"/>
+                <m:mspace width="0.166667em"/>
+                <m:mo>-</m:mo>
+                <m:mspace width="0.166667em"/>
+                <m:mspace width="4pt"/>
+                <m:mi>a</m:mi>
+                <m:mi>y</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mi>K</m:mi>
+            </m:mfrac>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <equation id="id2260928">
+        <m:math mode="display">
+          <m:mrow>
+            <m:mi>g</m:mi>
+            <m:mspace width="0.166667em"/>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>x</m:mi>
+              <m:mo>,</m:mo>
+              <m:mspace width="0.166667em"/>
+              <m:mi>y</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>c</m:mi>
+            <m:mi>y</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>c</m:mi>
+            <m:mi>x</m:mi>
+            <m:mi>y</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>L</m:mi>
+            <m:msup>
+              <m:mi>y</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mn>0</m:mn>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <equation id="id2261047"><m:math mode="display">
+          <m:mrow>
+            <m:mi>x</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mfrac>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mi>c</m:mi>
+                <m:mspace width="4pt"/>
+                <m:mspace width="0.166667em"/>
+                <m:mo>-</m:mo>
+                <m:mspace width="0.166667em"/>
+                <m:mspace width="4pt"/>
+                <m:mi>L</m:mi>
+                <m:mi>y</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mi>c</m:mi>
+            </m:mfrac>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2261122">On the phase plane, this becomes 
+<figure id="id13130899"><media id="id11481542" alt=""><image src="../../media/troff16.png" mime-type="image/png"/></media></figure></para>
+      <para id="id2261128">
+It is obvious that the character of this system depends on the relative
+values of <m:math><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo></m:mrow></m:math><m:math><m:mrow><m:mi>b</m:mi><m:mo>,</m:mo></m:mrow></m:math><m:math><m:mi>K</m:mi></m:math> and <m:math><m:mrow><m:mi>L</m:mi><m:mspace width="0.166667em"/></m:mrow></m:math>, and indeed these are from rather
+different possible systems.</para>
+      <para id="id2261183">We will first consider the case illustrated above where both limiting
+factors are relatively small.</para>
+      <equation id="id2261188"><m:math mode="display">
+          <m:mrow>
+            <m:mi>L</m:mi>
+            <m:mo>&lt;</m:mo>
+            <m:mi>c</m:mi>
+<m:mspace width="20pt"/>
+            <m:mtext>and</m:mtext>
+<m:mspace width="20pt"/>
+            <m:mi>K</m:mi>
+            <m:mo>&lt;</m:mo>
+            <m:mi>a</m:mi>
+         
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2261332">Note that as <m:math><m:mi>K</m:mi></m:math> and <m:math><m:mi>L</m:mi></m:math> approach zero, the system approaches the
+previously studied system.
+For this case, there are three possible equilibrium or singular points.
+There is an unstable point at the intersection of the two partial
+equilibrium curves, and a stable point
+at <m:math><m:mrow><m:mi>y</m:mi><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>0</m:mn><m:mspace width="0.166667em"/></m:mrow></m:math>, <m:math><m:mrow><m:mi>x</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mfrac><m:mi>a</m:mi><m:mi>K</m:mi></m:mfrac><m:mspace width="0.166667em"/></m:mrow></m:math>, and another stable point
+at <m:math><m:mrow><m:mi>y</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mfrac><m:mi>c</m:mi><m:mi>L</m:mi></m:mfrac><m:mspace width="4pt"/></m:mrow></m:math>, <m:math><m:mrow><m:mi>x</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>0</m:mn><m:mspace width="0.166667em"/></m:mrow></m:math>.
+In this case, as before, one or the other population always wins,
+depending on initial conditions, and the remaining population dies to
+zero.
+There is now a limit reached by the winner and indeed, the time plot of
+the winning population looks very similar to a logistic.
+For example, for particular initial <m:math><m:mi>x</m:mi></m:math> and <m:math><m:mrow><m:mi>y</m:mi><m:mspace width="0.166667em"/></m:mrow></m:math>, we have
+<figure id="id10651052"><media id="id11502863" alt=""><image src="../../media/troff17.png" mime-type="image/png"/></media></figure></para>
+      <para id="id2261513">The phase plane trajectories are illustrated for the normalized variables <m:math><m:mi>x</m:mi></m:math> and <m:math><m:mi>y</m:mi></m:math> in Figure J.
+The terms <m:math><m:mi>a</m:mi></m:math> and <m:math><m:mi>c</m:mi></m:math> are set equal to one, with <m:math><m:mi>K</m:mi></m:math> and <m:math><m:mi>L</m:mi></m:math> set
+equal to one-half.
+The winning population approaches 2 as its equilibrium value, and the
+loser becomes extinct.</para>
+      
+      <para id="id2261583">The second case to consider has strong self-limiting factors relative
+to the interactive terms</para>
+      <equation id="id2261588"><m:math mode="display">
+          <m:mrow>
+            <m:mi>L</m:mi>
+            <m:mo>&gt;</m:mo>
+            <m:mi>c</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mtext>and</m:mtext>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>K</m:mi>
+<m:mo>&gt;</m:mo>
+            <m:mi>a</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2261740">The partial equilibrium curves in the phase plane are
+<figure id="id13293476"><media id="id13293480" alt=""><image src="../../media/troff18.png" mime-type="image/png"/></media></figure></para>
+      <para id="id2261746">
+Here the signs of the derivatives in the various regions of the phase
+plane show that there is only one stable equilibrium point at the
+intersection of the two curves.
+Here is a case of stable co-existence predicted for a competition model.
+The phase plane trajectories are shown in Figure K for the normalized
+variables where <m:math><m:mrow><m:mi>a</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mi>c</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>1</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>K</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mi>L</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>2</m:mn><m:mspace width="4pt"/></m:mrow></m:math>.</para>
+      <para id="id2253620">The third case is not symmetric.
+It allows one population to have a stronger self-limiting feature, and
+the other a stronger interactive term.
+This is given by</para>
+      <equation id="id2253626"><m:math mode="display">
+          <m:mrow>
+            <m:mi>L</m:mi>
+            <m:mo>&lt;</m:mo>
+            <m:mi>c</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mtext>and</m:mtext>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>K</m:mi>
+            <m:mo>&gt;</m:mo>
+            <m:mi>a</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2262134">The partial equilibrium curves in the phase plane are
+<figure id="id13054101"><media id="id11560092" alt=""><image src="../../media/troff19.png" mime-type="image/png"/></media></figure></para>
+      <para id="id2262140">
+The equilibrium point at <m:math><m:mrow><m:mi>x</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>0</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>y</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mfrac><m:mi>c</m:mi><m:mi>L</m:mi></m:mfrac></m:mrow></m:math> is the
+only stable point.
+For this case, <m:math><m:mi>y</m:mi></m:math> always wins for any non-zero initial values,
+and <m:math><m:mi>x</m:mi></m:math> always becomes extinct.
+Figure L illustrates the phase plane trajectories for the case
+where <m:math><m:mrow><m:mi>a</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mi>c</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>1</m:mn><m:mspace width="0.166667em"/></m:mrow></m:math>, <m:math><m:mrow><m:mi>K</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>2</m:mn><m:mspace width="0.166667em"/></m:mrow></m:math>, and <m:math><m:mrow><m:mi>L</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mspace width="4pt"/></m:mrow></m:math>.</para>
+      <para id="id2262335">The fourth case is similar to the third, but the roles of the two
+populations are reversed.
+The results are similar with <m:math><m:mi>x</m:mi></m:math> always winning and approaching an
+equilibrium point of <m:math><m:mrow><m:mi>x</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mfrac><m:mi>a</m:mi><m:mi>K</m:mi></m:mfrac></m:mrow></m:math> and <m:math><m:mrow><m:mi>y</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>0</m:mn><m:mspace width="0.166667em"/></m:mrow></m:math>.
+The phase plane trajectories look like Figure L with the axes
+reversed.</para>
+      <para id="id2262412">The use of these competition models can be very interesting in what
+they say about the effects of the various growth, interactive, and
+limiting parameters.
+Applications can be made in short time spans to competing populations in
+population ecology, or over longer time spans to biological evolution.
+There are many other possibilities of economic models or international
+models that could be pursued, but we now turn to a very different type
+of interaction to be modeled.</para>
+<!--empty paragraphs get left behind.-->
+      <list id="id2262428" list-type="labeled-item" mark-suffix=".">
+        <item id="uid3"><label>D
+</label>Predation &amp; Prey Models
+
+</item>
+      </list>
+      <para id="id2262454">If the relation between two populations is not one of competition but
+one of one population preying on the other, a very different dynamic
+situation results.
+We first consider the simple Lotka-Volterra model where <link target-id="id2253737"/> becomes</para>
+      <equation id="id2262462"><m:math mode="display">
+          <m:mrow>
+            <m:mfrac>
+              <m:mrow>
+                <m:mi>d</m:mi>
+                <m:msub>
+                  <m:mi>p</m:mi>
+                  <m:mn>1</m:mn>
+                </m:msub>
+              </m:mrow>
+              <m:mrow>
+                <m:mi>d</m:mi>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>a</m:mi>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>b</m:mi>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mspace width="2.em"/>
+
+          </m:mrow>
+        </m:math>
+      </equation>
+      
+      <equation id="id2262579"><m:math mode="display">
+          <m:mrow>
+            <m:mfrac>
+              <m:mrow>
+                <m:mi>d</m:mi>
+                <m:msub>
+                  <m:mi>p</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msub>
+              </m:mrow>
+              <m:mrow>
+                <m:mi>d</m:mi>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mi>c</m:mi>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>+</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>d</m:mi>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2262692">This represents a system where <m:math><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub></m:math> is the population of the
+prey that has a growth rate <m:math><m:mi>a</m:mi></m:math> when there are not predators.
+The parameter <m:math><m:mi>b</m:mi></m:math> is the negative effect of predation
+on <m:math><m:msub><m:mi>p</m:mi><m:mrow><m:mn>1</m:mn><m:mspace width="0.166667em"/></m:mrow></m:msub></m:math>, and the product <m:math><m:mrow><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub><m:mspace width="4pt"/><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:math> models the
+frequency of encounter of the two.
+The population <m:math><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub></m:math> is that of the predation who would die out
+at a rate of <m:math><m:mi>c</m:mi></m:math> if there were no prey.
+The coefficient <m:math><m:mi>d</m:mi></m:math> gives the positive effect of the prey on the
+predator, and again <m:math><m:mrow><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub><m:mspace width="4pt"/><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:math> models the frequency of
+encounter.</para>
+      <para id="id2262840">As was done before, if the populations are normalized
+by <m:math><m:mrow><m:mi>x</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mfenced separators="" open="(" close=")"><m:mspace width="4pt"/><m:mfrac><m:mi>d</m:mi><m:mi>c</m:mi></m:mfrac><m:mspace width="4pt"/></m:mfenced><m:mspace width="4pt"/><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> and <m:math><m:mrow><m:mi>y</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mfenced separators="" open="(" close=")"><m:mspace width="4pt"/><m:mfrac><m:mi>b</m:mi><m:mi>a</m:mi></m:mfrac><m:mspace width="4pt"/></m:mfenced><m:mspace width="4pt"/><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub><m:mspace width="4pt"/></m:mrow></m:math>, then <link target-id="id2262462"/> becomes</para>
+      <equation id="id2262954"><m:math mode="display">
+          <m:mrow>
+            <m:mover accent="true">
+              <m:mi>x</m:mi>
+              <m:mo>˙</m:mo>
+            </m:mover>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>a</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mspace width="4pt"/>
+              <m:mi>x</m:mi>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mo>-</m:mo>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mi>x</m:mi>
+              <m:mi>y</m:mi>
+              <m:mspace width="0.166667em"/>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mspace width="2.em"/>
+
+          </m:mrow>
+        </m:math>
+      </equation>
+      
+      <equation id="id2263050"><m:math mode="display">
+          <m:mrow>
+            <m:mover accent="true">
+              <m:mi>y</m:mi>
+              <m:mo>˙</m:mo>
+            </m:mover>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mi>c</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mspace width="4pt"/>
+              <m:mi>y</m:mi>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mo>-</m:mo>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mi>x</m:mi>
+              <m:mi>y</m:mi>
+              <m:mspace width="0.166667em"/>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2263140">The phase plane equation is</para>
+      <equation id="id2263146"><m:math mode="display">
+          <m:mrow>
+            <m:mfrac>
+              <m:mrow>
+                <m:mi>d</m:mi>
+                <m:mi>x</m:mi>
+              </m:mrow>
+              <m:mrow>
+                <m:mi>d</m:mi>
+                <m:mi>y</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mfrac>
+              <m:mi>a</m:mi>
+              <m:mi>c</m:mi>
+            </m:mfrac>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mfrac>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mspace width="0.166667em"/>
+                <m:mi>x</m:mi>
+                <m:mspace width="4pt"/>
+                <m:mspace width="0.166667em"/>
+                <m:mo>-</m:mo>
+                <m:mspace width="0.166667em"/>
+                <m:mspace width="4pt"/>
+                <m:mi>x</m:mi>
+                <m:mi>y</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mspace width="0.166667em"/>
+                <m:mi>y</m:mi>
+                <m:mspace width="4pt"/>
+                <m:mspace width="0.166667em"/>
+                <m:mo>-</m:mo>
+                <m:mspace width="0.166667em"/>
+                <m:mspace width="4pt"/>
+                <m:mi>x</m:mi>
+                <m:mi>y</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mfrac>
+            <m:mspace width="2.em"/>
+
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2263289">Using the method of isoclines by finding the curves where the slope is
+constant shows a remarkable result.
+First, consider the partial equilibrium curves</para>
+      <equation id="id2263297">
+        <m:math mode="display">
+          <m:mrow>
+            <m:mi>f</m:mi>
+            <m:mspace width="0.166667em"/>
+            <m:mo>(</m:mo>
+            <m:mi>x</m:mi>
+            <m:mo>,</m:mo>
+            <m:mspace width="0.166667em"/>
+            <m:mi>y</m:mi>
+            <m:mo>)</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>a</m:mi>
+            <m:mspace width="0.166667em"/>
+            <m:mo>(</m:mo>
+            <m:mspace width="0.166667em"/>
+            <m:mi>x</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>x</m:mi>
+            <m:mi>y</m:mi>
+            <m:mo>)</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mn>0</m:mn>
+          </m:mrow>
+        </m:math>
+      </equation>
+      
+      <equation id="id2263406">
+        <m:math mode="display">
+          <m:mrow>
+            <m:mi>y</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mn>1</m:mn>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <equation id="id2263441">
+        <m:math mode="display">
+          <m:mrow>
+            <m:mi>g</m:mi>
+            <m:mspace width="0.166667em"/>
+            <m:mo>(</m:mo>
+            <m:mi>x</m:mi>
+            <m:mo>,</m:mo>
+            <m:mspace width="0.166667em"/>
+            <m:mi>y</m:mi>
+            <m:mo>)</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mi>c</m:mi>
+            <m:mspace width="0.166667em"/>
+            <m:mo>(</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mi>y</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>x</m:mi>
+            <m:mi>y</m:mi>
+            <m:mo>)</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mn>0</m:mn>
+          </m:mrow>
+        </m:math>
+      </equation>
+      
+      <equation id="id2263558">
+        <m:math mode="display">
+          <m:mrow>
+            <m:mi>x</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mn>1</m:mn>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>.</m:mo>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2263601">On the phase plane, this is
+<figure id="id8490861"><media id="id10599042" alt=""><image src="../../media/troff20.png" mime-type="image/png"/></media></figure></para>
+      <para id="id2263607">The solution trajectories in the phase plane are shown in Figure M.
+It can be shown <link target-id="bid8"/> that for any positive values of the parameters in <link target-id="id2262462"/>, the solutions
+in the phase plane are closed nested curves that enclose the singular
+point.
+The closed trajectories are called
+<emphasis>limit cycles, </emphasis>and they give rise to periodic or cyclic function when displayed as a
+function of time.
+The example used assumed an unlimited growth rate of the prey
+population <m:math><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub></m:math> to be 5% per year.
+The death rate of the predator with no prey is set at 10% per year. The interactive terms are set to be equal to the self rates</para>
+      
+      
+      <para id="id2263650">when <m:math><m:mrow><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>100</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>200</m:mn><m:mspace width="0.166667em"/></m:mrow></m:math>.
+This gives</para>
+      <equation id="id2263723"><m:math mode="display">
+          <m:mrow>
+            <m:msub>
+              <m:mover accent="true">
+                <m:mi>p</m:mi>
+                <m:mo>˙</m:mo>
+              </m:mover>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mn>0</m:mn>
+            <m:mo>.</m:mo>
+            <m:mn>05</m:mn>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mn>0</m:mn>
+            <m:mo>.</m:mo>
+            <m:mn>0005</m:mn>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mspace width="2.em"/>
+
+          </m:mrow>
+        </m:math>
+      </equation>
+      
+      <equation id="id2263845"><m:math mode="display">
+          <m:mrow>
+            <m:msub>
+              <m:mover accent="true">
+                <m:mi>p</m:mi>
+                <m:mo>˙</m:mo>
+              </m:mover>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mn>0</m:mn>
+            <m:mo>.</m:mo>
+            <m:mn>1</m:mn>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>+</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mn>0</m:mn>
+            <m:mo>.</m:mo>
+            <m:mn>0005</m:mn>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2263962">There are several interesting features of the solutions.
+For any initial mixture of population, a limit cycle passes through it.
+The resulting oscillations have amplitude and frequency that depend on
+the starting condition, and oscillations neither grow or decay.
+Unfortunately, the use of Euler's method destroys the exact form of the
+solutions.
+Note that the trajectories did not exactly close on the left side of
+Figure M.
+They can be made to approximate the exact solution of <link target-id="id2263723"/> by
+choosing <m:math><m:mi>T</m:mi></m:math> very small – but
+that slows down the calculations and can sometimes cause other
+numerical errors.</para>
+      <para id="id2263989">Time plots of these solutions are shown in Figure N for initial values
+of <m:math><m:mrow><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>200</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>50</m:mn><m:mspace width="0.166667em"/></m:mrow></m:math>.
+In Figure P the initial values are <m:math><m:mrow><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mn>50</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>200</m:mn></m:mrow></m:math>.
+Compare the initial values, maximum and minimum values, with the phase
+plane trajectories.
+Note that the period of the oscillation in Figure N is 91 years, and in
+Figure P, 110 years.
+The slight increase in amplitude of the oscillations is due to the
+Euler algorithm, not the model.
+The time interval <m:math><m:mi>T</m:mi></m:math> was set at 0.2 years.</para>
+      <para id="id2264137">There are both interesting theoretical and practical aspects to this
+model.
+Serious error can occur when one of the populations is small.
+Minor variations which are assumed to average out with large numbers,
+do not.
+In many experimental verifications of this model, one of the
+populations will die out at a minimum rather than regenerate.
+Also, the model is rather sensitive to small errors.
+The addition of small terms to the basic equation <link target-id="id2262462"/> causes great
+change in the character of the solution.
+This model has been studied in detail by population ecologists.
+<link target-id="bid3"/>
+<link target-id="bid7"/>
+<link target-id="bid8"/>
+<link target-id="bid10"/>
+<link target-id="bid12"/></para>
+      
+      
+      
+      
+      
+      
+      <para id="id2264169">We will next examine the effects on the simple predator-prey model of
+adding a crowding term as was done on the competition model and the
+logistic model.
+Consider the model
+</para>
+      <equation id="id2264190"><m:math mode="display">
+          <m:mrow>
+            <m:msub>
+              <m:mover accent="true">
+                <m:mi>p</m:mi>
+                <m:mo>˙</m:mo>
+              </m:mover>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>a</m:mi>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>b</m:mi>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>e</m:mi>
+            <m:mspace width="4pt"/>
+            <m:msubsup>
+              <m:mi>p</m:mi>
+              <m:mn>1</m:mn>
+              <m:mn>2</m:mn>
+            </m:msubsup>
+            <m:mspace width="2.em"/>
+
+          </m:mrow>
+        </m:math>
+      </equation>
+      
+      <equation id="id2264332">
+        <m:math mode="display">
+          <m:mrow>
+            <m:msub>
+              <m:mover accent="true">
+                <m:mi>p</m:mi>
+                <m:mo>˙</m:mo>
+              </m:mover>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mi>c</m:mi>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>+</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>d</m:mi>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>f</m:mi>
+            <m:mspace width="4pt"/>
+            <m:msubsup>
+              <m:mi>p</m:mi>
+              <m:mn>2</m:mn>
+              <m:mn>2</m:mn>
+            </m:msubsup>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2264463">where the coefficients <m:math><m:mi>e</m:mi></m:math> and <m:math><m:mi>f</m:mi></m:math> describe the negative effects of
+crowding and competition within the population or perhaps cannibalism.
+These equations can be normalized as done before to the form</para>
+      <equation id="id2264490"><m:math mode="display">
+          <m:mrow>
+            <m:mover accent="true">
+              <m:mi>x</m:mi>
+              <m:mo>˙</m:mo>
+            </m:mover>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>a</m:mi>
+            <m:mi>x</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>a</m:mi>
+            <m:mi>x</m:mi>
+            <m:mi>y</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>K</m:mi>
+            <m:msup>
+              <m:mi>x</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mspace width="2.em"/>
+
+          </m:mrow>
+        </m:math>
+      </equation>
+      
+      <equation id="id2264596"><m:math mode="display">
+          <m:mrow>
+            <m:mover accent="true">
+              <m:mi>y</m:mi>
+              <m:mo>˙</m:mo>
+            </m:mover>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>c</m:mi>
+            <m:mi>x</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>c</m:mi>
+            <m:mi>x</m:mi>
+            <m:mi>y</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>L</m:mi>
+            <m:msup>
+              <m:mi>y</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2264693">The effects of the added terms are rather dramatic.
+The partial equilibrium curves are shown in the following phase plane.</para>
+      <para id="id2264701">
+This assumes that <m:math><m:mrow><m:mfrac><m:mi>a</m:mi><m:mi>K</m:mi></m:mfrac><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>1</m:mn><m:mspace width="0.166667em"/></m:mrow></m:math>.
+The singular points are denoted by a circle.
+The singular points at the origin and
+at <m:math><m:mrow><m:mi>x</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mfrac><m:mi>a</m:mi><m:mi>K</m:mi></m:mfrac><m:mspace width="4pt"/></m:mrow></m:math>, <m:math><m:mrow><m:mi>y</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>0</m:mn></m:mrow></m:math> are unstable,
+while the one at the intersection of the two curves is stable.
+The equations were programmed
+with <m:math><m:mrow><m:mi>a</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mi>c</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mi>L</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>1</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>K</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>5</m:mn><m:mspace width="0.166667em"/></m:mrow></m:math>.
+The trajectories in the phase plane are shown in Figure Q.
+Compare these results with the derivative signs and singular point
+locations found above.
+Note that if <m:math><m:mrow><m:mi>K</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mi>L</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>0</m:mn><m:mspace width="0.166667em"/></m:mrow></m:math>, the two partial equilibrium curves
+become vertical and horizontal, giving the same results as found
+earlier in Figure M.
+Solutions of this model are shown as a function of time in Figure R for
+initial values of <m:math><m:mrow><m:mi>x</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>1</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>y</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>2</m:mn><m:mspace width="0.166667em"/></m:mrow></m:math>, in Figure S
+for <m:math><m:mrow><m:mi>x</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>3</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>y</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>2</m:mn><m:mspace width="0.166667em"/></m:mrow></m:math>, and Figure T
+for <m:math><m:mrow><m:mi>x</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>2</m:mn><m:mo>.</m:mo><m:mn>5</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>y</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>3</m:mn><m:mspace width="4pt"/></m:mrow></m:math>.</para>
+      <para id="id2265133">Note the relations of these time curves to the phase plane trajectories
+in Figure Q.
+In all cases, there are "overshoots" and "undershoots" as the
+populations interact, but they finally settle down to a constant
+co-existence that is the same for any initial condition.</para>
+      <para id="id2265141">The model is changed by removing the limiting term on
+population <m:math><m:mi>y</m:mi></m:math> by setting <m:math><m:mrow><m:mi>L</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>0</m:mn><m:mspace width="0.166667em"/></m:mrow></m:math>.
+This causes the <m:math><m:mi>y</m:mi></m:math> partial equilibrium curve to become horizontal;
+the resulting phase plane trajectories are shown in Figure U.
+The results are similar to those in Figure Q, but there is more
+oscillation before the final equilibrium is reached.
+If a limiting factor is made large by setting <m:math><m:mrow><m:mi>L</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>4</m:mn><m:mspace width="0.166667em"/></m:mrow></m:math>, the phase
+plane trajectories of Figure V result, giving very little oscillation.</para>
+      <para id="id2265229">A rather different situation results if the parameters are such that
+<m:math><m:mrow><m:mfrac><m:mi>a</m:mi><m:mi>k</m:mi></m:mfrac><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>1</m:mn><m:mspace width="0.166667em"/></m:mrow></m:math>. In this case, the intersection of the partial
+equilibrium is in the second quadrant which has no physical meaning. In
+the first quadrant where populations are positive, the equilibrium point
+at <m:math><m:mrow><m:mi>x</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mfrac><m:mi>a</m:mi><m:mi>K</m:mi></m:mfrac><m:mspace width="4pt"/></m:mrow></m:math>, <m:math><m:mrow><m:mi>y</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>0</m:mn></m:mrow></m:math> is the only stable one.
+This was programmed for <m:math><m:mrow><m:mi>a</m:mi><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>K</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math>. The phase plane
+trajectories are shown in Figure W, and the time solution for initial
+values of <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo><m:mn>5</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> in Figure X.</para>
+      <para id="id2265393">For these conditions, the predator dies out and the prey self-limits in
+a manner similar to the logistic.</para>
+      <para id="id2265398">By choosing more complicated interaction functions for the <m:math><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub><m:mo>,</m:mo><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub><m:mo>)</m:mo></m:mrow></m:math>
+and <m:math><m:mrow><m:mi>g</m:mi><m:mo>(</m:mo><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub><m:mo>,</m:mo><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub><m:mo>)</m:mo></m:mrow></m:math>, it is possible to obtain other types of solutions. For
+the simple case with no limiting in <link target-id="id2262462"/>, the partial equilibrium curves
+were vertical and horizontal straight lines and the trajectories were
+closed. With limiting added in <link target-id="id2264190"/>, the curves remained straight, but
+were no longer ecessarily vertical or horizontal, and the solution
+trajectories were no longer closed, but would either spiral or smoothly
+move to an equilibrium point. Although not illustrated here, it is
+possible to use a model of limiting similar to <link target-id=""/> that will cause a
+single stable limit cycle to occur, that all trajectories starting outside
+of it would spiral in to it, and all starting inside of it would spiral
+out to it. This would give a steady-state oscillation as a time function.
+Perhaps this type of model could be used to explain some of the cyclic
+variations that occur in business and economics. Much more work could be
+done on both the mathematics and interpretation of this predator-prey type
+system, but we will move on to others now.
+</para>
+      <list id="element-919" list-type="labeled-item" mark-suffix=".">
+<item><label>E</label> Simple Non-renewable Resource Model</item>
+</list><para id="element-492">Here we assume a simple system consisting of a population <m:math><m:mi>y</m:mi></m:math> that
+depends on, and consumes, a resource that cannot be replaced.
+The equations are somewhat similar to the predator-prey model, but the
+prey could grow and the resource here cannot.
+If <m:math><m:mi>x</m:mi></m:math> is the amount of resource, and it is distributed in such a way
+that the consumption by <m:math><m:mi>y</m:mi></m:math> is modeled by the product <m:math><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow></m:math>, the
+normalized equations are:
+</para><equation id="id2265562">
+        <m:math mode="display">
+          <m:mrow>
+            <m:mover accent="true">
+              <m:mi>x</m:mi>
+              <m:mo>˙</m:mo>
+            </m:mover>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>a</m:mi>
+            <m:mi>x</m:mi>
+            <m:mi>y</m:mi>
+          </m:mrow>
+        </m:math>
+      </equation>
+      
+      <equation id="id2265617"><m:math mode="display">
+          <m:mrow>
+            <m:mover accent="true">
+              <m:mi>y</m:mi>
+              <m:mo>˙</m:mo>
+            </m:mover>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mi>c</m:mi>
+            <m:mi>y</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>+</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>c</m:mi>
+            <m:mi>x</m:mi>
+            <m:mi>y</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2265695">The partial equilibrium curves in the phase plane are
+<figure id="id10648185"><media id="id4689198" alt=""><image src="../../media/troff22.png" mime-type="image/png"/></media></figure></para>
+      <para id="id2265701">
+The phase plane trajectories are shown in Figure Y.
+This uses <m:math><m:mrow><m:mi>a</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mi>c</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>1</m:mn></m:mrow></m:math>.</para>
+      <para id="id2265751">Note that the resource monotonically decreases while the population may or
+may not initially increase, but in any case, it ultimately dies out. An
+interesting result of this model is that there is some resource left after
+the population is gone. This is caused by the assumption that the
+distribution is such that consumption is governed by the product <m:math><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow></m:math>.
+If it is assumed that the resource is easily accessible, a better resource
+model might be</para>
+      <equation id="id2265774"><m:math mode="display">
+          <m:mrow>
+            <m:mover accent="true">
+              <m:mi>x</m:mi>
+              <m:mo>˙</m:mo>
+            </m:mover>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mi>a</m:mi>
+            <m:mi>y</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2265844">The nature of the solutions of this system is left to the reader.</para>
+<!--empty paragraphs get left behind.-->
+      <list id="id2265855" list-type="labeled-item" mark-suffix=".">
+        <item id="uid4"><label>F
+</label>An Arms Race Model
+
+</item>
+      </list>
+      <para id="id2265879">We will now move into rather different systems to see how models might be
+applied. The history of application of dynamic models to problems such as
+national armament is fairly new, but perhaps older than most realize. <link target-id="bid18"/><link target-id="bid16"/></para>
+      
+      
+      
+      <para id="id2265897">A simple linear model is the following</para>
+      <equation id="id2265900">
+        <m:math mode="display">
+          <m:mrow>
+            <m:mover accent="true">
+              <m:mi>x</m:mi>
+              <m:mo>˙</m:mo>
+            </m:mover>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mi>a</m:mi>
+            <m:mi>x</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>+</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>b</m:mi>
+            <m:mi>y</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>+</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>f</m:mi>
+          </m:mrow>
+        </m:math>
+      </equation>
+      
+      <equation id="id2265991"><m:math mode="display">
+          <m:mrow>
+            <m:mover accent="true">
+              <m:mi>y</m:mi>
+              <m:mo>˙</m:mo>
+            </m:mover>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mi>c</m:mi>
+            <m:mi>y</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>+</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>d</m:mi>
+            <m:mi>x</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>+</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>g</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="element-677">where the state variables <m:math><m:mi>x</m:mi></m:math> and <m:math><m:mi>y</m:mi></m:math> are measures of the arms
+level of two nations.
+The coefficients <m:math><m:mi>a</m:mi></m:math> and <m:math><m:mi>c</m:mi></m:math> are measures of confidence or expense
+that cause a decrease in military expenditures; <m:math><m:mi>b</m:mi></m:math> and <m:math><m:mi>d</m:mi></m:math> are
+the effects of the opponent's arms level on ones military build-up.
+The constants <m:math><m:mi>f</m:mi></m:math> and <m:math><m:mi>g</m:mi></m:math> represent the minimum level that would be
+maintained even if the opposition disarmed.</para><para id="id2266083">There are two general cases possible. If the situation is such that
+<m:math><m:mrow><m:mi>a</m:mi><m:mi>c</m:mi></m:mrow></m:math>&gt;<m:math><m:mrow><m:mi>b</m:mi><m:mi>d</m:mi></m:mrow></m:math>, then the partial equilibrium curves look like
+
+<figure id="id6527933"><media id="id3593844" alt=""><image src="../../media/troff23.png" mime-type="image/png"/></media></figure>
+
+
+</para>
+      <para id="element-382">The signs of the derivative show that the singular point is stable. This
+states that the arms race stops at a stable level for this
+case. If, on the other hand, the conditions are such that <m:math><m:mrow><m:mi>b</m:mi><m:mi>d</m:mi></m:mrow></m:math>&gt;<m:math><m:mrow><m:mi>a</m:mi><m:mi>c</m:mi></m:mrow></m:math>,
+the curves look like. <figure id="id5048804"><media id="id9892298" alt=""><image src="../../media/troff24.png" mime-type="image/png"/></media></figure>
+
+
+
+</para><para id="element-186">Here, there is no stable point, and the armament levels of both nations
+increase without limit.
+
+
+
+
+
+</para><para id="element-649">This model is linear so that analytical expressions for the solution
+can be found, and computer simulation is unnecessary.
+On the other hand, the model is too simple to be realistic, and a more reasonable one would be nonlinear.
+Again, while these models can be interesting, they leave out too many
+other state variables to be used for more than gaining insights.</para><list id="element-807" list-type="labeled-item" mark-suffix=".">
+<item><label>G</label>Models of Hostility and Friendliness</item>
+</list><para id="id2266227">While it is certainly easier to model and measure quantitative
+variables such as population, food, or money, it is also possible to apply dynamic modeling techniques to more subjective variables involved
+with attitudes and feelings.
+These variables must be quantified in some way that is obviously going to be somewhat subjective.
+Even though this process is difficult and subject to challenge, it must
+be done if more complete models of social systems are to be developed.
+This becomes apparent when, in trying to chose the state variables for
+a system, it is necessary to know how a group of people feel about
+another variable to predict their actions.
+One accepted example is the practice of assigning a monetary value to the
+<emphasis>good will</emphasis> of a company.</para>
+      <para id="id2266254">As an example, we will consider the dynamics of feelings between two
+populations in terms of their friendliness or hostility.
+<link target-id="bid13"/>
+Let <m:math><m:mi>x</m:mi></m:math> be the measure of friendliness of population <m:math><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub></m:math> toward
+population <m:math><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub></m:math>, and <m:math><m:mi>y</m:mi></m:math> the friendliness of <m:math><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub></m:math> toward <m:math><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub></m:math>.
+Negative friendliness is considered hostility. The equations are</para>
+      <equation id="id2266338">
+        <m:math mode="display">
+          <m:mrow>
+            <m:mover accent="true">
+              <m:mi>x</m:mi>
+              <m:mo>˙</m:mo>
+            </m:mover>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>f</m:mi>
+            <m:mspace width="0.166667em"/>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>x</m:mi>
+              <m:mo>,</m:mo>
+              <m:mspace width="0.166667em"/>
+              <m:mi>y</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <equation id="id2266398">
+        <m:math mode="display">
+          <m:mrow>
+            <m:mover accent="true">
+              <m:mi>y</m:mi>
+              <m:mo>˙</m:mo>
+            </m:mover>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>g</m:mi>
+            <m:mspace width="0.166667em"/>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>x</m:mi>
+              <m:mo>,</m:mo>
+              <m:mspace width="0.166667em"/>
+              <m:mi>y</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>.</m:mo>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2266466">The determination and interpretation of <m:math><m:mi>f</m:mi></m:math> and <m:math><m:mi>g</m:mi></m:math> is a bit more
+difficult here. Recall from Section B the definition of partial
+equilibrium curves. The <m:math><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> curve in the phase plane gives
+the equilibrium values of <m:math><m:mi>x</m:mi></m:math> for a fixed <m:math><m:mi>y</m:mi></m:math>. For this model,
+<m:math><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> gives the degree of friendliness <m:math><m:mi>x</m:mi></m:math> that will be approached
+by <m:math><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub></m:math> for an independently set amount of friendliness <m:math><m:mi>y</m:mi></m:math> of <m:math><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub></m:math>
+toward <m:math><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub></m:math>. Consider the following case:
+<figure id="id3735874"><media id="id3735879" alt=""><image src="../../media/troff25.png" mime-type="image/png"/></media></figure>
+</para><para id="element-684">Here, if <m:math><m:mi>y</m:mi></m:math> is neutral, then <m:math><m:mi>x</m:mi></m:math> become neutral. If <m:math><m:mi>y</m:mi></m:math> is
+friendly, then <m:math><m:mi>x</m:mi></m:math> is friendly. As <m:math><m:mi>y</m:mi></m:math> becomes more friendly, <m:math><m:mi>x</m:mi></m:math>
+increases to a point and then levels off at a maximum amount of friendliness.
+As <m:math><m:mi>y</m:mi></m:math> becomes hostile, <m:math><m:mi>x</m:mi></m:math> responds likewise and finally levels off
+at a maximum amount of hostility.
+</para><para id="element-313">Now consider the <m:math><m:mrow><m:mi>g</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> curve which is the <m:math><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub></m:math> response to
+<m:math><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub></m:math>. This is shown by
+<figure id="id5141103"><media id="id11538927" alt=""><image src="../../media/troff26.png" mime-type="image/png"/></media></figure>
+</para><para id="element-430">Population <m:math><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub></m:math> is naturally more friendly than <m:math><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub></m:math>. It is friendly
+even if <m:math><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub></m:math> is neutral, as is shown by point <m:math><m:mi>A</m:mi></m:math>. Only after <m:math><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub></m:math>
+becomes fairly hostile does <m:math><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub></m:math> begin to return with hostility as
+shown by point <m:math><m:mi>B</m:mi></m:math>.
+
+</para><para id="element-929">Given these relations and considering the signs of the derivatives, it
+is seen that the singular point at <m:math><m:mi>C</m:mi></m:math> is a stable equilibrium point.
+
+</para><para id="element-608">Consider a different set of characteristics where a population would
+initially return a large amount of hostility a hostile opponent, but
+after a certain level, would submit or surrender by having a reactionary
+response to a very hostile situation.
+This might be described by
+<figure id="id13280963"><media id="id11522510" alt=""><image src="../../media/troff27.png" mime-type="image/png"/></media></figure>
+</para><para id="element-593">Another characteristic is to have almost no response up to a certain
+level, then to react suddenly as described by:
+</para><para id="element-241">Many interesting models can be posed and the resulting solutions examined
+in the phase plane. In some cases, the results are insensitive in the
+sense that small changes in the partial equilibrium cause only little
+change in the solutions. Other cases are very sensitive.
+</para><para id="element-293">A very important aspect of this approach to modeling is the dynamic
+description. When the trajectories or time solutions are found, not only
+are the equilibrium points found, but how they are reached is predicted.
+In some cases, the effects of a .... more important than the
+final value. Also, sometimes the time necessary to achieve a certain
+condition is as important as the condition itself.
+</para><list id="element-447" list-type="labeled-item" mark-suffix=".">
+<item><label>H</label> Malthus Revisited</item>
+</list><para id="element-712">Reading, in this day and time, the 1798 essay by T.R. Malthus, one is
+struck by both the insight and the naite of this very influential
+statement.
+<link target-id="bid16"/>
+Malthus saw the possible dire consequences of an increasing population in
+a finite environment. His predictions of doom were based on the
+assumption that the world population increases according to a geometric
+sequence, while the food increases according to an arithmetic sequence.
+Stated in our terms, he assumed population increases exponentially and
+food linearly. The fact that world food production has more or less kept
+up with the population has lead critics to discount Malthus and his
+followers as irrelevant <emphasis>doomsday prophets.</emphasis> In fact, some feel this
+pessimistic view is not irrelevant, it is dangerous. The strong critics,
+known as <emphasis>technological optimists,</emphasis> assume that the factors that
+have prevented Malthus' predictions from coming true so far will continue
+to so do.
+<link target-id="bid14"/>
+In fact, they claim that growth is not the problem, it is the solution.
+Growth has given us the highest material standard of living by our
+abilities of growing faster than our problems.
+</para><para id="element-268">Our purpose in this treatise is not to take sides, but to suggest a
+different way of looking at our situation that will give more
+understanding and insight. Malthus based his prediction on observed and
+assumed growth patterns of population and food. If one looks at the
+underlying models that might support these assumptions, the population
+might come to be modeled by an equation similar to (8). One is
+hard-pressed to explain his assumed food growth, and that has indeed been
+the flaw in his assumptions.
+
+</para><para id="element-223">The <emphasis>technological optimists</emphasis> likewise have implied models to
+obtain their predictions. The costs of continued economic and technical
+growth must be considered in any realistic model. A bit of reflection
+shows that the question is not whether to use a model or not, but to
+determine what kind of model to use and whether it will be examined and
+debated explicitly.
+</para><para id="element-386">Very interesting results have been obtained in the preceding sections on
+applying two-variable models to various systems of interest to us. It is
+a valuable exercise to try to better model world population and food than
+Malthus did. Very soon one discovers (or should discover) that the
+systems are too complicated to be described by any two-state variables.
+Unfortunately, when using higher order models, many of our analytical methods no
+longer work. We lose the powerful tool of the phase plan. Second-order
+systems are useful to gain insight into simple systems with relatively
+simple interactions, but now we will have to rely primarily on computer
+simulation to give solutions of the resulting third and higher order
+models.
+</para>
+    </section>
+  </content>
+
+<bib:file>
+<bib:entry id="bid12">
+      <bib:book>
+<!--required fields-->
+        <bib:author>E. C. Pielou</bib:author>
+        <bib:title>An Introduction to Mathematical Ecology</bib:title>
+        <bib:publisher>Wiley</bib:publisher>
+        <bib:year>1969</bib:year>
+<!--optional fields-->
+        <bib:volume/>
+        <bib:series/>
+        <bib:address>New York</bib:address>
+        <bib:edition/>
+        <bib:month/>
+        <bib:note>pp. 1-75</bib:note>
+      </bib:book>
+    </bib:entry>
+
+
+<bib:entry id="bid13">
+      <bib:book>
+<!--required fields-->
+        <bib:author>K.E. Boulding</bib:author>
+        <bib:title>Conflict and Defense </bib:title>
+        <bib:publisher>Harper and Brothers</bib:publisher>
+        <bib:year>1962</bib:year>
+<!--optional fields-->
+        <bib:volume/>
+        <bib:series/>
+        <bib:address/>
+        <bib:edition/>
+        <bib:month/>
+        <bib:note/>
+      </bib:book>
+    </bib:entry>
+
+<bib:entry id="bid14">
+      <bib:book>
+<!--required fields-->
+        <bib:author>H.S.D. Cole, et. al.</bib:author>
+        <bib:title>Models of Doom- A Critique of the Limits to Growth</bib:title>
+        <bib:publisher>Universe Books</bib:publisher>
+        <bib:year>1973</bib:year>
+<!--optional fields-->
+        <bib:volume/>
+        <bib:series/>
+        <bib:address>New York</bib:address>
+        <bib:edition/>
+        <bib:month/>
+        <bib:note/>
+      </bib:book>
+    </bib:entry>
+<bib:entry id="bid16">
+      <bib:article>
+<!--required fields-->
+        <bib:author>T.R. Malthus, L.F. Richardson</bib:author>
+        <bib:title>Mathematics of Population and Food, and Mathematics of War and Foreign Politics</bib:title>
+        <bib:journal>The World of Mathematics</bib:journal>
+        <bib:year> 1956</bib:year>
+<!--optional fields-->
+        <bib:volume>2</bib:volume>
+        <bib:number/>
+        <bib:pages/>
+        <bib:month/>
+        <bib:note>edited by J.R. Newman, and Simon and Schuster</bib:note>
+      </bib:article>
+    </bib:entry>
+<bib:entry id="bid18">
+      <bib:book>
+<!--required fields-->
+        <bib:author>L.J. Cronbach and P. Suppes</bib:author>
+        <bib:title>Research for Tomorrow’s ????</bib:title>
+        <bib:publisher>Prentice-Hall</bib:publisher>
+        <bib:year>1929</bib:year>
+<!--optional fields-->
+        <bib:volume/>
+        <bib:series/>
+        <bib:address/>
+        <bib:edition/>
+        <bib:month/>
+        <bib:note>pp. 1-75</bib:note>
+      </bib:book>
+    </bib:entry>
+<bib:entry id="bid3">
+      <bib:book>
+<!--required fields-->
+        <bib:author>Charles J. Krebs</bib:author>
+        <bib:title>Ecology</bib:title>
+        <bib:publisher>Harper and Row</bib:publisher>
+        <bib:year>1972</bib:year>
+<!--optional fields-->
+        <bib:volume/>
+        <bib:series/>
+        <bib:address>New York</bib:address>
+        <bib:edition/>
+        <bib:month/>
+        <bib:note/>
+      </bib:book>
+    </bib:entry>
+<bib:entry id="bid7">
+      <bib:book>
+<!--required fields-->
+        <bib:author>R.H. MacArthur and J.H. Connell</bib:author>
+        <bib:title>The Biology of Population</bib:title>
+        <bib:publisher>John Wiley</bib:publisher>
+        <bib:year>1966</bib:year>
+<!--optional fields-->
+        <bib:volume/>
+        <bib:series/>
+        <bib:address>New York</bib:address>
+        <bib:edition/>
+        <bib:month/>
+        <bib:note/>
+      </bib:book>
+    </bib:entry>
+
+
+<bib:entry id="bid8">
+      <bib:book>
+<!--required fields-->
+        <bib:author>W.J. Cunningham</bib:author>
+        <bib:title>Nonlinear Analysis</bib:title>
+        <bib:publisher>McGraw-Hill</bib:publisher>
+        <bib:year>1958</bib:year>
+<!--optional fields-->
+        <bib:volume/>
+        <bib:series/>
+        <bib:address> </bib:address>
+        <bib:edition/>
+        <bib:month/>
+        <bib:note/>
+      </bib:book>
+    </bib:entry>
+
+
+<bib:entry id="bid9">
+      <bib:book>
+<!--required fields-->
+        <bib:author>H.T. Davis</bib:author>
+        <bib:title>Introduction to Nonlinear Differential and Integral Equations</bib:title>
+        <bib:publisher>Dover Publishing</bib:publisher>
+        <bib:year>1962</bib:year>
+<!--optional fields-->
+        <bib:volume/>
+        <bib:series/>
+        <bib:address>New York</bib:address>
+        <bib:edition/>
+        <bib:month/>
+        <bib:note/>
+      </bib:book>
+    </bib:entry>
+
+
+<bib:entry id="bid10">
+      <bib:article>
+<!--required fields-->
+        <bib:author>N.S. Goel, S.C. Maitra, and E.W. Montroll</bib:author>
+        <bib:title>A Review of Modern Physics Monograph</bib:title>
+        <bib:journal>Academic Press</bib:journal>
+        <bib:year> 1971</bib:year>
+<!--optional fields-->
+        <bib:volume>43</bib:volume>
+        <bib:number/>
+        <bib:pages>231-276</bib:pages>
+        <bib:month>April</bib:month>
+        <bib:note>also in Review of Modern Physics</bib:note>
+      </bib:article>
+    </bib:entry>
+</bib:file>
+</document>

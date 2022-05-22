@@ -1,0 +1,1303 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/">
+  <title>Higher Order Model</title>
+  <metadata>
+  <md:content-id>m18166</md:content-id><md:title>Higher Order Model</md:title>
+  <md:abstract/>
+  <md:uuid>ec2e7c63-0e94-4712-a1a5-a242ddffc4e6</md:uuid>
+</metadata>
+
+<content>
+    <section id="cid1">
+      <title>Higher-Order Models</title>
+      <para id="id2253707">Once it becomes necessary to include more than two state variables in a
+model, and if the interactions are nonlinear, the analytical and phase
+plane techniques can no longer be used. This section will consider
+several higher-order models and use digital simulation as the tool for
+analysis. The first example will be a rather logical extension of some of
+our earlier population models.
+
+</para>
+      <list id="element-827" list-type="labeled-item" mark-suffix=".">
+<item><label>A</label>Population Models with Age Specific Birth and Death Rates</item>
+</list><para id="element-907">Even cursory examination of the assumptions behind the population model
+assumed in Section IV show them to be unrealistic. The model</para><equation id="id2253720">
+        <m:math mode="display">
+          <m:mrow>
+            <m:mfrac>
+              <m:mrow>
+                <m:mi>d</m:mi>
+                <m:mi>p</m:mi>
+              </m:mrow>
+              <m:mrow>
+                <m:mi>d</m:mi>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>r</m:mi>
+            <m:mi>p</m:mi>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2253770">assumes <m:math><m:mi>r</m:mi></m:math> to be the difference between the birth rate and death rate,
+and that these rates are not a function of time or population.</para>
+      <para id="id2253787">An improvement on this model would allow different birth and death
+rates to be assigned to members of the population of different ages.
+This means that the population will have to be divided into groups with
+similar rates, and that the number of groups necessary will be the
+number of state variables required. <link target-id="bid12"/> </para>
+      
+      <para id="id2253799">For example, let <m:math><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub></m:math> be the population of people between zero
+and ten years of age, <m:math><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub></m:math> the population of those from eleven to
+twenty, <m:math><m:msub><m:mi>p</m:mi><m:mn>3</m:mn></m:msub></m:math> those from twenty-one to thirty, etc.
+Let <m:math><m:msub><m:mi>b</m:mi><m:mn>1</m:mn></m:msub></m:math> be the average birth rate of <m:math><m:msub><m:mi>p</m:mi><m:mrow><m:mn>1</m:mn><m:mspace width="0.166667em"/></m:mrow></m:msub></m:math>, and <m:math><m:msub><m:mi>b</m:mi><m:mn>2</m:mn></m:msub></m:math> the rate for <m:math><m:msub><m:mi>p</m:mi><m:mrow><m:mn>2</m:mn><m:mspace width="0.166667em"/></m:mrow></m:msub></m:math>, etc., with <m:math><m:msub><m:mi>d</m:mi><m:mn>1</m:mn></m:msub></m:math> being the average
+death rate of <m:math><m:msub><m:mi>p</m:mi><m:mrow><m:mn>1</m:mn><m:mspace width="0.166667em"/></m:mrow></m:msub></m:math>, etc.
+Assume the maximum possible age to be one hundred.
+The equations for this model are given by
+</para>
+      <equation id="id2253956">
+        <m:math mode="display">
+          <m:mrow>
+            <m:mrow>
+              <m:mspace width="4pt"/>
+              <m:msub>
+                <m:mi>p</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mi>n</m:mi>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:mo>+</m:mo>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:mn>1</m:mn>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mo>=</m:mo>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:msub>
+                <m:mi>b</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mspace width="4pt"/>
+              <m:msub>
+                <m:mi>p</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mi>n</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mo>+</m:mo>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:msub>
+                <m:mi>b</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:mspace width="4pt"/>
+              <m:msub>
+                <m:mi>p</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mi>n</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mo>+</m:mo>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mo>.</m:mo>
+              <m:mo>.</m:mo>
+              <m:mo>.</m:mo>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:msub>
+                <m:mi>b</m:mi>
+                <m:mn>10</m:mn>
+              </m:msub>
+              <m:mspace width="4pt"/>
+              <m:msub>
+                <m:mi>p</m:mi>
+                <m:mn>10</m:mn>
+              </m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mi>n</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mspace width="4pt"/>
+              <m:msub>
+                <m:mi>p</m:mi>
+                <m:mo>(</m:mo>
+              </m:msub>
+              <m:mi>n</m:mi>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mo>+</m:mo>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mn>1</m:mn>
+              <m:mrow>
+                <m:mo>)</m:mo>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:mo>=</m:mo>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mn>1</m:mn>
+                  <m:mspace width="4pt"/>
+                  <m:mspace width="4pt"/>
+                  <m:mo>-</m:mo>
+                  <m:mspace width="4pt"/>
+                  <m:mspace width="4pt"/>
+                  <m:msub>
+                    <m:mi>d</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:msub>
+                  <m:mi>p</m:mi>
+                  <m:mn>1</m:mn>
+                </m:msub>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mi>n</m:mi>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mspace width="4pt"/>
+                <m:msub>
+                  <m:mi>p</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msub>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mi>n</m:mi>
+                  <m:mspace width="4pt"/>
+                  <m:mspace width="4pt"/>
+                  <m:mo>+</m:mo>
+                  <m:mspace width="4pt"/>
+                  <m:mspace width="4pt"/>
+                  <m:mn>1</m:mn>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:mo>=</m:mo>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mn>1</m:mn>
+                  <m:mspace width="4pt"/>
+                  <m:mspace width="4pt"/>
+                  <m:mo>-</m:mo>
+                  <m:mspace width="4pt"/>
+                  <m:mspace width="4pt"/>
+                  <m:msub>
+                    <m:mi>d</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msub>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:msub>
+                  <m:mi>p</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msub>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mi>n</m:mi>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:mo>⋯</m:mo>
+                <m:msub>
+                  <m:mi>p</m:mi>
+                  <m:mn>10</m:mn>
+                </m:msub>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mi>n</m:mi>
+                  <m:mspace width="4pt"/>
+                  <m:mspace width="4pt"/>
+                  <m:mo>+</m:mo>
+                  <m:mspace width="4pt"/>
+                  <m:mspace width="4pt"/>
+                  <m:mn>1</m:mn>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:mo>=</m:mo>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:mo>(</m:mo>
+              </m:mrow>
+              <m:mn>1</m:mn>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mo>-</m:mo>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:msub>
+                <m:mi>d</m:mi>
+                <m:mrow>
+                  <m:mn>9</m:mn>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:msub>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:msub>
+                <m:mi>p</m:mi>
+                <m:mn>9</m:mn>
+              </m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mi>n</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mo>,</m:mo>
+            </m:mrow>
+            <m:mspace width="2.em"/>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mn>66</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2253059">where the time interval represented by each successive value of <m:math><m:mi>n</m:mi></m:math> is
+the same as that for the age span for each population group, i.e., ten
+years.
+Likewise, the birth and death rate are numbers per ten-year period.
+The equations in <link target-id="id2253956"/> can be described by a flow graph, illustrated below for only three sections.</para>
+      <figure id="id1171611410308"><media id="id4113533" alt=""><image src="../../media/troff28.png" mime-type="image/png"/></media></figure>
+      <para id="id2254806">These equations can be easily programmed and solved on a computer, but
+because they are linear, there are some interesting properties that can
+be worked out analytically.
+They are best seen by writing <link target-id="is2253956"/> as a matrix equation.
+</para>
+      <equation id="id2254885">
+        <m:math mode="display">
+          <m:mrow>
+            <m:mfenced separators="" open="[" close="]">
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>p</m:mi>
+                  <m:mn>1</m:mn>
+                </m:msub>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mi>n</m:mi>
+                  <m:mspace width="4pt"/>
+                  <m:mspace width="0.166667em"/>
+                  <m:mo>+</m:mo>
+                  <m:mspace width="0.166667em"/>
+                  <m:mspace width="4pt"/>
+                  <m:mn>1</m:mn>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:msub>
+                  <m:mi>p</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msub>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mi>n</m:mi>
+                  <m:mspace width="4pt"/>
+                  <m:mspace width="0.166667em"/>
+                  <m:mo>+</m:mo>
+                  <m:mspace width="0.166667em"/>
+                  <m:mspace width="4pt"/>
+                  <m:mn>1</m:mn>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:msub>
+                  <m:mi>p</m:mi>
+                  <m:mn>3</m:mn>
+                </m:msub>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mi>n</m:mi>
+                  <m:mspace width="4pt"/>
+                  <m:mspace width="0.166667em"/>
+                  <m:mo>+</m:mo>
+                  <m:mspace width="0.166667em"/>
+                  <m:mspace width="4pt"/>
+                  <m:mn>1</m:mn>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:msub>
+                  <m:mi>p</m:mi>
+                  <m:mn>4</m:mn>
+                </m:msub>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mi>n</m:mi>
+                  <m:mspace width="4pt"/>
+                  <m:mspace width="0.166667em"/>
+                  <m:mo>+</m:mo>
+                  <m:mspace width="0.166667em"/>
+                  <m:mspace width="4pt"/>
+                  <m:mn>1</m:mn>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mrow>
+                  <m:mn>3</m:mn>
+                  <m:mi>d</m:mi>
+                  <m:mi>o</m:mi>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+                <m:msub>
+                  <m:mi>p</m:mi>
+                  <m:mn>10</m:mn>
+                </m:msub>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mi>n</m:mi>
+                  <m:mspace width="4pt"/>
+                  <m:mo>+</m:mo>
+                  <m:mspace width="4pt"/>
+                  <m:mn>1</m:mn>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mrow>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+            </m:mfenced>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mfenced separators="" open="[" close="]">
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mrow>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>b</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mspace width="4pt"/>
+                    <m:mo>-</m:mo>
+                    <m:mspace width="4pt"/>
+                    <m:msub>
+                      <m:mi>d</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msub>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mspace width="4pt"/>
+                  <m:mspace width="4pt"/>
+                  <m:mn>0</m:mn>
+                  <m:mn>0</m:mn>
+                  <m:mn>3</m:mn>
+                  <m:mi>d</m:mi>
+                  <m:mi>o</m:mi>
+                  <m:mi>t</m:mi>
+                  <m:mn>0</m:mn>
+                </m:mrow>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>b</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msub>
+                  <m:mn>0</m:mn>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mspace width="4pt"/>
+                    <m:mo>-</m:mo>
+                    <m:mspace width="4pt"/>
+                    <m:msub>
+                      <m:mi>d</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msub>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mspace width="4pt"/>
+                  <m:mspace width="4pt"/>
+                  <m:mn>0</m:mn>
+                  <m:mspace width="4pt"/>
+                  <m:mn>0</m:mn>
+                </m:mrow>
+                <m:mrow>
+                  <m:mo>.</m:mo>
+                  <m:mo>.</m:mo>
+                  <m:mo>.</m:mo>
+                  <m:mo>.</m:mo>
+                  <m:mo>.</m:mo>
+                  <m:mo>.</m:mo>
+                  <m:mspace width="4pt"/>
+                  <m:mspace width="4pt"/>
+                  <m:mspace width="4pt"/>
+                  <m:mo>.</m:mo>
+                  <m:mo>.</m:mo>
+                  <m:mo>.</m:mo>
+                </m:mrow>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>b</m:mi>
+                    <m:mn>9</m:mn>
+                  </m:msub>
+                  <m:mn>0</m:mn>
+                  <m:mspace width="4pt"/>
+                  <m:mspace width="4pt"/>
+                  <m:mspace width="4pt"/>
+                  <m:mi>a</m:mi>
+                  <m:mi>b</m:mi>
+                  <m:mi>o</m:mi>
+                  <m:mi>v</m:mi>
+                  <m:mi>e</m:mi>
+                  <m:mspace width="4pt"/>
+                  <m:mspace width="4pt"/>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mspace width="4pt"/>
+                    <m:mo>-</m:mo>
+                    <m:mspace width="4pt"/>
+                    <m:msub>
+                      <m:mi>d</m:mi>
+                      <m:mn>9</m:mn>
+                    </m:msub>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mspace width="4pt"/>
+                  <m:mspace width="4pt"/>
+                </m:mrow>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>b</m:mi>
+                    <m:mn>10</m:mn>
+                  </m:msub>
+                  <m:mn>0</m:mn>
+                  <m:mspace width="4pt"/>
+                  <m:mn>3</m:mn>
+                  <m:mi>d</m:mi>
+                  <m:mi>o</m:mi>
+                  <m:mi>t</m:mi>
+                  <m:mspace width="4pt"/>
+                  <m:mn>0</m:mn>
+                </m:mrow>
+              </m:mrow>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+            </m:mfenced>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mfenced separators="" open="[" close="]">
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>p</m:mi>
+                  <m:mn>1</m:mn>
+                </m:msub>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mi>n</m:mi>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:msub>
+                  <m:mi>p</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msub>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mi>n</m:mi>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:msub>
+                  <m:mi>p</m:mi>
+                  <m:mn>3</m:mn>
+                </m:msub>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mi>n</m:mi>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mrow>
+                  <m:mn>3</m:mn>
+                  <m:mi>d</m:mi>
+                  <m:mi>o</m:mi>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+                <m:mspace width="4pt"/>
+                <m:msub>
+                  <m:mi>p</m:mi>
+                  <m:mn>10</m:mn>
+                </m:msub>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mi>n</m:mi>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mrow>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+            </m:mfenced>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2255457">In compact vector notation, this becomes</para>
+      <equation id="id2255462"><m:math mode="display">
+          <m:mrow>
+            <m:munder>
+              <m:mi>P</m:mi>
+              <m:mo>_̲</m:mo>
+            </m:munder>
+            <m:mspace width="0.166667em"/>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>n</m:mi>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mo>+</m:mo>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mn>1</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>A</m:mi>
+            <m:mspace width="4pt"/>
+            <m:munder>
+              <m:mi>P</m:mi>
+              <m:mo>̲_</m:mo>
+            </m:munder>
+            <m:mspace width="0.166667em"/>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>n</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2255570">&gt;From this expression, it is easily seen that the population
+distribution after <m:math><m:mi>n</m:mi></m:math> times ten years from some initial population
+distribution <m:math><m:mrow><m:mi>P</m:mi><m:mi>u</m:mi><m:mi>n</m:mi><m:mi>d</m:mi><m:mi>e</m:mi><m:mi>r</m:mi><m:mspace width="0.166667em"/><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:math> is given by</para>
+      <equation id="id2255617"><m:math mode="display">
+          <m:mrow>
+            <m:munder>
+              <m:mi>P</m:mi>
+              <m:mo>_̲</m:mo>
+            </m:munder>
+            <m:mspace width="0.166667em"/>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>n</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:msup>
+              <m:mi>A</m:mi>
+              <m:mi>n</m:mi>
+            </m:msup>
+            <m:mspace width="4pt"/>
+            <m:munder>
+              <m:mi>P</m:mi>
+              <m:mo>̲_</m:mo>
+            </m:munder>
+            <m:mspace width="0.166667em"/>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mn>0</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2255714">There are several interesting observations for the readers with a
+knowledge of matrix theory.
+After several steps of <m:math><m:mrow><m:mi>n</m:mi><m:mspace width="0.166667em"/></m:mrow></m:math>, the age distribution will assume a form
+given by the eigenvector of the largest eigenvalue of <m:math><m:mrow><m:mi>A</m:mi><m:mspace width="4pt"/></m:mrow></m:math>.</para>
+      <para id="id2255748">After several steps, the age distribution will stop changing and this
+eigenvector is called the
+<emphasis>stable age distribution,</emphasis>
+and this largest eigenvalue is the stable growth rate if the eigenvalue
+is greater than one
+(decay rate if is is less than one).
+The problem is a bit more complicated if the eigenvalues are complex
+(where oscillations occur).</para>
+      <para id="id2255762">It is possible to modify the equations of <link target-id="id2253956"/> to allow for shorter <m:math><m:mi>T</m:mi></m:math>
+in Euler's method than the span of ages in a population group, and to
+allow different spans for different groups. Let <m:math><m:mi>T</m:mi></m:math> be the time
+interval between each calculation of new levels. Let <m:math><m:msub><m:mi>S</m:mi><m:mi>i</m:mi></m:msub></m:math> be the span
+of ages for the group <m:math><m:msub><m:mi>p</m:mi><m:mrow><m:mi>i</m:mi><m:mspace width="0.166667em"/></m:mrow></m:msub></m:math>. Consider the population group
+<m:math><m:msub><m:mi>p</m:mi><m:mrow><m:mn>2</m:mn><m:mspace width="0.166667em"/></m:mrow></m:msub></m:math>. During one time interval <m:math><m:mrow><m:mi>T</m:mi><m:mspace width="0.166667em"/></m:mrow></m:math>, the number that dies is
+<m:math><m:mrow><m:msub><m:mi>d</m:mi><m:mn>2</m:mn></m:msub><m:mspace width="4pt"/><m:msub><m:mi>p</m:mi><m:mrow><m:mn>2</m:mn><m:mspace width="0.166667em"/></m:mrow></m:msub></m:mrow></m:math>, the fraction that advances to the next group is
+<m:math><m:mfenced separators="" open="(" close=")"><m:mspace width="4pt"/><m:mfrac><m:mi>T</m:mi><m:msub><m:mi>S</m:mi><m:mn>2</m:mn></m:msub></m:mfrac><m:mspace width="4pt"/></m:mfenced></m:math> times those that do not die <m:math><m:mrow><m:mfenced separators="" open="(" close=")"><m:mspace width="4pt"/><m:mn>1</m:mn><m:mspace width="4pt"/><m:mspace width="0.166667em"/><m:mo>-</m:mo><m:mspace width="0.166667em"/><m:mspace width="4pt"/><m:msub><m:mi>d</m:mi><m:mn>2</m:mn></m:msub><m:mspace width="4pt"/></m:mfenced><m:mspace width="4pt"/><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub><m:mspace width="4pt"/></m:mrow></m:math>, and the rest <m:math><m:mrow><m:mfenced separators="" open="(" close=")"><m:mspace width="4pt"/><m:mn>1</m:mn><m:mspace width="4pt"/><m:mspace width="0.166667em"/><m:mo>-</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mfrac><m:mi>T</m:mi><m:msub><m:mi>S</m:mi><m:mn>2</m:mn></m:msub></m:mfrac><m:mspace width="4pt"/></m:mfenced><m:mspace width="4pt"/><m:mfenced separators="" open="(" close=")"><m:mspace width="4pt"/><m:mn>1</m:mn><m:mspace width="4pt"/><m:mspace width="0.166667em"/><m:mo>-</m:mo><m:mspace width="0.166667em"/><m:mspace width="4pt"/><m:msub><m:mi>d</m:mi><m:mn>2</m:mn></m:msub></m:mfenced><m:mspace width="4pt"/><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:math> stay in the group.
+The equations become</para>
+      
+      <equation id="element-975"><m:math>
+<m:msub>
+<m:mi>P</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mo>(</m:mo>
+<m:mi>n</m:mi>
+<m:mo>+</m:mo>
+<m:mn>1</m:mn>
+<m:mo>)</m:mo>
+<m:mo>=</m:mo>
+<m:msub>
+<m:mi>b</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:msub>
+<m:mi>p</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>(</m:mo>
+<m:mi>n</m:mi>
+<m:mo>)</m:mo>
+<m:mo>+</m:mo>
+
+<m:msub>
+<m:mi>b</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+<m:msub>
+<m:mi>p</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mo>(</m:mo>
+<m:mi>n</m:mi>
+<m:mo>)</m:mo>
+<m:mo>+</m:mo>
+<m:mi>...</m:mi>
+</m:math></equation><equation id="element-956"><m:math>
+<m:msub>
+<m:mi>P</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mo>(</m:mo>
+<m:mi>n</m:mi>
+<m:mo>+</m:mo>
+<m:mn>1</m:mn>
+<m:mo>)</m:mo>
+<m:mo>=</m:mo>
+<m:mo>(</m:mo>
+<m:mfrac>
+<m:mrow>
+<m:mi>T</m:mi>
+</m:mrow>
+<m:mrow>
+<m:msub>
+<m:mi>S</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+</m:mfrac>
+<m:mo>)</m:mo>
+<m:mo>(</m:mo>
+<m:mn>1</m:mn>
+<m:mo>-</m:mo>
+<m:msub>
+<m:mi>d</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>)</m:mo>
+<m:msub>
+<m:mi>P</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>(</m:mo>
+<m:mi>n</m:mi>
+<m:mo>)</m:mo>
+<m:mo>+</m:mo>
+<m:mo>(</m:mo>
+<m:mn>1</m:mn>
+<m:mo>-</m:mo>
+<m:msub>
+<m:mi>d</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mo>)</m:mo>
+<m:msub>
+<m:mi>P</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mo>(</m:mo>
+<m:mi>n</m:mi>
+<m:mo>)</m:mo>
+</m:math></equation><equation id="element-418"><m:math>
+<m:msub>
+<m:mi>P</m:mi>
+<m:mi>M</m:mi>
+</m:msub>
+<m:mo>(</m:mo>
+<m:mi>n</m:mi>
+<m:mo>+</m:mo>
+<m:mi>1</m:mi>
+<m:mo>)</m:mo>
+<m:mo>=</m:mo>
+<m:mo>(</m:mo>
+<m:mfrac>
+<m:mrow>
+<m:mi>T</m:mi>
+</m:mrow>
+<m:mrow>
+<m:msub>
+<m:mi>S</m:mi>
+<m:mrow>
+<m:mi>M</m:mi>
+<m:mo>-</m:mo>
+<m:mn>1</m:mn>
+</m:mrow>
+</m:msub>
+</m:mrow>
+</m:mfrac>
+<m:mo>)</m:mo>
+<m:mo>(</m:mo>
+<m:mn>1</m:mn>
+<m:mo>-</m:mo>
+<m:msub>
+<m:mi>d</m:mi>
+<m:mrow>
+<m:mi>M</m:mi>
+<m:mo>-</m:mo>
+<m:mn>1</m:mn>
+</m:mrow>
+</m:msub>
+<m:mo>)</m:mo>
+<m:msub>
+<m:mi>P</m:mi>
+<m:mrow>
+<m:mi>M</m:mi>
+<m:mo>-</m:mo>
+<m:mn>1</m:mn>
+</m:mrow>
+</m:msub>
+<m:mo>(</m:mo>
+<m:mi>n</m:mi>
+<m:mo>)</m:mo>
+<m:mo>+</m:mo>
+<m:mo>(</m:mo>
+<m:mfrac>
+<m:mrow>
+<m:mn>1</m:mn>
+<m:mo>-</m:mo>
+<m:mi>T</m:mi>
+</m:mrow>
+<m:mrow>
+<m:msub>
+<m:mi>S</m:mi>
+<m:mi>M</m:mi>
+</m:msub>
+</m:mrow>
+</m:mfrac>
+<m:mo>)</m:mo>
+<m:mo>(</m:mo>
+<m:mn>1</m:mn>
+<m:mo>-</m:mo>
+<m:msub>
+<m:mi>d</m:mi>
+<m:mi>M</m:mi>
+</m:msub>
+<m:mo>)</m:mo>
+<m:msub>
+<m:mi>P</m:mi>
+<m:mi>M</m:mi>
+</m:msub>
+<m:mo>(</m:mo>
+<m:mi>n</m:mi>
+<m:mo>)</m:mo>
+</m:math></equation><para id="id2256077">The birth rates <m:math><m:msub><m:mi>b</m:mi><m:mi>i</m:mi></m:msub></m:math> are the number of births per initial value
+of population in a group <m:math><m:msub><m:mi>p</m:mi><m:mi>i</m:mi></m:msub></m:math> per time interval <m:math><m:mrow><m:mi>T</m:mi><m:mspace width="0.166667em"/></m:mrow></m:math>.
+The death rate is likewise per time interval <m:math><m:mrow><m:mi>T</m:mi><m:mspace width="0.166667em"/></m:mrow></m:math>.</para>
+      <para id="id2256137">This is a rather general formulation that allows non-equal age grouping
+and short time interval without requiring a high order. The system can be
+posed in matrix form as before. The main limitation on this approach is
+that it is linear. In general, the various birth and death rates will
+depend on crowding and other environmental and social factors that are
+assumed constant here. Even so, insight can be gained into population
+growth by experiments on these simple linear models.</para>
+<!--empty paragraphs get left behind.-->
+      
+<!--empty paragraphs get left behind.-->
+      <list id="element-518" list-type="labeled-item" mark-suffix=".">
+<item><label>B</label> A Model of the World
+</item>
+</list><para id="id2256163">One of the most interesting and controversial applications of dynamic
+modeling is the work of J. Forrester at Massachusetts Institute of
+Technology on a simulation of the world. In 1970 at the request of an
+international group called the Club of Rome, Forrester developed a
+fifth-order model of the work using what he calls "system dynamics,"
+methods that had previously only been applied to industrial and urban
+systems. The preliminary results were published <link target-id="bid1"/> in 1971, and further work done by his colleague Dennis Meadows was published <link target-id="bid2"/> in
+1972. The response to this work was incredible. There has been a flood of
+articles in newspapers, popular magazines, and scholarly journals –
+some in praise and others in condemnation. Most have been superficial and
+emotional. There is, however, one interesting serious response published
+by a group in England <link target-id="bid14"/> in 1973.</para>
+      
+      
+      
+      
+      
+      
+      <para id="id2256206">The state variables chosen by Forrester are:</para>
+      
+      
+      
+      
+      
+      <table id="id2256243" summary="">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<m:math>
+<m:mi>N</m:mi>
+</m:math>
+</entry>
+<entry>population</entry>
+</row>
+            <row>
+              <entry>
+                <m:math>
+                  <m:mi>C</m:mi>
+                </m:math>
+              </entry>
+              <entry>capital</entry>
+            </row>
+            <row>
+              <entry>
+                <m:math>
+                  <m:mi>A</m:mi>
+                </m:math>
+              </entry>
+              <entry>agriculture</entry>
+            </row>
+            <row>
+              <entry>
+                <m:math>
+                  <m:mi>P</m:mi>
+                </m:math>
+              </entry>
+              <entry>pollution</entry>
+            </row>
+            <row>
+              <entry>
+                <m:math>
+                  <m:mi>R</m:mi>
+                </m:math>
+              </entry>
+              <entry>non-renewable resources</entry>
+            </row>
+          </tbody>
+        
+</tgroup>
+</table>
+<!--empty paragraphs get left behind.-->
+      <para id="id2256324">The model then assumed the form</para>
+      <equation id="id2256328"><m:math mode="display">
+          <m:mrow>
+            <m:mtable>
+              <m:mtr>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mover accent="true">
+                      <m:mi>N</m:mi>
+                      <m:mo>˙</m:mo>
+                    </m:mover>
+                    <m:mspace width="4pt"/>
+                    <m:mspace width="4pt"/>
+                    <m:mspace width="4pt"/>
+                    <m:mo>=</m:mo>
+                    <m:mspace width="4pt"/>
+                    <m:mspace width="4pt"/>
+                    <m:mspace width="4pt"/>
+                    <m:msub>
+                      <m:mi>f</m:mi>
+                      <m:mrow>
+                        <m:mn>1</m:mn>
+                        <m:mspace width="0.166667em"/>
+                        <m:mo>(</m:mo>
+                      </m:mrow>
+                    </m:msub>
+                    <m:mrow>
+                      <m:mspace width="4pt"/>
+                      <m:mi>N</m:mi>
+                      <m:mo>,</m:mo>
+                      <m:mspace width="4pt"/>
+                      <m:mi>C</m:mi>
+                      <m:mo>,</m:mo>
+                      <m:mspace width="4pt"/>
+                      <m:mi>A</m:mi>
+                      <m:mo>,</m:mo>
+                      <m:mspace width="4pt"/>
+                      <m:mi>P</m:mi>
+                      <m:mo>,</m:mo>
+                      <m:mspace width="4pt"/>
+                      <m:mi>R</m:mi>
+                      <m:mspace width="4pt"/>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mover accent="true">
+                      <m:mi>C</m:mi>
+                      <m:mo>˙</m:mo>
+                    </m:mover>
+                    <m:mspace width="4pt"/>
+                    <m:mspace width="4pt"/>
+                    <m:mspace width="4pt"/>
+                    <m:mo>=</m:mo>
+                    <m:mspace width="4pt"/>
+                    <m:mspace width="4pt"/>
+                    <m:mspace width="4pt"/>
+                    <m:msub>
+                      <m:mi>f</m:mi>
+                      <m:mrow>
+                        <m:mn>2</m:mn>
+                        <m:mspace width="0.166667em"/>
+                        <m:mo>(</m:mo>
+                      </m:mrow>
+                    </m:msub>
+                    <m:mrow>
+                      <m:mspace width="4pt"/>
+                      <m:mi>N</m:mi>
+                      <m:mo>,</m:mo>
+                      <m:mspace width="4pt"/>
+                      <m:mi>C</m:mi>
+                      <m:mo>,</m:mo>
+                      <m:mspace width="4pt"/>
+                      <m:mi>A</m:mi>
+                      <m:mo>,</m:mo>
+                      <m:mspace width="4pt"/>
+                      <m:mi>P</m:mi>
+                      <m:mo>,</m:mo>
+                      <m:mspace width="4pt"/>
+                      <m:mi>R</m:mi>
+                      <m:mspace width="4pt"/>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mover accent="true">
+                      <m:mi>A</m:mi>
+                      <m:mo>˙</m:mo>
+                    </m:mover>
+                    <m:mspace width="4pt"/>
+                    <m:mspace width="4pt"/>
+                    <m:mspace width="4pt"/>
+                    <m:mo>=</m:mo>
+                    <m:mspace width="4pt"/>
+                    <m:mspace width="4pt"/>
+                    <m:mspace width="4pt"/>
+                    <m:msub>
+                      <m:mi>f</m:mi>
+                      <m:mrow>
+                        <m:mn>3</m:mn>
+                        <m:mspace width="0.166667em"/>
+                        <m:mo>(</m:mo>
+                      </m:mrow>
+                    </m:msub>
+                    <m:mrow>
+                      <m:mspace width="4pt"/>
+                      <m:mi>N</m:mi>
+                      <m:mo>,</m:mo>
+                      <m:mspace width="4pt"/>
+                      <m:mi>C</m:mi>
+                      <m:mo>,</m:mo>
+                      <m:mspace width="4pt"/>
+                      <m:mi>A</m:mi>
+                      <m:mo>,</m:mo>
+                      <m:mspace width="4pt"/>
+                      <m:mi>P</m:mi>
+                      <m:mo>,</m:mo>
+                      <m:mspace width="4pt"/>
+                      <m:mi>R</m:mi>
+                      <m:mspace width="4pt"/>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mover accent="true">
+                      <m:mi>P</m:mi>
+                      <m:mo>˙</m:mo>
+                    </m:mover>
+                    <m:mspace width="4pt"/>
+                    <m:mspace width="4pt"/>
+                    <m:mspace width="4pt"/>
+                    <m:mo>=</m:mo>
+                    <m:mspace width="4pt"/>
+                    <m:mspace width="4pt"/>
+                    <m:mspace width="4pt"/>
+                    <m:msub>
+                      <m:mi>f</m:mi>
+                      <m:mrow>
+                        <m:mn>4</m:mn>
+                        <m:mspace width="0.166667em"/>
+                        <m:mo>(</m:mo>
+                      </m:mrow>
+                    </m:msub>
+                    <m:mrow>
+                      <m:mspace width="4pt"/>
+                      <m:mi>N</m:mi>
+                      <m:mo>,</m:mo>
+                      <m:mspace width="4pt"/>
+                      <m:mi>C</m:mi>
+                      <m:mo>,</m:mo>
+                      <m:mspace width="4pt"/>
+                      <m:mi>A</m:mi>
+                      <m:mo>,</m:mo>
+                      <m:mspace width="4pt"/>
+                      <m:mi>P</m:mi>
+                      <m:mo>,</m:mo>
+                      <m:mspace width="4pt"/>
+                      <m:mi>R</m:mi>
+                      <m:mspace width="4pt"/>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mover accent="true">
+                      <m:mi>R</m:mi>
+                      <m:mo>˙</m:mo>
+                    </m:mover>
+                    <m:mspace width="4pt"/>
+                    <m:mspace width="4pt"/>
+                    <m:mspace width="4pt"/>
+                    <m:mo>=</m:mo>
+                    <m:mspace width="4pt"/>
+                    <m:mspace width="4pt"/>
+                    <m:mspace width="4pt"/>
+                    <m:msub>
+                      <m:mi>f</m:mi>
+                      <m:mrow>
+                        <m:mn>5</m:mn>
+                        <m:mspace width="0.166667em"/>
+                        <m:mo>(</m:mo>
+                      </m:mrow>
+                    </m:msub>
+                    <m:mrow>
+                      <m:mspace width="4pt"/>
+                      <m:mi>N</m:mi>
+                      <m:mo>,</m:mo>
+                      <m:mspace width="4pt"/>
+                      <m:mi>C</m:mi>
+                      <m:mo>,</m:mo>
+                      <m:mspace width="4pt"/>
+                      <m:mi>A</m:mi>
+                      <m:mo>,</m:mo>
+                      <m:mspace width="4pt"/>
+                      <m:mi>P</m:mi>
+                      <m:mo>,</m:mo>
+                      <m:mspace width="4pt"/>
+                      <m:mi>R</m:mi>
+                      <m:mspace width="4pt"/>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+            <m:mspace width="2.em"/>
+      
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2256795">In one sense, this work is a logical extension of the dynamic modeling
+discussed in the earlier sections of this paper, and Forrester's formalism
+is nothing more than using Euler's method to solve simultaneous
+differential equations. In another sense, his bold use of these methods
+represents a distinct departure from the specialized models that the
+demographer, economist, etc. have used in their separate disciplines.</para>
+      <para id="id2256807">There are several features of Forrester's approach that should be
+understood. The functions <m:math><m:msub><m:mi>f</m:mi><m:mrow><m:mn>1</m:mn><m:mspace width="0.166667em"/></m:mrow></m:msub></m:math>, <m:math><m:msub><m:mi>f</m:mi><m:mrow><m:mn>2</m:mn><m:mspace width="0.166667em"/></m:mrow></m:msub></m:math>, etc. are developed in
+a complicated way using the theories and empirical results of specialists
+in those areas. This generally means that there are numerous intermediate
+variables defined and used, both for insight and because the data occurs
+that way. One should not confuse these with the state variables, however.
+Forrester also uses tables rather than functions to implement the <m:math><m:msub><m:mi>f</m:mi><m:mi>i</m:mi></m:msub></m:math>
+in the simulation. These are usually easier to handle by
+non-mathematicians, and again in the form that empirical relations are
+often known.</para><para id="element-847">A version of the world model has been programmed in APL on an IBM 370 at Rice. The details of this program and instructions on its use are included in the appendix. Examples of the results of the model are given in <link target-id="bid1"/> and <link target-id="bid2"/> and a criticism in <link target-id="bid14"/>.</para>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+<!--empty paragraphs get left behind.-->
+    </section>
+  </content>
+
+<bib:file>
+<bib:entry id="bid1">
+      <bib:book>
+<!--required fields-->
+        <bib:author>J.W. Forrester</bib:author>
+        <bib:title>World Dynamics</bib:title>
+        <bib:publisher>Wright-Allen Press</bib:publisher>
+        <bib:year>1971</bib:year>
+<!--optional fields-->
+        <bib:volume/>
+        <bib:series/>
+        <bib:address>Cambridge</bib:address>
+        <bib:edition/>
+        <bib:month/>
+        <bib:note/>
+      </bib:book>
+    </bib:entry>
+
+
+<bib:entry id="bid2">
+      <bib:book>
+<!--required fields-->
+        <bib:author>D.L. Meadows, et al</bib:author>
+        <bib:title>The Limits to Growth</bib:title>
+        <bib:publisher>Universe Books</bib:publisher>
+        <bib:year>1972</bib:year>
+<!--optional fields-->
+        <bib:volume/>
+        <bib:series/>
+        <bib:address>New York</bib:address>
+        <bib:edition/>
+        <bib:month/>
+        <bib:note/>
+      </bib:book>
+    </bib:entry>
+<bib:entry id="bid14">
+      <bib:book>
+<!--required fields-->
+        <bib:author>H.S.D. Cole, et. al.</bib:author>
+        <bib:title>Models of Doom- A Critique of the Limits to Growth</bib:title>
+        <bib:publisher>Universe Books</bib:publisher>
+        <bib:year>1973</bib:year>
+<!--optional fields-->
+        <bib:volume/>
+        <bib:series/>
+        <bib:address>New York</bib:address>
+        <bib:edition/>
+        <bib:month/>
+        <bib:note/>
+      </bib:book>
+    </bib:entry>
+<bib:entry id="bid16">
+      <bib:article>
+<!--required fields-->
+        <bib:author>T.R. Malthus, L.F. Richardson</bib:author>
+        <bib:title>Mathematics of Population and Food, and Mathematics of War and Foreign Politics</bib:title>
+        <bib:journal>The World of Mathematics</bib:journal>
+        <bib:year> 1956</bib:year>
+<!--optional fields-->
+        <bib:volume>2</bib:volume>
+        <bib:number/>
+        <bib:pages/>
+        <bib:month/>
+        <bib:note>edited by J.R. Newman, and Simon and Schuster</bib:note>
+      </bib:article>
+    </bib:entry>
+</bib:file>
+</document>

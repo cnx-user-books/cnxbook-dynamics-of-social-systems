@@ -1,0 +1,1510 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/">
+  <title>Exponential Growth</title>
+  <metadata>
+  <md:content-id>m17672</md:content-id><md:title>Exponential Growth</md:title>
+  <md:abstract/>
+  <md:uuid>b1a2b0c5-2a3c-4395-be09-db0f20b93088</md:uuid>
+</metadata>
+
+<content>
+    <para id="id2253696">Since it is the dynamic nature of a system that we want to model and
+understand, the simplest form will be considered. This will involve one
+state variable and will give rise to so-called "exponential" growth. </para>
+
+    <section id="id2253711"><title> Two Examples
+</title>
+    
+    <para id="id2253725">First consider a mathematical model of a bank savings account. Assume
+that there is an initial deposit but after that, no deposits or
+withdrawals. The bank has an interest rate <m:math><m:msub><m:mi>r</m:mi><m:mi>i</m:mi></m:msub></m:math> and service charge
+rate <m:math><m:msub><m:mi>r</m:mi><m:mi>s</m:mi></m:msub></m:math> that are used to calculate the interest and service charge
+once each time period. If the net income (interest less service charge)
+is re-invested each time, and each time period is denoted by the integer
+<m:math><m:mrow><m:mi>n</m:mi><m:mspace width="0.166667em"/></m:mrow></m:math>, the future amount of money could be calculated from</para>
+    
+    <equation id="id2253786"><m:math mode="display">
+        <m:mrow>
+          <m:mi>M</m:mi>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>n</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mo>+</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mn>1</m:mn>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo>=</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mrow>
+	  <m:mi>M</m:mi>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>n</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+            <m:mspace width="4pt"/>
+            <m:mo>+</m:mo>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>r</m:mi>
+              <m:mi>i</m:mi>
+            </m:msub>
+          </m:mrow>
+          <m:mspace width="4pt"/>
+          <m:mi>M</m:mi>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>n</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>r</m:mi>
+              <m:mi>s</m:mi>
+            </m:msub>
+          <m:mspace width="4pt"/>
+          <m:mi>M</m:mi>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>n</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mspace width="2.em"/>
+
+        </m:mrow>
+      </m:math></equation>
+    <para id="id2253910">A net growth rate <m:math><m:mi>r</m:mi></m:math> is defined as the difference</para>
+    <equation id="id2253926"><m:math mode="display">
+        <m:mrow>
+          <m:mi>r</m:mi>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo>=</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:msub>
+            <m:mi>r</m:mi>
+            <m:mi>i</m:mi>
+          </m:msub>
+          <m:mspace width="4pt"/>
+          <m:mo>-</m:mo>
+          <m:mspace width="4pt"/>
+          <m:msub>
+            <m:mi>r</m:mi>
+            <m:mi>s</m:mi>
+          </m:msub>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="2.em"/>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="id2254003">and this is further combined to define <m:math><m:mi>R</m:mi></m:math> by</para>
+    <equation id="id2254018"><m:math mode="display">
+        <m:mrow>
+          <m:mi>R</m:mi>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo>=</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo>(</m:mo>
+          <m:mi>r</m:mi>
+          <m:mspace width="4pt"/>
+          <m:mo>+</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mn>1</m:mn>
+          <m:mo>)</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="id2254087">The basic model in <link target-id="id2253786" class="cnxn"/> simplifies to give</para>
+    <equation id="id2254092"><m:math mode="display">
+        <m:mrow>
+          <m:mi>M</m:mi>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>n</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mo>+</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mn>1</m:mn>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo>=</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mn>1</m:mn>
+            <m:mspace width="4pt"/>
+            <m:mo>+</m:mo>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>r</m:mi>
+              <m:mi>i</m:mi>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>r</m:mi>
+              <m:mi>s</m:mi>
+            </m:msub>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mspace width="4pt"/>
+          <m:mi>M</m:mi>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>n</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mspace width="2.em"/>
+
+        </m:mrow>
+      </m:math>
+    </equation>
+    
+    <equation id="id2254210">
+      <m:math mode="display">
+        <m:mrow>
+          <m:mo>=</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo>(</m:mo>
+          <m:mn>1</m:mn>
+          <m:mspace width="4pt"/>
+          <m:mo>+</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mi>r</m:mi>
+          <m:mo>)</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mi>M</m:mi>
+          <m:mo>(</m:mo>
+          <m:mi>n</m:mi>
+          <m:mo>)</m:mo>
+        </m:mrow>
+      </m:math>
+    </equation>
+    
+    <equation id="id2254264">
+      <m:math mode="display">
+        <m:mrow>
+          <m:mi>M</m:mi>
+          <m:mo>(</m:mo>
+          <m:mi>n</m:mi>
+          <m:mspace width="4pt"/>
+          <m:mo>+</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mn>1</m:mn>
+          <m:mo>)</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo>=</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mi>R</m:mi>
+          <m:mspace width="4pt"/>
+          <m:mi>M</m:mi>
+          <m:mo>(</m:mo>
+          <m:mi>n</m:mi>
+          <m:mo>)</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo>.</m:mo>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="id2254335">This equation is called a
+<emphasis>first-order difference equation</emphasis>, and the solution <m:math><m:mrow><m:mi>M</m:mi><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>)</m:mo></m:mrow></m:math> is found in a
+fairly straightforward way. Consider the equation for the first few
+values of <m:math><m:mrow><m:mi>n</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.166667em"/><m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="0.166667em"/><m:mn>2</m:mn><m:mo>,</m:mo><m:mspace width="0.166667em"/><m:mo>.</m:mo><m:mo>.</m:mo><m:mo>.</m:mo></m:mrow></m:math></para>
+    
+    <equation id="element-376"><m:math mode="display">
+        <m:mrow>
+          <m:mrow>
+            <m:mi>M</m:mi>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mn>1</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>R</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mi>M</m:mi>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mn>0</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+      </m:math>
+</equation><equation id="element-868"><m:math mode="display">
+        <m:mrow>
+          <m:mrow>
+           <m:mi>M</m:mi>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mn>2</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>R</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mi>M</m:mi>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mn>1</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:msup>
+              <m:mi>R</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mspace width="4pt"/>
+            <m:mi>M</m:mi>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mn>0</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+      </m:math>
+</equation><equation id="element-832"><m:math mode="display">
+        <m:mrow>
+          <m:mrow>
+           <m:mi>M</m:mi>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mn>3</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>R</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mi>M</m:mi>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mn>2</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:msup>
+              <m:mi>R</m:mi>
+              <m:mn>3</m:mn>
+            </m:msup>
+            <m:mspace width="4pt"/>
+            <m:mi>M</m:mi>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mn>0</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+      </m:math>
+</equation><equation id="element-98"><m:math mode="display">
+        <m:mrow>
+          <m:mrow>
+            <m:mrow>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mrow>
+                <m:mo>·</m:mo>
+                <m:mspace width="4pt"/>
+                <m:mo>·</m:mo>
+                <m:mspace width="4pt"/>
+                <m:mo>·</m:mo>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+      </m:math>
+</equation><equation id="element-284"><m:math mode="display">
+        <m:mrow>
+          <m:mrow>
+            
+            <m:mi>M</m:mi>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>n</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>M</m:mi>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mn>0</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mspace width="4pt"/>
+            <m:msup>
+              <m:mi>R</m:mi>
+              <m:mi>n</m:mi>
+            </m:msup>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+          </m:mrow>
+        </m:mrow>
+      </m:math>
+</equation><para id="id2255054">The solution to <link target-id="id2254092" class="cnxn"/> is a geometric sequence that has an initial value of
+<m:math><m:mrow><m:mi>M</m:mi><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:math> and increases as a function of <m:math><m:mi>n</m:mi></m:math> if <m:math><m:mi>R</m:mi></m:math> is greater than 1
+<m:math><m:mrow><m:mo>(</m:mo><m:mi>r</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:math>, and decreases toward zero as a function of <m:math><m:mi>n</m:mi></m:math> if <m:math><m:mi>R</m:mi></m:math> is
+less than 1 <m:math><m:mrow><m:mo>(</m:mo><m:mi>r</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>0</m:mn><m:mo>)</m:mo><m:mspace width="0.166667em"/></m:mrow></m:math>. This makes intuitive sense. One's account
+grows rapidly with a high interest rate and low service charge rate, and
+would decrease toward zero if the service charges exceeded the interest.</para>
+    <para id="id2255163">A second example involves the growth of a population that has no
+constraints. If we assume that the population is a continuous function of
+time <m:math><m:mrow><m:mi>p</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo><m:mspace width="0.166667em"/></m:mrow></m:math>, and that the birth rate <m:math><m:msub><m:mi>r</m:mi><m:mi>b</m:mi></m:msub></m:math> and death rate <m:math><m:msub><m:mi>r</m:mi><m:mi>d</m:mi></m:msub></m:math>
+are constants (<m:math><m:mspace width="4pt"/></m:math>not functions of the population <m:math><m:mrow><m:mi>p</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:math> or time <m:math><m:mrow><m:mi>t</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/></m:mrow></m:math>), then the rate of increase in population can be written</para>
+    <equation id="id2255259"><m:math mode="display">
+        <m:mrow>
+          <m:mfrac>
+            <m:mrow>
+              <m:mi>d</m:mi>
+              <m:mi>p</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mi>d</m:mi>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo>=</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:msub>
+              <m:mi>r</m:mi>
+              <m:mi>b</m:mi>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>r</m:mi>
+              <m:mi>d</m:mi>
+            </m:msub>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mspace width="4pt"/>
+          <m:mi>p</m:mi>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="id2255363">There are a number of assumptions behind this simple model, but we delay
+those considerations until later and examine the nature of the solution of
+this simple model. First, we define a net rate of growth</para>
+    <equation id="id2255372"><m:math mode="display">
+        <m:mrow>
+          <m:mi>r</m:mi>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo>=</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:msub>
+            <m:mi>r</m:mi>
+            <m:mi>b</m:mi>
+          </m:msub>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo>-</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:msub>
+            <m:mi>r</m:mi>
+            <m:mi>d</m:mi>
+          </m:msub>
+          <m:mspace width="2.em"/>
+        
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="id2255446">which gives</para>
+    <equation id="id2255451"><m:math mode="display">
+        <m:mrow>
+          <m:mfrac>
+            <m:mrow>
+              <m:mi>d</m:mi>
+              <m:mi>p</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mi>d</m:mi>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo>=</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+      
+            <m:mi>r</m:mi>
+            <m:mi>p</m:mi>
+          
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+       
+         
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="id2255522">which is a first-order linear differential equation. If the value of the
+population at time equals zero is <m:math><m:mrow><m:msub><m:mi>p</m:mi><m:mi>o</m:mi></m:msub><m:mspace width="4pt"/></m:mrow></m:math>, then the solution of <link target-id="id2255451" class="cnxn"/> is
+given by</para>
+    
+    <equation id="id2255553"><m:math mode="display">
+        <m:mrow>
+          <m:mi>p</m:mi>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>t</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo>=</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:msub>
+            <m:mi>p</m:mi>
+            <m:mi>o</m:mi>
+          </m:msub>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mi>r</m:mi>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:msup>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:msub>
+            <m:mi>p</m:mi>
+            <m:mi>o</m:mi>
+          </m:msub>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo>=</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mi>p</m:mi>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mn>0</m:mn>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="id2255724">The population grows exponentially if <m:math><m:mi>r</m:mi></m:math> is positive (if <m:math><m:mrow><m:msub><m:mi>r</m:mi><m:mi>b</m:mi></m:msub><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mspace width="4pt"/><m:msub><m:mi>r</m:mi><m:mrow><m:mi>d</m:mi><m:mspace width="0.166667em"/></m:mrow></m:msub></m:mrow></m:math>) and decays exponentially if <m:math><m:mi>r</m:mi></m:math> is negative (<m:math><m:mrow><m:msub><m:mi>r</m:mi><m:mi>b</m:mi></m:msub><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mspace width="4pt"/><m:msub><m:mi>r</m:mi><m:mrow><m:mi>d</m:mi><m:mspace width="0.166667em"/></m:mrow></m:msub></m:mrow></m:math>). The fact that <link target-id="id2255553" class="cnxn"/> is a solution of <link target-id="id2255451" class="cnxn"/> is easily verified by
+substitution. Note that in order to calculate future values of
+population, the result of the past as given by <m:math><m:mrow><m:mi>p</m:mi><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:math> must be known.
+(<m:math><m:mrow><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mi>p</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:math> is a state variable and only one is necessary.)</para>
+</section>
+<section id="element-666"><title>Exponential and Geometric Growth</title>
+
+    
+    <para id="id2255880">It is worth spending a bit of time considering the nature of the solution
+of the difference <link target-id="id2254092" class="cnxn"/> and the differential <link target-id="id2255451" class="cnxn"/>. First,
+note that the solutions of both increase at the same "rate". If we sample
+the population function <m:math><m:mrow><m:mi>p</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:math> at intervals of <m:math><m:mi>T</m:mi></m:math> time units, a
+geometric number sequence results. Let <m:math><m:msub><m:mi>p</m:mi><m:mi>n</m:mi></m:msub></m:math> be the samples of <m:math><m:mrow><m:mi>p</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:math>
+given by</para>
+    <equation id="id2255944"><m:math mode="display">
+        <m:mrow>
+          <m:msub>
+            <m:mi>p</m:mi>
+            <m:mi>n</m:mi>
+          </m:msub>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo>=</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mi>p</m:mi>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>n</m:mi>
+            <m:mi>T</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mi>n</m:mi>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo>=</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mn>0</m:mn>
+          <m:mo>,</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mn>1</m:mn>
+          <m:mo>,</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mn>2</m:mn>
+          <m:mo>,</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mo>.</m:mo>
+          <m:mo>.</m:mo>
+          <m:mo>.</m:mo>
+          <m:mspace width="2.em"/>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="id2256087">This give for <link target-id="id2255553" class="cnxn"/></para>
+    <equation id="id2256093"><m:math mode="display">
+        <m:mrow>
+          <m:msub>
+            <m:mi>p</m:mi>
+            <m:mi>n</m:mi>
+          </m:msub>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo>=</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mi>p</m:mi>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>n</m:mi>
+            <m:mi>T</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo>=</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:msubsup>
+            <m:mi>p</m:mi>
+            <m:mrow>
+              <m:mi>o</m:mi>
+              <m:mspace width="0.166667em"/>
+              <m:mi>e</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mi>r</m:mi>
+              <m:mi>n</m:mi>
+              <m:mi>T</m:mi>
+            </m:mrow>
+          </m:msubsup>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo>=</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:msub>
+            <m:mi>p</m:mi>
+            <m:mi>o</m:mi>
+          </m:msub>
+          <m:msup>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:msup>
+                <m:mi>e</m:mi>
+                <m:mrow>
+                  <m:mi>r</m:mi>
+                  <m:mi>T</m:mi>
+                </m:mrow>
+              </m:msup>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mi>n</m:mi>
+          </m:msup>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="id2256255">which is the same as <link target-id="id2253055" class="cnxn"/> if</para>
+    <equation id="id2256261"><m:math mode="display">
+        <m:mrow>
+          <m:mi>R</m:mi>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo>=</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mi>r</m:mi>
+              <m:mi>T</m:mi>
+            </m:mrow>
+          </m:msup>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="id2256324">This means that one can calculate samples of the exponential solution of
+differential equations exactly by solving the difference <link target-id="id2254092" class="cnxn"/> if
+<m:math><m:mi>R</m:mi></m:math> is chosen by <link target-id="id2256261" class="cnxn"/>. Since difference equations are easily implemented
+on a digital computer, this is an important result; unfortunately,
+however, it is exact only if the equations are linear. Note that if the
+time interval <m:math><m:mi>T</m:mi></m:math> is small, then the first two terms of the Taylor's
+series give</para>
+    <equation id="id2256354"><m:math mode="display">
+        <m:mrow>
+          <m:mi>R</m:mi>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo>=</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mi>r</m:mi>
+              <m:mi>T</m:mi>
+            </m:mrow>
+          </m:msup>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo>≈</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mn>1</m:mn>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo>+</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mi>r</m:mi>
+          <m:mi>T</m:mi>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="id2256465">which is somewhat similar to <link target-id="id2254018" class="cnxn"/>.
+Another view of the relation can be seen by approximating <link target-id="id2255451" class="cnxn"/> by</para>
+    <equation id="id2256472"><m:math mode="display">
+        <m:mrow>
+          <m:mfrac>
+            <m:mrow>
+              <m:mi>x</m:mi>
+              <m:mo>(</m:mo>
+              <m:mi>n</m:mi>
+              <m:mspace width="4pt"/>
+              <m:mo>+</m:mo>
+              <m:mspace width="4pt"/>
+              <m:mn>1</m:mn>
+              <m:mo>)</m:mo>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mo>-</m:mo>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mi>x</m:mi>
+              <m:mo>(</m:mo>
+              <m:mi>n</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mi>T</m:mi>
+          </m:mfrac>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo>=</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mi>r</m:mi>
+          <m:mspace width="4pt"/>
+          <m:mi>x</m:mi>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>n</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo>,</m:mo>
+          <m:mspace width="2.em"/>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="id2256585">which gives</para>
+    <equation id="id2256590"><m:math mode="display">
+        <m:mrow>
+          <m:mi>x</m:mi>
+          <m:mo>(</m:mo>
+          <m:mi>n</m:mi>
+          <m:mo>+</m:mo>
+          <m:mn>1</m:mn>
+          <m:mo>)</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo>=</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mi>x</m:mi>
+          <m:mo>(</m:mo>
+          <m:mi>n</m:mi>
+          <m:mo>)</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo>+</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mi>r</m:mi>
+          <m:mi>T</m:mi>
+          <m:mspace width="4pt"/>
+          <m:mi>x</m:mi>
+          <m:mo>(</m:mo>
+          <m:mi>n</m:mi>
+          <m:mo>)</m:mo>
+          <m:mspace width="2.em"/>
+        </m:mrow>
+      </m:math>
+    </equation>
+    
+    <equation id="id2256689">
+      <m:math mode="display">
+        <m:mrow>
+          <m:mo>=</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo>(</m:mo>
+          <m:mn>1</m:mn>
+          <m:mspace width="4pt"/>
+          <m:mspace width="0.166667em"/>
+          <m:mo>+</m:mo>
+          <m:mspace width="0.166667em"/>
+          <m:mspace width="4pt"/>
+          <m:mi>r</m:mi>
+          <m:mi>T</m:mi>
+          <m:mspace width="0.166667em"/>
+          <m:mo>)</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mi>x</m:mi>
+          <m:mo>(</m:mo>
+          <m:mi>n</m:mi>
+          <m:mo>)</m:mo>
+        </m:mrow>
+      </m:math>
+    </equation>
+    
+    <para id="element-167">having a solution</para><equation id="id2256758"><m:math mode="display">
+        <m:mrow>
+          <m:mi>x</m:mi>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>n</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo>=</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mi>x</m:mi>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mn>0</m:mn>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:msup>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mn>1</m:mn>
+              <m:mspace width="4pt"/>
+              <m:mspace width="0.166667em"/>
+              <m:mo>+</m:mo>
+              <m:mspace width="0.166667em"/>
+              <m:mspace width="4pt"/>
+              <m:mi>r</m:mi>
+              <m:mi>T</m:mi>
+              <m:mspace width="0.166667em"/>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mi>n</m:mi>
+          </m:msup>
+        </m:mrow>
+      </m:math>
+    </equation>
+    
+
+    <para id="id2256867">This implies <link target-id="id2256590" class="cnxn"/> also, and the method is known as Euler's method for
+numerically solving a differential equation.</para>
+    <para id="id2256874">These approximations are used often in modeling. For population models a
+differential evuation is often used, even though it is obvious that
+births and deaths occur at random discrete times and populations can take
+on only integer values. The approximation makes sense only if we use
+large aggregates of individuals. We end up modeling a process that occurs
+at random discrete points in time by a continuous time mode, which is then
+approximated by a uniformly-spaced discrete time difference equation for
+solution on a digital computer!</para>
+    <para id="element-821">The rapidity of increase of an exponential is usually surprising and it is this fact that makes understanding it important. There are several ways to describe the rate of growth.</para><equation id="id2256898"><m:math mode="display">
+        <m:mrow>
+<m:mtext>If</m:mtext>
+<m:mspace width="10pt"/>
+          <m:mi>x</m:mi>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo>=</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mi>k</m:mi>
+          <m:mspace width="4pt"/>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mi>r</m:mi>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:msup>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo>,</m:mo>
+        </m:mrow>
+      </m:math>
+    </equation>
+    
+    <equation id="id2256961"><m:math mode="display">
+        <m:mrow>
+<m:mtext>then</m:mtext>
+<m:mspace width="10pt"/>
+          <m:mfrac>
+            <m:mrow>
+              <m:mi>d</m:mi>
+              <m:mi>x</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mi>d</m:mi>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo>=</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mi>k</m:mi>
+          <m:mspace width="4pt"/>
+          <m:mi>r</m:mi>
+          <m:mspace width="4pt"/>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mi>r</m:mi>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:msup>
+        </m:mrow>
+      </m:math>
+    </equation>
+    
+    <equation id="id2257031"><m:math mode="display">
+<m:mtext>or</m:mtext>
+<m:mspace width="10pt"/>        
+<m:mrow>
+          <m:mi>r</m:mi>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo>=</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mfrac>
+            <m:mn>1</m:mn>
+            <m:mi>x</m:mi>
+          </m:mfrac>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mfrac>
+            <m:mrow>
+              <m:mi>d</m:mi>
+              <m:mi>x</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mi>d</m:mi>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo>.</m:mo>
+          <m:mspace width="2.em"/>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="id2257111">This states that <m:math><m:mi>r</m:mi></m:math> is the rate of growth per unit of <m:math><m:mrow><m:mi>x</m:mi><m:mspace width="0.166667em"/></m:mrow></m:math>. For
+example, the growth rate for the U.S. is about 0.014 per year, or an
+increase of 14 people per thousand people each year.</para>
+    <para id="id2257142">Another measure of the rate is the time for the variable to double in
+value. This doubling time, <m:math><m:mrow><m:msub><m:mi>T</m:mi><m:mi>d</m:mi></m:msub><m:mspace width="4pt"/></m:mrow></m:math>, is constant and can easily be shown
+to be given by</para>
+    <equation id="id2257166"><m:math mode="display">
+        <m:mrow>
+          <m:msub>
+            <m:mi>T</m:mi>
+            <m:mi>d</m:mi>
+          </m:msub>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo>=</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mfrac>
+            <m:mn>1</m:mn>
+            <m:mi>r</m:mi>
+          </m:mfrac>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:msub>
+            <m:mo form="prefix">log</m:mo>
+            <m:mi>e</m:mi>
+          </m:msub>
+          <m:mn>2</m:mn>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo>=</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mn>0</m:mn>
+          <m:mo>.</m:mo>
+          <m:mn>6931472</m:mn>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mfrac>
+            <m:mn>1</m:mn>
+            <m:mi>r</m:mi>
+          </m:mfrac>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="id2257290">For example, doubling times for several rates are given by</para>
+    <table id="id2257296" summary="">
+<tgroup cols="2"><tbody>
+          <row>
+            <entry><m:math><m:mi>r</m:mi></m:math></entry>
+            <entry><m:math><m:msub><m:mi>T</m:mi><m:mi>d</m:mi></m:msub></m:math></entry>
+          </row>
+          <row>
+            <entry>.01</entry>
+            <entry>70</entry>
+          </row>
+          <row>
+            <entry>.02</entry>
+            <entry>35</entry>
+          </row>
+          <row>
+            <entry>.03</entry>
+            <entry>23</entry>
+          </row>
+          <row>
+            <entry>.04</entry>
+            <entry>17</entry>
+          </row>
+          <row>
+            <entry>.05</entry>
+            <entry>14</entry>
+          </row>
+          <row>
+            <entry>.06</entry>
+            <entry>12</entry>
+          </row>
+        </tbody>
+      
+
+</tgroup>
+</table>
+    <para id="id2257397">The present world population is about three billion, and the growth
+rate is 2.1% per year. This gives</para>
+    <equation id="id2257402"><m:math mode="display">
+        <m:mrow>
+          <m:mi>p</m:mi>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>t</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo>=</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mn>3</m:mn>
+          <m:mspace width="4pt"/>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mrow>
+                <m:mn>0</m:mn>
+                <m:mo>.</m:mo>
+                <m:mn>021</m:mn>
+              </m:mrow>
+              <m:mspace width="4pt"/>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:msup>
+          <m:mspace width="2.em"/>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="id2257480">with <m:math><m:mrow><m:mi>p</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:math> measured in billions of people and <m:math><m:mi>t</m:mi></m:math> in years. This
+gives a doubling time of 33 years. While it is easy to talk of growth
+rate and doubling times, these have real predictive meaning <emphasis>only</emphasis>
+if the growth is exponential.</para>
+</section>
+<section id="element-455"><title>Two Points of View</title>
+    
+    <para id="id2257532">There are two rather different approaches that can be used when describing
+some physical phenomenon by exponential growth. It can be viewed as an
+empirical description of how some variables tend to evolve in time. This
+is a data-fitting view that is pragmatic and flexible, but does not give
+much insight or direction on how to conduct experiments or what other
+things might be implied.</para>
+    <para id="id2257542">The second approach primarily considers the underlying differential
+equation as a "law" of growth that results in exponential behavior. This
+law has various assumptions and implications that can be examined for
+reasonableness or verified by independent experiment. While perhaps not
+so important for the first-order linear equation here, this approach
+becomes necessary for the more complicated models later.</para>
+    <para id="id2257552">These approaches must often be mixed. The data will imply a model or
+equation which will give direction as to what data should be taken, which
+will in turn imply modifications, etc. The process where structure is
+chosen and the parameters are chosen so that the model solution agrees
+with observed data is a form of parameter identification. That was how
+<link target-id="id2257402" class="cnxn"/> was determined.</para>
+</section>
+<section id="element-858"><title>The Use of Semi-Log Plots</title><para id="element-947">When examining data that has been plotted in fashion, it is often hard to say much about its basic nature. For example if a time series is plotted on linear coordinates as follows
+<figure id="id45106786"><media id="id45106791" alt=""><image src="../../media/troff3.png" mime-type="image/png"/></media></figure>  
+
+
+it would not be obvious if it were samples of an exponential, a parabola, or some other function. Straight lines, on the other hand, are easy to identify and so we will seek a method of displaying data that will use straight lines.</para>
+    
+ 
+    
+    <para id="id2257596">If <m:math><m:mrow><m:mi>x</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:math> is an exponential, then</para>
+    <equation id="id2257616"><m:math mode="display">
+        <m:mrow>
+          <m:mi>x</m:mi>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>t</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo>=</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mi>k</m:mi>
+          <m:mspace width="4pt"/>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mi>r</m:mi>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:msup>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="id225769376465">Taking logarithms of base <m:math><m:mi>e</m:mi></m:math> for both sides of <link target-id="id2257616" class="cnxn"/> gives</para>
+    <equation id="id2257709"><m:math mode="display">
+        <m:mrow>
+          <m:mo form="prefix">log</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mi>x</m:mi>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo>=</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo form="prefix">log</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mi>k</m:mi>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo>+</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mi>r</m:mi>
+          <m:mi>t</m:mi>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+        
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="id2257797">If, rather than plotting <m:math><m:mi>x</m:mi></m:math> versus <m:math><m:mrow><m:mi>t</m:mi><m:mspace width="0.166667em"/></m:mrow></m:math>, we plot the log of <m:math><m:mi>x</m:mi></m:math>
+versus <m:math><m:mrow><m:mi>t</m:mi><m:mspace width="0.166667em"/></m:mrow></m:math>, then we have a straight line with a slope of <m:math><m:mi>r</m:mi></m:math> and an
+intercept of log <m:math><m:mrow><m:mi>k</m:mi><m:mspace width="4pt"/></m:mrow></m:math>. It would look like 
+<figure id="id44488526"><media id="id44488532" alt=""><image src="../../media/troff4.png" mime-type="image/png"/></media></figure></para>
+    <para id="element-73">Actually using the logarithm of a variable is awkward so the variable itself can be plotted on logarithmic coordinates to give the same result. Graph paper with logarithmic spacing along one coordinate and uniform spacing along the other is called semi-log paper.</para><para id="element-602">Consider the plot of the U.S. population displayed on semi-log paper in
+Figure 3. Note that there were two distinct periods of exponential
+growth, one from 1600 to 1650, and another from 1650 to 1870. To
+calculate the growth rate over the 1650 – 1870 period, we can calculate
+the slope.</para>
+    
+    <equation id="element-453"><m:math>
+<m:mi>r</m:mi>
+<m:mo>=</m:mo>
+<m:mfrac>
+<m:mrow>
+<m:mtext>log</m:mtext>
+<m:mspace width="5pt"/>
+<m:mi>p</m:mi>
+<m:mo>(</m:mo>
+<m:msub>
+<m:mi>t</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>)</m:mo>
+<m:mo>-</m:mo>
+<m:mtext>log</m:mtext>
+<m:mspace width="5pt"/>
+<m:mi>p</m:mi>
+<m:mo>(</m:mo>
+<m:msub>
+<m:mi>t</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mo>)</m:mo>
+</m:mrow>
+<m:mrow>
+<m:msub>
+<m:mi>t</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>-</m:mo>
+<m:msub>
+<m:mi>t</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+</m:mrow>
+</m:mfrac>
+</m:math></equation><equation id="id2257895">
+      <m:math mode="display">
+        <m:mrow>
+          <m:mo>=</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mfrac>
+            <m:mrow>
+              <m:mo form="prefix">log</m:mo>
+              <m:mspace width="4pt"/>
+              <m:msup>
+                <m:mn>10</m:mn>
+                <m:mn>7</m:mn>
+              </m:msup>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mo>-</m:mo>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mo form="prefix">log</m:mo>
+              <m:mspace width="4pt"/>
+              <m:msup>
+                <m:mn>10</m:mn>
+                <m:mn>5</m:mn>
+              </m:msup>
+            </m:mrow>
+            <m:mrow>
+              <m:mn>1823</m:mn>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mo>-</m:mo>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mn>1670</m:mn>
+            </m:mrow>
+          </m:mfrac>
+        </m:mrow>
+      </m:math>
+    </equation>
+    
+    <equation id="id2257992">
+      <m:math mode="display">
+        <m:mrow>
+          <m:mo>=</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mfrac>
+            <m:mrow>
+              <m:mn>16</m:mn>
+              <m:mo>.</m:mo>
+              <m:mn>118</m:mn>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mo>-</m:mo>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mn>11</m:mn>
+              <m:mo>.</m:mo>
+              <m:mn>513</m:mn>
+            </m:mrow>
+            <m:mn>153</m:mn>
+          </m:mfrac>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mo>=</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mspace width="4pt"/>
+          <m:mn>0</m:mn>
+          <m:mo>.</m:mo>
+          <m:mn>03</m:mn>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="id2258080">During that period, there was a 3% per year growth rate or, in other
+terms, a 23-year doubling time.</para>
+    <para id="id2258087">An alternative is to measure the doubling time and calculate <m:math><m:mi>r</m:mi></m:math> from
+<link target-id="id2257166" class="cnxn"/>.
+Still another approach is to measure the time necessary for the population
+to increase by <m:math><m:mrow><m:mi>e</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>.</m:mo><m:mn>72</m:mn></m:mrow></m:math>... The growth rate is the
+reciprocal of that time interval. Derive and check these for yourself.</para>
+    <para id="id2258123">The data displayed in Figures 1, 2 and 3 illustrates exponential growth
+and the use of semi-log paper.
+The books
+<link target-id="bid0" class="cnxn"/>
+<link target-id="bid3" class="cnxn"/>
+give interesting discussions of growth.
+</para>
+</section>
+    <section id="element-618"><title>Analytical versus Numerical Solutions</title>
+<para id="id2258130">In some cases, there is a choice between an analytical solution in the
+form of an equation and a numerical solution in the form of a sequence of
+numbers. A real advantage of an analytical form is the ability to easily
+see the effects of various parameters. For example, the exponential
+solution of <link target-id="id2255259" class="cnxn"/> given in <link target-id="id2255553" class="cnxn"/> directly shows the relation of the growth
+rate <m:math><m:mi>r</m:mi></m:math> in equation <link target-id="id2255259" class="cnxn"/> to the exponent in solution <link target-id="id2255553" class="cnxn"/>. If the
+equation were numerically solved, say on a digital computer or calculator
+using Euler's method given in <link target-id="id2256590" class="cnxn"/>
+, it would take numerous experimental
+runs to establish the same relations.</para>
+    <para id="id2258153">On the other hand, for complicated equations there are no known analytical
+expressions for the solutions, and numerical solutions are the only
+alternatives. It is still worth studying the analytical solution of
+simple equations to gain insight into the nature of the numerical solutions of complex equations.
+
+
+</para>
+</section><section id="element-59"><title>Assumptions</title>
+<para id="element-553">
+The linear first-order differential equation model that is implied by
+exponential growth has many assumptions that are worth noting here.
+First, the growth rate is constant, independent of crowding, food,
+availability, etc. It also assumes that age distribution within the
+population is constant, and that an average birth and death rate makes
+sense. There are many factors one will want to include  effects of
+crowding and resource availability, time delays in reproduction, different
+birth and death rates for different age groups, and many more. In the
+next section we will add one complication  the effects of a
+limit to growth.
+</para></section>
+  </content>
+<bib:file>
+<bib:entry id="bid0">
+      <bib:book>
+<!--required fields-->
+        <bib:author>D.J. de Solla Price</bib:author>
+        <bib:title>Little Science Big Science</bib:title>
+        <bib:publisher>Columbia University press</bib:publisher>
+        <bib:year>1963</bib:year>
+<!--optional fields-->
+        <bib:volume/>
+        <bib:series/>
+        <bib:address>New York</bib:address>
+        <bib:edition/>
+        <bib:month/>
+        <bib:note/>
+      </bib:book>
+    </bib:entry>
+
+<bib:entry id="bid3">
+      <bib:book>
+<!--required fields-->
+        <bib:author>Charles J. Krebs</bib:author>
+        <bib:title>Ecology</bib:title>
+        <bib:publisher>Harper and Row</bib:publisher>
+        <bib:year>1972</bib:year>
+<!--optional fields-->
+        <bib:volume/>
+        <bib:series/>
+        <bib:address>New York</bib:address>
+        <bib:edition/>
+        <bib:month/>
+        <bib:note/>
+      </bib:book>
+    </bib:entry>
+</bib:file>
+
+</document>

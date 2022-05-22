@@ -1,0 +1,483 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:md="http://cnx.rice.edu/mdml">
+  <title>Simulation</title>
+  <metadata>
+  <md:content-id>m18164</md:content-id><md:title>Simulation</md:title>
+  <md:abstract/>
+  <md:uuid>c4fc5687-9194-4707-bc06-862cffdf631a</md:uuid>
+</metadata>
+
+<content>
+    <section id="cid1">
+      <title>Dynamic Simulation on a Digital Computer</title>
+      <para id="id2253706">If a system is modeled by a differential equation, and if the
+equations are numerically solved on a digital computer or calculator,
+the system is said to be simulated on the computer.
+If the model is valid and the numerical methods accurate, experiments
+can be performed on the computer simulation that might be impossible to
+conduct otherwise.</para>
+      <para id="id2253716">Consider several examples that use the models already discussed.
+If a population is governed by a linear first-order equation</para>
+      <equation id="id2253721"><m:math mode="display">
+          <m:mrow>
+            <m:mfrac>
+              <m:mi>dp</m:mi>
+              <m:mrow>
+                <m:mi>d</m:mi>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>r</m:mi>
+            <m:mi>p</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+           
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2253790">one would not be able to "solve" this equation on a computer. If, however, we use Euler's method as was done in (14) by approximating
+the derivative as</para>
+      <equation id="id2253798"><m:math mode="display">
+          <m:mrow>
+            <m:mfrac>
+              <m:mrow>
+                <m:mi>d</m:mi>
+                <m:mi>p</m:mi>
+              </m:mrow>
+              <m:mrow>
+                <m:mi>d</m:mi>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mfrac>
+              <m:mrow>
+                <m:mi>p</m:mi>
+                <m:mo>(</m:mo>
+                <m:mi>n</m:mi>
+                <m:mi>T</m:mi>
+                <m:mspace width="4pt"/>
+                <m:mo>+</m:mo>
+                <m:mspace width="4pt"/>
+                <m:mi>T</m:mi>
+                <m:mspace width="0.166667em"/>
+                <m:mo>)</m:mo>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:mo>-</m:mo>
+                <m:mspace width="4pt"/>
+                <m:mspace width="4pt"/>
+                <m:mi>p</m:mi>
+                <m:mo>(</m:mo>
+                <m:mi>n</m:mi>
+                <m:mi>T</m:mi>
+                <m:mspace width="0.166667em"/>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mi>T</m:mi>
+            </m:mfrac>
+            <m:mspace width="2.em"/>
+
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2254158">where time is considered at intervals of <m:math><m:mrow><m:mi>T</m:mi><m:mspace width="4pt"/></m:mrow></m:math>,</para>
+      <equation id="id2254176">
+        <m:math mode="display">
+          <m:mrow>
+            <m:mi>t</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>n</m:mi>
+            <m:mi>T</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>n</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mn>0</m:mn>
+            <m:mo>,</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mn>1</m:mn>
+            <m:mo>,</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mn>2</m:mn>
+            <m:mo>,</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mo>.</m:mo>
+            <m:mo>.</m:mo>
+            <m:mo>.</m:mo>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2254294">This gives for (1)
+.EQ (34)</para>
+      <equation id="id2254307"><m:math mode="display">
+          <m:mrow>
+            <m:mi>p</m:mi>
+            <m:mo>(</m:mo>
+            <m:mi>n</m:mi>
+            <m:mi>T</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mo>+</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mi>T</m:mi>
+            <m:mspace width="0.166667em"/>
+            <m:mo>)</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>p</m:mi>
+            <m:mo>(</m:mo>
+            <m:mi>n</m:mi>
+            <m:mi>T</m:mi>
+            <m:mspace width="0.166667em"/>
+            <m:mo>)</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>+</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>T</m:mi>
+            <m:mi>r</m:mi>
+            <m:mi>p</m:mi>
+            <m:mo>(</m:mo>
+            <m:mi>n</m:mi>
+            <m:mi>T</m:mi>
+            <m:mspace width="0.166667em"/>
+            <m:mo>)</m:mo>
+            <m:mi>p</m:mi>
+            <m:mo>(</m:mo>
+            <m:mi>n</m:mi>
+            <m:mi>T</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mo>+</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mi>T</m:mi>
+            <m:mspace width="0.166667em"/>
+            <m:mo>)</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>(</m:mo>
+            <m:mn>1</m:mn>
+            <m:mspace width="4pt"/>
+            <m:mo>+</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mi>r</m:mi>
+            <m:mi>T</m:mi>
+            <m:mspace width="0.166667em"/>
+            <m:mo>)</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mi>p</m:mi>
+            <m:mo>(</m:mo>
+            <m:mi>n</m:mi>
+            <m:mi>T</m:mi>
+            <m:mspace width="0.166667em"/>
+            <m:mo>)</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+     
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2254499">If we include the time interval <m:math><m:mi>T</m:mi></m:math> in the functional notation by</para>
+      <equation id="id2254514"><m:math mode="display">
+          <m:mrow>
+            <m:mi>p</m:mi>
+            <m:mo>(</m:mo>
+            <m:mi>n</m:mi>
+            <m:mi>T</m:mi>
+            <m:mspace width="0.166667em"/>
+            <m:mo>)</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>x</m:mi>
+            <m:mo>(</m:mo>
+            <m:mi>n</m:mi>
+            <m:mo>)</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2254575">then (3) becomes
+</para>
+      <equation id="id2254594"><m:math mode="display">
+          <m:mrow>
+            <m:mi>x</m:mi>
+<m:mo>(</m:mo>
+            <m:mi>n</m:mi>
+            <m:mspace width="4pt"/>
+            <m:mo>+</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mn>1</m:mn>
+            <m:mo>)</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>(</m:mo>
+            <m:mn>1</m:mn>
+            <m:mspace width="4pt"/>
+            <m:mo>+</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mi>r</m:mi>
+            <m:mi>T</m:mi>
+            <m:mspace width="0.166667em"/>
+            <m:mo>)</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mi>x</m:mi>
+            <m:mo>(</m:mo>
+            <m:mi>n</m:mi>
+            <m:mo>)</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+          
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2254694">which is now in a form that one can easily calculate successive values
+of <m:math><m:mrow><m:mi>x</m:mi><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>)</m:mo></m:mrow></m:math> given any initial value.
+This can be programmed on a computer or simply done on a hand
+calculator.</para>
+      <para id="id2254718">Next, consider the nonlinear equation that models a population with a
+simple limit given by (23).</para>
+      <equation id="id2254723"><m:math mode="display">
+          <m:mrow>
+            <m:mfrac>
+              <m:mrow>
+                <m:mi>d</m:mi>
+                <m:mi>p</m:mi>
+              </m:mrow>
+              <m:mrow>
+                <m:mi>d</m:mi>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mfenced separators="" open="(" close=")">
+              <m:mspace width="4pt"/>
+              <m:mn>1</m:mn>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mo>-</m:mo>
+              <m:mspace width="4pt"/>
+              <m:mspace width="4pt"/>
+              <m:mfrac>
+                <m:mi>p</m:mi>
+                <m:mi>k</m:mi>
+              </m:mfrac>
+              <m:mspace width="4pt"/>
+            </m:mfenced>
+            <m:mspace width="4pt"/>
+            <m:msub>
+              <m:mi>r</m:mi>
+              <m:mrow>
+                <m:mi>o</m:mi>
+                <m:mspace width="0.166667em"/>
+                <m:mi>p</m:mi>
+              </m:mrow>
+            </m:msub>
+            <m:mspace width="2.em"/>
+            
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2254835">Using Euler's method again gives</para>
+      <equation id="id2254841"><m:math mode="display">
+          <m:mrow>
+            <m:mi>x</m:mi>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>n</m:mi>
+              <m:mspace width="4pt"/>
+              <m:mo>+</m:mo>
+              <m:mspace width="4pt"/>
+              <m:mn>1</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>=</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>x</m:mi>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>n</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>+</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mi>T</m:mi>
+            <m:msub>
+              <m:mi>r</m:mi>
+              <m:mrow>
+                <m:mi>o</m:mi>
+                <m:mspace width="0.166667em"/>
+                <m:mi>x</m:mi>
+                <m:mo>(</m:mo>
+                <m:mi>n</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:msub>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mo>-</m:mo>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+            <m:mfenced separators="" open="(" close=")">
+              <m:mspace width="4pt"/>
+              <m:mfrac>
+                <m:mrow>
+                  <m:mi>T</m:mi>
+                  <m:msub>
+                    <m:mi>r</m:mi>
+                    <m:mi>o</m:mi>
+                  </m:msub>
+                </m:mrow>
+                <m:mi>k</m:mi>
+              </m:mfrac>
+              <m:mspace width="4pt"/>
+            </m:mfenced>
+            <m:mspace width="4pt"/>
+            <m:mi>x</m:mi>
+            <m:msup>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mi>n</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mspace width="4pt"/>
+            <m:mspace width="4pt"/>
+        
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2255020">This equation is complex enough to illustrate several points;
+therefore, we will examine several numerical solutions.
+<link target-id="id2254841"/> was programmed on a Tektronix 31 programmable calculator
+with a plotter automatically plotting the solutions by drawing straight
+lines between successive <m:math><m:mrow><m:mi>x</m:mi><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>)</m:mo><m:mspace width="4pt"/></m:mrow></m:math>.</para>
+      <para id="id2255049">First, consider a low-density growth rate
+of <m:math><m:mrow><m:msub><m:mi>r</m:mi><m:mi>o</m:mi></m:msub><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>1</m:mn></m:mrow></m:math> or 10% per year for an initial population
+of <m:math><m:mrow><m:msub><m:mi>p</m:mi><m:mi>o</m:mi></m:msub><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>100</m:mn></m:mrow></m:math> over a time period of 100 years.
+We will use for the reducing effect on the growth rate in (2), a value
+of <m:math><m:mrow><m:mi>β</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>0001</m:mn><m:mspace width="0.166667em"/></m:mrow></m:math>, which implies a carrying capacity for the
+system of <m:math><m:mrow><m:mi>k</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>10</m:mn><m:mo>,</m:mo><m:mn>000</m:mn><m:mspace width="0.166667em"/></m:mrow></m:math>.
+For the Euler method, a time interval of <m:math><m:mrow><m:mi>T</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>2</m:mn><m:mspace width="4pt"/></m:mrow></m:math>years is used,
+which means 50 calculations of (6) will be necessary for the 100-year
+period.</para>
+      <para id="id2255222">The curves in Figure A are the output of the simulation for the above
+parameters and also for other growth rates of 5% and 20%.
+Note the solution always approaching the same limit but requiring
+different amounts of time.</para>
+      <para id="id2255230">In Figure B, the model is run assuming several different initial
+populations.
+Again, the solutions always approach the limit of <m:math><m:mrow><m:mi>k</m:mi><m:mspace width="0.166667em"/></m:mrow></m:math>, even if the
+initial population is greater than <m:math><m:mrow><m:mi>k</m:mi><m:mspace width="4pt"/></m:mrow></m:math>.</para>
+      <para id="id2255261">Figure C shows the effects of various amounts of limiting by
+considering various values for the factor <m:math><m:mrow><m:mi>β</m:mi><m:mspace width="0.166667em"/></m:mrow></m:math>, and
+therefore <m:math><m:mrow><m:mi>k</m:mi><m:mspace width="0.166667em"/></m:mrow></m:math>, the carrying capacity.
+When the limit is removed (<m:math><m:mrow><m:mi>k</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mi>∞</m:mi></m:mrow></m:math>), the growth is exponential.</para>
+      <para id="id2255320">These examples illustrate the kinds of questions that can be pursued
+by running experiments on the computer simulation.
+There is one more point that should be considered.
+It has nothing to do with the differential equation model (23) but with
+the numerical procedure, Euler's method.
+Consider the effects of using various time intervals <m:math><m:mi>T</m:mi></m:math> while holding everything else constant.
+Figure D shows the results of this experiment.
+The curve resulting from using a time interval
+of <m:math><m:mrow><m:mi>T</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>2</m:mn><m:mspace width="4pt"/></m:mrow></m:math>years looks essentially the same as the exact solution
+of the differential equation.
+The numerical solution deviates more as <m:math><m:mi>T</m:mi></m:math> is increased until,
+for <m:math><m:mrow><m:mi>T</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>20</m:mn><m:mspace width="4pt"/></m:mrow></m:math>years, it has lost the character of the exact solution.
+A method for checking to see if <m:math><m:mi>T</m:mi></m:math> is sufficiently small is to try
+halving it until the change is small.</para>
+      
+      <para id="id2255431">One last point should be made concerning this numerical simulation.
+Euler's method is the only approach to numerically solve (23) that has
+been discussed.
+That is not because it is the best – there are far more efficient
+and sophisticated methods – but that is not our subject here, so we
+will continue with the straightforward algorithm of Euler.</para>
+      <para id="id2255446">The super-exponential logistic equation of (31) was simulated on the
+calculator and run with a low population growth rate
+of <m:math><m:mrow><m:msub><m:mi>r</m:mi><m:mi>o</m:mi></m:msub><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>1</m:mn><m:mspace width="0.166667em"/></m:mrow></m:math>, a
+maximum rate of <m:math><m:mrow><m:mi>M</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mo>.</m:mo><m:mn>2</m:mn><m:mspace width="0.166667em"/></m:mrow></m:math>, and a carrying capacity
+of <m:math><m:mrow><m:mi>k</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mn>10</m:mn><m:mo>,</m:mo><m:mn>000</m:mn><m:mspace width="0.166667em"/></m:mrow></m:math>.
+This solution is shown in Figure E and compared with an exponential
+of the same <m:math><m:mrow><m:msub><m:mi>r</m:mi><m:mi>o</m:mi></m:msub><m:mspace width="4pt"/></m:mrow></m:math>, and a simple logistic of the
+same <m:math><m:msub><m:mi>r</m:mi><m:mi>o</m:mi></m:msub></m:math> and <m:math><m:mrow><m:mi>k</m:mi><m:mspace width="0.166667em"/></m:mrow></m:math>.
+The model was run again with a maximum growth rate of <m:math><m:mrow><m:mi>M</m:mi><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>=</m:mo><m:mspace width="4pt"/><m:mspace width="4pt"/><m:mo>.</m:mo><m:mn>5</m:mn><m:mspace width="0.166667em"/></m:mrow></m:math>, and
+the results are shown in Figure F.
+Note the initial exponential growth which becomes super-exponential,
+growing extremely rapidly, then abruptly leveling off to an
+equilibrium.
+</para>
+    </section>
+  </content>
+</document>
