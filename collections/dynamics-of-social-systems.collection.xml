@@ -1,65 +1,22 @@
-<col:collection xmlns="http://cnx.rice.edu/collxml" xmlns:col="http://cnx.rice.edu/collxml" xml:lang="en">
+<?xml version="1.0"?>
+<col:collection xmlns="http://cnx.rice.edu/collxml" xmlns:col="http://cnx.rice.edu/collxml" xml:lang="en" authors="C. Sidney Burrus ,Howard Resnikoff">
   <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
-  <md:content-id>col10587</md:content-id>
-  <md:title>Dynamics of Social Systems</md:title>
-  
-  
-  <md:license url="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License 4.0</md:license>
-  <md:language>en</md:language>
-
-  
-
-  
-  
-  <md:uuid>8555ff76-956e-4a3f-816e-d99a32d40d9e</md:uuid>
-<md:slug>dynamics-of-social-systems</md:slug>
-</metadata>
-
+    <md:content-id>col10587</md:content-id>
+    <md:title>Dynamics of Social Systems</md:title>
+    <md:license url="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License 4.0</md:license>
+    <md:language>en</md:language>
+    <md:uuid>8555ff76-956e-4a3f-816e-d99a32d40d9e</md:uuid>
+    <md:slug>dynamics-of-social-systems</md:slug>
+  </metadata>
   <col:content>
-    
-      <col:module document="m17670"/>
-        
-      
-    
-    
-      <col:module document="m17671"/>
-        
-      
-    
-    
-      <col:module document="m17819"/>
-        
-      
-    
-    
-      <col:module document="m17672"/>
-        
-      
-    
-    
-      <col:module document="m18163"/>
-        
-      
-    
-    
-      <col:module document="m18164"/>
-        
-      
-    
-    
-      <col:module document="m18165"/>
-        
-      
-    
-    
-      <col:module document="m18166"/>
-        
-      
-    
-    
-      <col:module document="m18167"/>
-        
-      
-    
+    <col:module document="m17670"/>
+    <col:module document="m17671"/>
+    <col:module document="m17819"/>
+    <col:module document="m17672"/>
+    <col:module document="m18163"/>
+    <col:module document="m18164"/>
+    <col:module document="m18165"/>
+    <col:module document="m18166"/>
+    <col:module document="m18167"/>
   </col:content>
 </col:collection>
